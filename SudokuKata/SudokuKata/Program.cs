@@ -7,19 +7,23 @@ namespace SudokuKata
 {
     public interface IRandomValueGenerator
     {
-        int GenerateRandomValue();
-        int GenerateRandomValue(int limit);
+        int Next();
+        int Next(int limit);
     }
 
     public class RandomNumber : IRandomValueGenerator
     {
         private Random rnd;
-        public int GenerateRandomValue()
+        public RandomNumber()
+        {
+            rnd = new Random();
+        }
+        public int Next()
         {
             return rnd.Next();
         }
 
-        public int GenerateRandomValue(int limit)
+        public int Next(int limit)
         {
             return rnd.Next(limit);
         }
@@ -27,7 +31,7 @@ namespace SudokuKata
 
     public class Program
     {
-        public static void Play(IRandomValueGenerator rnd)
+        public static void Play(IRandomValueGenerator rng)
         {
             #region Construct fully populated board
             // Prepare empty board
@@ -51,7 +55,6 @@ namespace SudokuKata
             };
 
             // Construct board to be solved
-            Random rng = new Random();
 
             // Top element is current state of the board
             Stack<int[]> stateStack = new Stack<int[]>();
