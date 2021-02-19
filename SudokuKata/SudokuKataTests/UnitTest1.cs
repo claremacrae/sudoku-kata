@@ -42,6 +42,13 @@ namespace SudokuKataTests
         {
             VerifySudokuForSeed(42);
         }
+        
+        [UseReporter(typeof(AraxisMergeReporter))]
+        [Fact]
+        public void Test2()
+        {
+            VerifySudokuForSeed(1);
+        }
 
         private static void VerifySudokuForSeed(int seed)
         {
