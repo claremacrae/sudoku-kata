@@ -5,39 +5,9 @@ using System.Text;
 
 namespace SudokuKata
 {
-    public interface IRandomValueGenerator
-    {
-        int Next();
-        int Next(int limit);
-    }
-
-    public class RandomNumber : IRandomValueGenerator
-    {
-        private Random rnd;
-        public RandomNumber()
-        {
-            rnd = new Random();
-        }
-
-        public RandomNumber(Int32 seed)
-        {
-            rnd = new Random(seed);
-        }
-
-        public int Next()
-        {
-            return rnd.Next();
-        }
-
-        public int Next(int limit)
-        {
-            return rnd.Next(limit);
-        }
-    }
-
     public class Program
     {
-        public static void Play(IRandomValueGenerator rng)
+        public static void Play(Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
@@ -1023,7 +993,7 @@ namespace SudokuKata
 
         static void Main(string[] args)
         {
-            Play(new RandomNumber());
+            Play(new Random());
 
             Console.WriteLine();
             Console.Write("Press ENTER to exit... ");
