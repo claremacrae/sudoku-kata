@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SudokuKata
 {
-    class Program
+    public class Program
     {
-        static void Play()
+        public static void Play()
         {
             #region Construct fully populated board
             // Prepare empty board
