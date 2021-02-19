@@ -18,6 +18,12 @@ namespace SudokuKata
         {
             rnd = new Random();
         }
+
+        public RandomNumber(Int32 seed)
+        {
+            rnd = new Random(seed);
+        }
+
         public int Next()
         {
             return rnd.Next();
