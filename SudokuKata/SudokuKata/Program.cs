@@ -27,7 +27,7 @@ namespace SudokuKata
 
     public class Program
     {
-        public static void Play()
+        public static void Play(IRandomValueGenerator rnd)
         {
             #region Construct fully populated board
             // Prepare empty board
@@ -1014,7 +1014,7 @@ namespace SudokuKata
 
         static void Main(string[] args)
         {
-            Play();
+            Play(new RandomNumber());
 
             Console.WriteLine();
             Console.Write("Press ENTER to exit... ");
