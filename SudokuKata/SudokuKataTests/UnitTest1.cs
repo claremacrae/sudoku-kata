@@ -40,10 +40,15 @@ namespace SudokuKataTests
         [Fact]
         public void Test1()
         {
+            VerifySudokuForSeed(42);
+        }
+
+        private static void VerifySudokuForSeed(int seed)
+        {
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleOutput())
             {
-                SudokuKata.Program.Play(new Random(42));
+                SudokuKata.Program.Play(new Random(seed));
                 string s = consoleOutput.GetOuput();
                 Approvals.Verify(s);
             }
