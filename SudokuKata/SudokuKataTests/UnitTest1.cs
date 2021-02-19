@@ -1,3 +1,5 @@
+using ApprovalTests;
+using ApprovalTests.Reporters;
 using System;
 using System.IO;
 using Xunit;
@@ -32,6 +34,7 @@ namespace SudokuKataTests
             }
         }
 
+        [UseReporter(typeof(AraxisMergeReporter))]
         [Fact]
         public void Test1()
         {
@@ -39,7 +42,8 @@ namespace SudokuKataTests
             using (var consoleOutput = new ConsoleOutput())
             {
                 SudokuKata.Program.Play();
-                Assert.Equal("", consoleOutput.GetOuput());
+                string s = consoleOutput.GetOuput();
+                Approvals.Verify(s);
             }
             Assert.Equal(currentConsoleOut, Console.Out);
         }
