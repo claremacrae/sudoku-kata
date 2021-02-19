@@ -49,6 +49,22 @@ namespace SudokuKataTests
         {
             VerifySudokuForSeed(1);
         }
+        
+        [UseReporter(typeof(AraxisMergeReporter))]
+        [Fact]
+        public void Test3()
+        {
+            // this one reaches 'block' description
+            VerifySudokuForSeed(4);
+        }
+
+        [UseReporter(typeof(AraxisMergeReporter))]
+        [Fact]
+        public void Test4()
+        {
+            // this one reaches 'fail' description - although the calculation does complete
+            VerifySudokuForSeed(6);
+        }
 
         private static void VerifySudokuForSeed(int seed)
         {
