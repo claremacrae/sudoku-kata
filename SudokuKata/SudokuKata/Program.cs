@@ -26,12 +26,16 @@ namespace SudokuKata
 
         public int Next()
         {
-            return rnd.Next();
+            var next = rnd.Next();
+            Console.WriteLine(">>> Next random number: {0}.", next);
+            return next;
         }
 
         public int Next(int limit)
         {
-            return rnd.Next(limit);
+            var next = rnd.Next(limit);
+            Console.WriteLine(">>> Next random number: {0} out of {1}.", next, limit);
+            return next;
         }
     }
 
