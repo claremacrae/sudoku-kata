@@ -997,8 +997,8 @@ namespace SudokuKata
             Play(new RandomNumber());
 
             Console.WriteLine();
-            Console.Write("Press ENTER to exit... ");
-            Console.ReadLine();
+            // Console.Write("Press ENTER to exit... ");
+            // Console.ReadLine();
         }
     }
 }
