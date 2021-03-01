@@ -1,5 +1,4 @@
 using ApprovalTests;
-using ApprovalTests.Reporters;
 using SudokuKata;
 using System;
 using System.IO;
@@ -37,21 +36,18 @@ namespace SudokuKataTests
         }
 
  
-        [UseReporter(typeof(AraxisMergeReporter))]
         [Fact]
         public void Test1()
         {
             VerifySudokuForSeed(42);
         }
         
-        [UseReporter(typeof(AraxisMergeReporter))]
         [Fact]
         public void Test2()
         {
             VerifySudokuForSeed(1);
         }
         
-        [UseReporter(typeof(AraxisMergeReporter))]
         [Fact]
         public void Test3()
         {
@@ -59,7 +55,6 @@ namespace SudokuKataTests
             VerifySudokuForSeed(4);
         }
 
-        [UseReporter(typeof(AraxisMergeReporter))]
         [Fact]
         public void Test4()
         {
