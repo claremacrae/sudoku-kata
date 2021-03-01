@@ -18,14 +18,14 @@ namespace SudokuKata.Utilities
         public int Next()
         {
             var next = rnd.Next();
-            Console.WriteLine(">>> Next random number: {0}.", next);
+            // Console.WriteLine(">>> Next random number: {0}.", next);
             return next;
         }
 
         public int Next(int limit)
         {
             var next = rnd.Next(limit);
-            Console.WriteLine(">>> Next random number: {0} out of {1}.", next, limit);
+            // Console.WriteLine(">>> Next random number: {0} out of {1}.", next, limit);
             return next;
         }
     }
