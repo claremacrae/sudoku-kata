@@ -5,12 +5,6 @@ using System.Text;
 
 namespace SudokuKata
 {
-    public interface IRandomValueGenerator
-    {
-        int Next();
-        int Next(int limit);
-    }
-
     public class RandomNumber : IRandomValueGenerator
     {
         private Random rnd;
