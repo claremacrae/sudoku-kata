@@ -8,7 +8,7 @@ using Xunit;
 
 namespace SudokuKataTests
 {
-    public class UnitTest1
+    public class ProgramTests
     {
 
         // From http://www.vtrifonov.com/2012/11/getting-console-output-within-unit-test.html
