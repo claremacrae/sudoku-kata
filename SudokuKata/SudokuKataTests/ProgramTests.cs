@@ -3,6 +3,7 @@ using SudokuKata;
 using System;
 using ApprovalTests.Namers;
 using SudokuKata.Utilities;
+using SudokuKataTests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
 

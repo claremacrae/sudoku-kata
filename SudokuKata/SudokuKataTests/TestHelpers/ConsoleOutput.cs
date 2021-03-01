@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SudokuKataTests
+namespace SudokuKataTests.TestHelpers
 {
     public class ConsoleUtilities
     {

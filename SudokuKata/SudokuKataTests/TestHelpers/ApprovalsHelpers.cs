@@ -1,7 +1,7 @@
 ﻿using ApprovalTests;
 using Newtonsoft.Json;
 
-namespace SudokuKataTests
+namespace SudokuKataTests.TestHelpers
 {
     internal static class ApprovalsHelpers
     {
