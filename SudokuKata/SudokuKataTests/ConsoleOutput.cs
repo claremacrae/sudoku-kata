@@ -3,7 +3,7 @@ using System.IO;
 
 namespace SudokuKataTests
 {
-    public partial class ProgramTests
+    public class ConsoleUtilities
     {
         // From http://www.vtrifonov.com/2012/11/getting-console-output-within-unit-test.html
         public class ConsoleOutput : IDisposable

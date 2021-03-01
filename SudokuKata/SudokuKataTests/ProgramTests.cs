@@ -6,7 +6,7 @@ using Xunit;
 
 namespace SudokuKataTests
 {
-    public partial class ProgramTests
+    public class ProgramTests
     {
         [Fact]
         public void Test1()
@@ -37,7 +37,7 @@ namespace SudokuKataTests
         private static void VerifySudokuForSeed(int seed)
         {
             var currentConsoleOut = Console.Out;
-            using (var consoleOutput = new ConsoleOutput())
+            using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
             {
                 Program.Play(new RandomNumber(seed));
                 string s = consoleOutput.GetOuput();
