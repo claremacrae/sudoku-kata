@@ -1,4 +1,4 @@
-
+﻿
 Final look of the solved board:
 +---+---+---+
 |586|479|213|

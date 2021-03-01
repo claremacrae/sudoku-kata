@@ -1,39 +1,47 @@
 using ApprovalTests;
 using SudokuKata;
 using System;
+using ApprovalTests.Namers;
+using ApprovalTests.Reporters;
 using SudokuKata.Utilities;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace SudokuKataTests
 {
     public class ProgramTests
     {
-        [Fact]
-        public void Test1()
+        private readonly ITestOutputHelper _testOutputHelper;
+
+        public ProgramTests(ITestOutputHelper testOutputHelper)
         {
-            VerifySudokuForSeed(42);
-        }
-        
-        [Fact]
-        public void Test2()
-        {
-            VerifySudokuForSeed(1);
-        }
-        
-        [Fact]
-        public void Test3()
-        {
-            // this one reaches 'block' description
-            VerifySudokuForSeed(4);
+            _testOutputHelper = testOutputHelper;
         }
 
         [Fact]
-        public void Test4()
+        // [UseReporter(typeof(AllFailingTestsClipboardReporter ))]
+        public void TestSeed()
         {
-            // this one reaches 'fail' description - although the calculation does complete
-            VerifySudokuForSeed(6);
+            var errors = 0;
+            for (int seed = 0; seed < 20; seed++)
+            {
+                var section = $"{seed:D4}";
+                using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
+                {
+                    try
+                    {
+                        VerifySudokuForSeed(seed);
+                    }
+                    catch (Exception e)
+                    {
+                        _testOutputHelper.WriteLine(e.ToString());
+                        errors += 1;
+                    }
+                }
+            }
+            Assert.Equal(0, errors);
         }
-
+        
         private static void VerifySudokuForSeed(int seed)
         {
             var currentConsoleOut = Console.Out;
