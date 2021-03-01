@@ -1,4 +1,4 @@
-﻿namespace SudokuKata.Utililities
+﻿namespace SudokuKata.Utilities
 {
     public interface IRandomValueGenerator
     {

@@ -1,7 +1,7 @@
 using ApprovalTests;
 using SudokuKata;
 using System;
-using SudokuKata.Utililities;
+using SudokuKata.Utilities;
 using Xunit;
 
 namespace SudokuKataTests
