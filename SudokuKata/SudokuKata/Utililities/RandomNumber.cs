@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SudokuKata
+namespace SudokuKata.Utililities
 {
     public class RandomNumber : IRandomValueGenerator
     {

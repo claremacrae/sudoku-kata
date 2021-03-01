@@ -3,6 +3,7 @@ using ApprovalTests.Reporters;
 using SudokuKata;
 using System;
 using System.IO;
+using SudokuKata.Utililities;
 using Xunit;
 
 namespace SudokuKataTests
