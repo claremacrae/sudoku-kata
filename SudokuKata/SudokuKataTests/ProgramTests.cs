@@ -2,7 +2,6 @@ using ApprovalTests;
 using SudokuKata;
 using System;
 using ApprovalTests.Namers;
-using ApprovalTests.Reporters;
 using SudokuKata.Utilities;
 using Xunit;
 using Xunit.Abstractions;
@@ -19,7 +18,6 @@ namespace SudokuKataTests
         }
 
         [Fact]
-        // [UseReporter(typeof(AllFailingTestsClipboardReporter ))]
         public void TestSeed()
         {
             var errors = 0;
