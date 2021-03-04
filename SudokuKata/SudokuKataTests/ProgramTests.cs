@@ -46,7 +46,7 @@ namespace SudokuKataTests
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
             {
-                Program.Play(new RandomNumber(seed));
+                Program.Play(new RandomNumber(seed), new Random(seed));
                 string s = consoleOutput.GetOuput();
                 Approvals.Verify(s);
             }

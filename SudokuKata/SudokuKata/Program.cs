@@ -8,7 +8,7 @@ namespace SudokuKata
 {
     public class Program
     {
-        public static void Play(IRandomValueGenerator rng)
+        public static void Play(IRandomValueGenerator rng, Random rnd2)
         {
             #region Construct fully populated board
             // Prepare empty board
@@ -994,7 +994,7 @@ namespace SudokuKata
 
         static void Main(string[] args)
         {
-            Play(new RandomNumber());
+            Play(new RandomNumber(), new Random());
 
             Console.WriteLine();
             // Console.Write("Press ENTER to exit... ");
