@@ -2,7 +2,6 @@ using ApprovalTests;
 using SudokuKata;
 using System;
 using ApprovalTests.Namers;
-using SudokuKata.Utilities;
 using SudokuKataTests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
@@ -46,7 +45,7 @@ namespace SudokuKataTests
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
             {
-                Program.Play(new RandomNumber(seed), new Random(seed));
+                Program.Play(new Random(seed));
                 string s = consoleOutput.GetOuput();
                 Approvals.Verify(s);
             }

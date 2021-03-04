@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SudokuKata.Utilities;
 
 namespace SudokuKata
 {
     public class Program
     {
-        public static void Play(IRandomValueGenerator rngold, Random rng)
+        public static void Play(Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
@@ -994,7 +993,7 @@ namespace SudokuKata
 
         static void Main(string[] args)
         {
-            Play(new RandomNumber(), new Random());
+            Play(new Random());
 
             Console.WriteLine();
             // Console.Write("Press ENTER to exit... ");
