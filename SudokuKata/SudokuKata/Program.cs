@@ -8,7 +8,7 @@ namespace SudokuKata
 {
     public class Program
     {
-        public static void Play(IRandomValueGenerator rng, Random rnd2)
+        public static void Play(IRandomValueGenerator rngold, Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
