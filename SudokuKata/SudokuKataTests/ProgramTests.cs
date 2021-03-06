@@ -8,6 +8,12 @@ using Xunit.Abstractions;
 
 namespace SudokuKataTests
 {
+    [Collection("Sequential")]
+    //  ^^^ Prevent running in parallel with other tests that write to console
+    //  This test works by capturing any output to standard output.
+    //  It must not run in parallel with any other tests that also write to standard output.
+    //  Any other tests that also capture console output should also be put in the same Collection.
+    //  See https://stackoverflow.com/a/47174842/104370
     public class ProgramTests
     {
         private readonly ITestOutputHelper _testOutputHelper;
