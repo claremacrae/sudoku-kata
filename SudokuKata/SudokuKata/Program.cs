@@ -296,8 +296,8 @@ namespace SudokuKata
                         candidateMasks[i] = allOnes & ~colidingNumbers;
                     }
 
-                Console.WriteLine("Candidates remaining:");
-                Console.WriteLine(CandidatesStringifier.ConvertToString(candidateMasks));
+                // Console.WriteLine("Candidates remaining:");
+                // Console.WriteLine(CandidatesStringifier.ConvertToString(candidateMasks));
                 #endregion
 
                 #region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
