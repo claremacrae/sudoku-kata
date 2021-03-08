@@ -192,7 +192,7 @@ namespace SudokuKata
             Console.WriteLine(string.Join(Environment.NewLine, board.Select(s => new string(s)).ToArray()));
             #endregion
 
-            #region Generate inital board from the completely solved one
+            #region Generate initial board from the completely solved one
             // Board is solved at this point.
             // Now pick subset of digits as the starting position.
             int remainingDigits = 30;
