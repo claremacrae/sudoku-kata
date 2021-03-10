@@ -6,6 +6,20 @@ using SudokuKata.Utilities;
 
 namespace SudokuKata
 {
+    public class Grid
+    {
+        public int[] _finalState;
+        public char[][] _board;
+        public int[] _state;
+
+        public Grid(int[] state, char[][] board, int[] finalState)
+        {
+            _state = state;
+            _board = board;
+            _finalState = finalState;
+        }
+    }
+
     public class Program
     {
         public static void Play(Random rng)
@@ -241,10 +255,10 @@ namespace SudokuKata
             Console.WriteLine(string.Join("\n", board.Select(s => new string(s)).ToArray()));
             #endregion
 
-            SolveBoard(rng, state, board, finalState);
+            SolveBoard(rng, new Grid(state, board, finalState));
         }
 
-        private static void SolveBoard(Random rng, int[] state, char[][] board, int[] finalState)
+        private static void SolveBoard(Random rng, Grid grid)
         {
             Stack<int[]> stateStack;
             Stack<int> rowIndexStack;
@@ -283,10 +297,10 @@ namespace SudokuKata
 
                 #region Calculate candidates for current state of the board
 
-                int[] candidateMasks = new int[state.Length];
+                int[] candidateMasks = new int[grid._state.Length];
 
-                for (int i = 0; i < state.Length; i++)
-                    if (state[i] == 0)
+                for (int i = 0; i < grid._state.Length; i++)
+                    if (grid._state[i] == 0)
                     {
                         int row = i / 9;
                         int col = i % 9;
@@ -300,9 +314,9 @@ namespace SudokuKata
                             int colSiblingIndex = 9 * j + col;
                             int blockSiblingIndex = 9 * (blockRow * 3 + j / 3) + blockCol * 3 + j % 3;
 
-                            int rowSiblingMask = 1 << (state[rowSiblingIndex] - 1);
-                            int colSiblingMask = 1 << (state[colSiblingIndex] - 1);
-                            int blockSiblingMask = 1 << (state[blockSiblingIndex] - 1);
+                            int rowSiblingMask = 1 << (grid._state[rowSiblingIndex] - 1);
+                            int colSiblingMask = 1 << (grid._state[colSiblingIndex] - 1);
+                            int blockSiblingMask = 1 << (grid._state[blockSiblingIndex] - 1);
 
                             colidingNumbers = colidingNumbers | rowSiblingMask | colSiblingMask | blockSiblingMask;
                         }
@@ -317,7 +331,7 @@ namespace SudokuKata
 
                 #region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
 
-                var rowsIndices = state
+                var rowsIndices = grid._state
                     .Select((value, index) => new
                     {
                         Discriminator = index / 9,
@@ -328,7 +342,7 @@ namespace SudokuKata
                     })
                     .GroupBy(tuple => tuple.Discriminator);
 
-                var columnIndices = state
+                var columnIndices = grid._state
                     .Select((value, index) => new
                     {
                         Discriminator = 9 + index % 9,
@@ -339,7 +353,7 @@ namespace SudokuKata
                     })
                     .GroupBy(tuple => tuple.Discriminator);
 
-                var blockIndices = state
+                var blockIndices = grid._state
                     .Select((value, index) => new
                     {
                         Row = index / 9,
@@ -391,8 +405,8 @@ namespace SudokuKata
                         int rowToWrite = row + row / 3 + 1;
                         int colToWrite = col + col / 3 + 1;
 
-                        state[singleCandidateIndex] = candidate + 1;
-                        board[rowToWrite][colToWrite] = (char) ('1' + candidate);
+                        grid._state[singleCandidateIndex] = candidate + 1;
+                        grid._board[rowToWrite][colToWrite] = (char) ('1' + candidate);
                         candidateMasks[singleCandidateIndex] = 0;
                         changeMade = true;
 
@@ -493,9 +507,9 @@ namespace SudokuKata
                             string message = $"{description} can contain {digit} only at ({row + 1}, {col + 1}).";
 
                             int stateIndex = 9 * row + col;
-                            state[stateIndex] = digit;
+                            grid._state[stateIndex] = digit;
                             candidateMasks[stateIndex] = 0;
-                            board[rowToWrite][colToWrite] = (char) ('0' + digit);
+                            grid._board[rowToWrite][colToWrite] = (char) ('0' + digit);
 
                             changeMade = true;
 
@@ -615,7 +629,7 @@ namespace SudokuKata
                                 .SelectMany(mask =>
                                     cellGroups
                                         .Where(group => @group.All(cell =>
-                                            state[cell.Index] == 0 || (mask & (1 << (state[cell.Index] - 1))) == 0))
+                                            grid._state[cell.Index] == 0 || (mask & (1 << (grid._state[cell.Index] - 1))) == 0))
                                         .Select(group => new
                                         {
                                             Mask = mask,
@@ -623,11 +637,11 @@ namespace SudokuKata
                                             Cells = @group,
                                             CellsWithMask =
                                                 @group.Where(cell =>
-                                                        state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0)
+                                                        grid._state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0)
                                                     .ToList(),
                                             CleanableCellsCount =
                                                 @group.Count(
-                                                    cell => state[cell.Index] == 0 &&
+                                                    cell => grid._state[cell.Index] == 0 &&
                                                             (candidateMasks[cell.Index] & mask) != 0 &&
                                                             (candidateMasks[cell.Index] & ~mask) != 0)
                                         }))
@@ -779,10 +793,10 @@ namespace SudokuKata
                         int digit1 = candidateDigit1.Dequeue();
                         int digit2 = candidateDigit2.Dequeue();
 
-                        int[] alternateState = new int[finalState.Length];
-                        Array.Copy(state, alternateState, alternateState.Length);
+                        int[] alternateState = new int[grid._finalState.Length];
+                        Array.Copy(grid._state, alternateState, alternateState.Length);
 
-                        if (finalState[index1] == digit1)
+                        if (grid._finalState[index1] == digit1)
                         {
                             alternateState[index1] = digit2;
                             alternateState[index2] = digit1;
@@ -918,7 +932,7 @@ namespace SudokuKata
                                 {
                                     usedDigits[digitToMove - 1] = false;
                                     currentState[currentStateIndex] = 0;
-                                    board[rowToWrite][colToWrite] = '.';
+                                    grid._board[rowToWrite][colToWrite] = '.';
                                 }
 
                                 if (movedToDigit <= 9)
@@ -926,7 +940,7 @@ namespace SudokuKata
                                     lastDigitStack.Push(movedToDigit);
                                     usedDigits[movedToDigit - 1] = true;
                                     currentState[currentStateIndex] = movedToDigit;
-                                    board[rowToWrite][colToWrite] = (char) ('0' + movedToDigit);
+                                    grid._board[rowToWrite][colToWrite] = (char) ('0' + movedToDigit);
 
                                     if (currentState.Any(digit => digit == 0))
                                         command = "expand";
@@ -979,26 +993,26 @@ namespace SudokuKata
                             description = $"block ({row1 / 3 + 1}, {col1 / 3 + 1})";
                         }
 
-                        state[index1] = finalState[index1];
-                        state[index2] = finalState[index2];
+                        grid._state[index1] = grid._finalState[index1];
+                        grid._state[index2] = grid._finalState[index2];
                         candidateMasks[index1] = 0;
                         candidateMasks[index2] = 0;
                         changeMade = true;
 
-                        for (int i = 0; i < state.Length; i++)
+                        for (int i = 0; i < grid._state.Length; i++)
                         {
                             int tempRow = i / 9;
                             int tempCol = i % 9;
                             int rowToWrite = tempRow + tempRow / 3 + 1;
                             int colToWrite = tempCol + tempCol / 3 + 1;
 
-                            board[rowToWrite][colToWrite] = '.';
-                            if (state[i] > 0)
-                                board[rowToWrite][colToWrite] = (char) ('0' + state[i]);
+                            grid._board[rowToWrite][colToWrite] = '.';
+                            if (grid._state[i] > 0)
+                                grid._board[rowToWrite][colToWrite] = (char) ('0' + grid._state[i]);
                         }
 
                         Console.WriteLine(
-                            $"Guessing that {digit1} and {digit2} are arbitrary in {description} (multiple solutions): Pick {finalState[index1]}->({row1 + 1}, {col1 + 1}), {finalState[index2]}->({row2 + 1}, {col2 + 1}).");
+                            $"Guessing that {digit1} and {digit2} are arbitrary in {description} (multiple solutions): Pick {grid._finalState[index1]}->({row1 + 1}, {col1 + 1}), {grid._finalState[index2]}->({row2 + 1}, {col2 + 1}).");
                     }
                 }
 
@@ -1008,9 +1022,9 @@ namespace SudokuKata
                 {
                     #region Print the board as it looks after one change was made to it
 
-                    Console.WriteLine(string.Join(Environment.NewLine, board.Select(s => new string(s)).ToArray()));
+                    Console.WriteLine(string.Join(Environment.NewLine, grid._board.Select(s => new string(s)).ToArray()));
                     string code =
-                        string.Join(string.Empty, board.Select(s => new string(s)).ToArray())
+                        string.Join(string.Empty, grid._board.Select(s => new string(s)).ToArray())
                             .Replace("-", string.Empty)
                             .Replace("+", string.Empty)
                             .Replace("|", string.Empty)
