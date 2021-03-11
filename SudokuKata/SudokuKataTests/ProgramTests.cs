@@ -68,17 +68,7 @@ namespace SudokuKataTests
             // https://www.thonky.com/sudoku/solution-count?puzzle=004509000500100048090020560000030016340010025720060000059040070270001003000702600
             var expected = "164589237532176948897423561985234716346917825721865394659348172278691453413752689";
 
-            var inputDigits = new int[81];
-            Assert.Equal(81, input.Length);
-            for (var i = 0; i < input.Length; i++)
-            {
-                var character = input[i];
-                var digit = (int)char.GetNumericValue(character);
-                inputDigits[i] = digit;
-            }
-
-            var finalState = new int[81];
-            var grid = new Grid(inputDigits, finalState);
+            var grid = new Grid(input);
             Program.SolveBoard(new Random(0), grid);
             Assert.Equal(expected, GridStringifier.ConvertToCode(grid._state));
         }

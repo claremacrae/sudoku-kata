@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using SudokuKata.Utilities;
@@ -15,6 +16,20 @@ namespace SudokuKata
         {
             _state = state;
             _finalState = finalState;
+        }
+
+        public Grid(string input)
+        {
+            _state = new int[81];
+            Debug.Assert(81 == input.Length);
+            for (var i = 0; i < input.Length; i++)
+            {
+                var character = input[i];
+                var digit = (int)char.GetNumericValue(character);
+                _state[i] = digit;
+            }
+
+            _finalState = new int[81];
         }
     }
 
