@@ -24,6 +24,18 @@ namespace SudokuKata
             _state = input.Select(c => (int) char.GetNumericValue(c)).ToArray();
             _finalState = new int[81];
         }
+
+        public static Grid Solve(string input)
+        {
+            var grid = new Grid(input);
+            Program.SolveBoard(new Random(), grid);
+            return grid;
+        }
+
+        public override string ToString()
+        {
+            return GridStringifier.ConvertToCode(_state);
+        }
     }
 
     public class Program
