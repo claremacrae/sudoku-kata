@@ -11,7 +11,7 @@ namespace SudokuKata
         public int[] _finalState;
         public int[] _state;
 
-        public Grid(int[] state, char[][] board, int[] finalState)
+        public Grid(int[] state, int[] finalState)
         {
             _state = state;
             _finalState = finalState;
@@ -253,7 +253,7 @@ namespace SudokuKata
             Console.WriteLine(string.Join("\n", board.Select(s => new string(s)).ToArray()));
             #endregion
 
-            SolveBoard(rng, new Grid(state, board, finalState));
+            SolveBoard(rng, new Grid(state, finalState));
         }
 
         private static void SolveBoard(Random rng, Grid grid)
