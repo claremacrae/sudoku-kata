@@ -69,7 +69,7 @@ namespace SudokuKataTests
             var expected = "164589237532176948897423561985234716346917825721865394659348172278691453413752689";
 
             var grid = new Grid(input);
-            Program.SolveBoard(new Random(0), grid);
+            Program.SolveBoard(new Random(), grid);
             Assert.Equal(expected, GridStringifier.ConvertToCode(grid._state));
         }
     }
