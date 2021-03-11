@@ -15,7 +15,6 @@ namespace SudokuKata
         public Grid(int[] state, char[][] board, int[] finalState)
         {
             _state = state;
-            _board = board;
             _finalState = finalState;
         }
     }
