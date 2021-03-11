@@ -64,6 +64,8 @@ namespace SudokuKataTests
         {
             // See Easy https://www.websudoku.com/?level=1&set_id=2417252423
             var input    = "004509000500100048090020560000030016340010025720060000059040070270001003000702600";
+            // Solution from:
+            // https://www.thonky.com/sudoku/solution-count?puzzle=004509000500100048090020560000030016340010025720060000059040070270001003000702600
             var expected = "164589237532176948897423561985234716346917825721865394659348172278691453413752689";
 
             var inputDigits = new int[81];
