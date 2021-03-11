@@ -27,22 +27,22 @@ namespace SudokuKata.Utilities
         {
             var o = row * 9;
             var row1 = "|";
-            row1 += ToTriplet(board, o + 0, o + 1, o + 2);
+            row1 += ToTriplet(board, o + 0);
             row1 += "|";
-            row1 += ToTriplet(board, o + 3, o + 4, o + 5);
+            row1 += ToTriplet(board, o + 3);
             row1 += "|";
-            row1 += ToTriplet(board, o + 6, o + 7, o + 8);
+            row1 += ToTriplet(board, o + 6);
             row1 += "|";
             row1 += "\n";
             return row1;
             ;
         }
 
-        private static string ToTriplet(int[] board, int index0, int index1, int index2)
+        private static string ToTriplet(int[] board, int index0)
         {
             var value1 = board[index0];
-            var value2 = board[index1];
-            var value3 = board[index2];
+            var value2 = board[index0 + 1];
+            var value3 = board[index0 + 2];
             return ToCell(value1) + ToCell(value2) + ToCell(value3);
         }
 
