@@ -26,21 +26,16 @@ namespace SudokuKata.Utilities
         private static string ToRowNumbered(int[] board, int row)
         {
             var o = row * 9;
-            return ToRow(board, o + 0, o + 1, o + 2, o + 3, o + 4, o + 5, o + 6, o + 7, o + 8);;
-        }
-
-        private static string ToRow(int[] board, int index0, int index1, int index2, int index3, int index4, int index5,
-            int index6, int index7, int index8)
-        {
-            var row = "|";
-            row += ToTriplet(board, index0, index1, index2);
-            row += "|";
-            row += ToTriplet(board, index3, index4, index5);
-            row += "|";
-            row += ToTriplet(board, index6, index7, index8);
-            row += "|";
-            row += "\n";
-            return row;
+            var row1 = "|";
+            row1 += ToTriplet(board, o + 0, o + 1, o + 2);
+            row1 += "|";
+            row1 += ToTriplet(board, o + 3, o + 4, o + 5);
+            row1 += "|";
+            row1 += ToTriplet(board, o + 6, o + 7, o + 8);
+            row1 += "|";
+            row1 += "\n";
+            return row1;
+            ;
         }
 
         private static string ToTriplet(int[] board, int index0, int index1, int index2)
