@@ -402,11 +402,7 @@ namespace SudokuKata
                         int row = singleCandidateIndex / 9;
                         int col = singleCandidateIndex % 9;
 
-                        int rowToWrite = row + row / 3 + 1;
-                        int colToWrite = col + col / 3 + 1;
-
                         grid._state[singleCandidateIndex] = candidate + 1;
-                        grid._board[rowToWrite][colToWrite] = (char) ('1' + candidate);
                         candidateMasks[singleCandidateIndex] = 0;
                         changeMade = true;
 
@@ -501,15 +497,12 @@ namespace SudokuKata
                             int row = candidateRowIndices.ElementAt(index);
                             int col = candidateColIndices.ElementAt(index);
                             int digit = candidates.ElementAt(index);
-                            int rowToWrite = row + row / 3 + 1;
-                            int colToWrite = col + col / 3 + 1;
 
                             string message = $"{description} can contain {digit} only at ({row + 1}, {col + 1}).";
 
                             int stateIndex = 9 * row + col;
                             grid._state[stateIndex] = digit;
                             candidateMasks[stateIndex] = 0;
-                            grid._board[rowToWrite][colToWrite] = (char) ('0' + digit);
 
                             changeMade = true;
 
@@ -917,9 +910,6 @@ namespace SudokuKata
                                 int colToMove = colIndexStack.Peek();
                                 int digitToMove = lastDigitStack.Pop();
 
-                                int rowToWrite = rowToMove + rowToMove / 3 + 1;
-                                int colToWrite = colToMove + colToMove / 3 + 1;
-
                                 bool[] usedDigits = usedDigitsStack.Peek();
                                 int[] currentState = stateStack.Peek();
                                 int currentStateIndex = 9 * rowToMove + colToMove;
@@ -932,7 +922,6 @@ namespace SudokuKata
                                 {
                                     usedDigits[digitToMove - 1] = false;
                                     currentState[currentStateIndex] = 0;
-                                    grid._board[rowToWrite][colToWrite] = '.';
                                 }
 
                                 if (movedToDigit <= 9)
@@ -940,7 +929,6 @@ namespace SudokuKata
                                     lastDigitStack.Push(movedToDigit);
                                     usedDigits[movedToDigit - 1] = true;
                                     currentState[currentStateIndex] = movedToDigit;
-                                    grid._board[rowToWrite][colToWrite] = (char) ('0' + movedToDigit);
 
                                     if (currentState.Any(digit => digit == 0))
                                         command = "expand";
@@ -998,18 +986,6 @@ namespace SudokuKata
                         candidateMasks[index1] = 0;
                         candidateMasks[index2] = 0;
                         changeMade = true;
-
-                        for (int i = 0; i < grid._state.Length; i++)
-                        {
-                            int tempRow = i / 9;
-                            int tempCol = i % 9;
-                            int rowToWrite = tempRow + tempRow / 3 + 1;
-                            int colToWrite = tempCol + tempCol / 3 + 1;
-
-                            grid._board[rowToWrite][colToWrite] = '.';
-                            if (grid._state[i] > 0)
-                                grid._board[rowToWrite][colToWrite] = (char) ('0' + grid._state[i]);
-                        }
 
                         Console.WriteLine(
                             $"Guessing that {digit1} and {digit2} are arbitrary in {description} (multiple solutions): Pick {grid._finalState[index1]}->({row1 + 1}, {col1 + 1}), {grid._finalState[index2]}->({row2 + 1}, {col2 + 1}).");
