@@ -2,6 +2,7 @@ using ApprovalTests;
 using SudokuKata;
 using System;
 using ApprovalTests.Namers;
+using SudokuKata.Utilities;
 using SudokuKataTests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
@@ -56,6 +57,27 @@ namespace SudokuKataTests
                 Approvals.Verify(s);
             }
             Assert.Equal(currentConsoleOut, Console.Out);
+        }
+        
+        [Fact]
+        public void ShouldSolveGrid()
+        {
+            var input    = "004509000500100048090020560000030016340010025720060000059040070270001003000702600";
+            var expected = "164589237532176948897423561985234716346917825721865394659348172278691453413752689";
+
+            var inputDigits = new int[81];
+            Assert.Equal(81, input.Length);
+            for (var i = 0; i < input.Length; i++)
+            {
+                var character = input[i];
+                var digit = (int)char.GetNumericValue(character);
+                inputDigits[i] = digit;
+            }
+
+            var finalState = new int[81];
+            var grid = new Grid(inputDigits, finalState);
+            Program.SolveBoard(new Random(0), grid);
+            Assert.Equal(expected, GridStringifier.ConvertToCode(grid._state));
         }
     }
 }

@@ -256,7 +256,7 @@ namespace SudokuKata
             SolveBoard(rng, new Grid(state, finalState));
         }
 
-        private static void SolveBoard(Random rng, Grid grid)
+        public static void SolveBoard(Random rng, Grid grid)
         {
             Stack<int[]> stateStack;
             Stack<int> rowIndexStack;
