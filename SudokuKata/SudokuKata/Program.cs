@@ -1022,15 +1022,8 @@ namespace SudokuKata
                 {
                     #region Print the board as it looks after one change was made to it
 
-                    Console.WriteLine(string.Join(Environment.NewLine, grid._board.Select(s => new string(s)).ToArray()));
-                    string code =
-                        string.Join(string.Empty, grid._board.Select(s => new string(s)).ToArray())
-                            .Replace("-", string.Empty)
-                            .Replace("+", string.Empty)
-                            .Replace("|", string.Empty)
-                            .Replace(".", "0");
-
-                    Console.WriteLine("Code: {0}", code);
+                    Console.Write(GridStringifier.ConvertToString(grid._state));
+                    Console.WriteLine("Code: {0}", GridStringifier.ConvertToCode(grid._state));
                     Console.WriteLine();
 
                     #endregion
