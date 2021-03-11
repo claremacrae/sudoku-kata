@@ -9,7 +9,6 @@ namespace SudokuKata
     public class Grid
     {
         public int[] _finalState;
-        public char[][] _board;
         public int[] _state;
 
         public Grid(int[] state, char[][] board, int[] finalState)
