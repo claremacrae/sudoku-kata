@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SudokuKata.Utilities;
+using SudokuKataCpp;
 
 namespace SudokuKata
 {
@@ -10,6 +11,7 @@ namespace SudokuKata
     {
         public static void Play(Random rng)
         {
+            //Class1.sayHello();
             #region Construct fully populated board
             // Prepare empty board
             string line = "+---+---+---+";
