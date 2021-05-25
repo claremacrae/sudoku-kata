@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using SudokuKata.Utilities;
 
@@ -8,10 +9,16 @@ namespace SudokuKata
 {
     public class Program
     {
+        public const string CppDll = @"C:\Code\sudoku-kata-claremacrae\SudokuKata\x64\Debug\SudokuKataCpp.dll";
+
+        [DllImport(CppDll, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int getLine();
+
         public static void Play(Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
+            var x = getLine();
             string line = "+---+---+---+";
             string middle = "|...|...|...|";
             char[][] board = new char[][]
