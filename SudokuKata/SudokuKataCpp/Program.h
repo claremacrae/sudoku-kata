@@ -28,6 +28,11 @@ extern "C"
     {
         return marshallString("+---+---+---+");
     }
+
+    __declspec(dllexport) char* __stdcall GetMiddle()
+    {
+        return marshallString("|...|...|...|");
+    }
 }
 
 

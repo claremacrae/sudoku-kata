@@ -15,12 +15,16 @@ namespace SudokuKata
         [return: MarshalAs(UnmanagedType.LPStr)]
         public static extern string GetLine();
 
+        [DllImport(CppDll, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
+        [return: MarshalAs(UnmanagedType.LPStr)]
+        public static extern string GetMiddle();
+
         public static void Play(Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
             string line = GetLine();
-            string middle = "|...|...|...|";
+            string middle = GetMiddle();
             char[][] board = new char[][]
             {
                 line.ToCharArray(),
