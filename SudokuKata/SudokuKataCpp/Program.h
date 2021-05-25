@@ -24,18 +24,6 @@ char* marshallString(const std::string& text)
 
 extern "C"
 {
-    SUDOKU_EXPORT
-    int getInt()
-    {
-        return 42;
-    }
-
-    SUDOKU_EXPORT
-    const char* getLine()
-    {
-        return "+---+---+---+";
-    }
-
     __declspec(dllexport) char* __stdcall StringReturnAPI01()
     {
         return marshallString("+---+---+---+");
