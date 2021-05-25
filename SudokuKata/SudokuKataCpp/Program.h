@@ -8,6 +8,19 @@
 #define SUDOKU_EXPORT _declspec(dllexport)
 
 
+char* marshallString(char szSampleString[])
+{
+    ULONG ulSize = strlen(szSampleString) + sizeof(char);
+    char* pszReturn = NULL;
+
+    pszReturn = (char*)::CoTaskMemAlloc(ulSize);
+    // Copy the contents of szSampleString
+    // to the memory pointed to by pszReturn.
+    strcpy(pszReturn, szSampleString);
+    // Return pszReturn.
+    return pszReturn;
+}
+
 extern "C"
 {
     SUDOKU_EXPORT
@@ -25,15 +38,7 @@ extern "C"
     __declspec(dllexport) char* __stdcall StringReturnAPI01()
     {
         char szSampleString[] = "+---+---+---+";
-        ULONG ulSize = strlen(szSampleString) + sizeof(char);
-        char* pszReturn = NULL;
-
-        pszReturn = (char*)::CoTaskMemAlloc(ulSize);
-        // Copy the contents of szSampleString
-        // to the memory pointed to by pszReturn.
-        strcpy(pszReturn, szSampleString);
-        // Return pszReturn.
-        return pszReturn;
+        return marshallString(szSampleString);
     }
 }
 
