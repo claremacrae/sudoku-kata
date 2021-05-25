@@ -3,7 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SudokuKata.Utilities;
-using SudokuKataCpp;
+
+using System.Runtime.InteropServices;
+using ManagedMain;
+
+// Imports the CPP DLL
+namespace ManagedMain
+{
+    public class Cpp
+    {
+        [DllImport(
+            "Cpp.dll",
+            EntryPoint = "add",
+            ExactSpelling = false
+        )]
+        public static extern Int32 add(Int32 a, Int32 b);
+    }
+}
 
 namespace SudokuKata
 {
@@ -12,6 +28,7 @@ namespace SudokuKata
         public static void Play(Random rng)
         {
             //Class1.sayHello();
+            Console.WriteLine(Cpp.add(3, 4).ToString());
             #region Construct fully populated board
             // Prepare empty board
             string line = "+---+---+---+";

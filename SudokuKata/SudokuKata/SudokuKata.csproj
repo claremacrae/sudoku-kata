@@ -52,12 +52,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SudokuKataCpp\SudokuKataCpp.vcxproj">
-      <Project>{80817f61-b73c-4f6e-a029-00903cfb4247}</Project>
-      <Name>SudokuKataCpp</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
