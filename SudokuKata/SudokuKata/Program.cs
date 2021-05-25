@@ -13,13 +13,13 @@ namespace SudokuKata
 
         [DllImport(CppDll, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
         [return: MarshalAs(UnmanagedType.LPStr)]
-        public static extern string StringReturnAPI01();
+        public static extern string GetLine();
 
         public static void Play(Random rng)
         {
             #region Construct fully populated board
             // Prepare empty board
-            string line = StringReturnAPI01();
+            string line = GetLine();
             string middle = "|...|...|...|";
             char[][] board = new char[][]
             {

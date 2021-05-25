@@ -24,7 +24,7 @@ char* marshallString(const std::string& text)
 
 extern "C"
 {
-    __declspec(dllexport) char* __stdcall StringReturnAPI01()
+    __declspec(dllexport) char* __stdcall GetLine()
     {
         return marshallString("+---+---+---+");
     }
