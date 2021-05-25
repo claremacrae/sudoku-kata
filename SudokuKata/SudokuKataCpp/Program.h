@@ -8,8 +8,9 @@
 #define SUDOKU_EXPORT _declspec(dllexport)
 
 
-char* marshallString(char szSampleString[])
+char* marshallString(const std::string& text)
 {
+    auto szSampleString = text.c_str();
     ULONG ulSize = strlen(szSampleString) + sizeof(char);
     char* pszReturn = NULL;
 
