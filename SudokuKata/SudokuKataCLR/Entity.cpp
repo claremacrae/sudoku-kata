@@ -1,4 +1,5 @@
-﻿#include "Entity.h"
+﻿#include "pch.h"
+#include "Entity.h"
 namespace CLI
 {
     Entity::Entity(String^ name, float xPos, float yPos)
