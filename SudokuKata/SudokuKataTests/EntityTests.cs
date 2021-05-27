@@ -4,6 +4,7 @@ using Xunit;
 
 namespace SudokuKataTests
 {
+    [Collection("Sequential")]
     public class EntityTests
     {
         [Fact]
