@@ -9,22 +9,16 @@ namespace SudokuKata
 {
     public class Program
     {
-        public const string CppDll = @"C:\Code\sudoku-kata-claremacrae\SudokuKata\x64\Debug\SudokuKataCpp.dll";
-
-        [DllImport(CppDll, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-        [return: MarshalAs(UnmanagedType.LPStr)]
-        public static extern string GetLine();
-
-        [DllImport(CppDll, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-        [return: MarshalAs(UnmanagedType.LPStr)]
-        public static extern string GetMiddle();
-
         public static void Play(Random rng)
         {
+            if (System.Environment.Is64BitProcess)
+            {
+                throw new Exception("64-bit process");
+            }
             #region Construct fully populated board
             // Prepare empty board
-            string line = GetLine();
-            string middle = GetMiddle();
+            string line = "+---+---+---+";
+            string middle = "|...|...|...|";
             char[][] board = new char[][]
             {
                 line.ToCharArray(),
