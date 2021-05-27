@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using SudokuKata.Utilities;
+using SudokuKataCLR;
 
 namespace SudokuKata
 {
@@ -15,6 +16,7 @@ namespace SudokuKata
             {
                 throw new Exception("64-bit process");
             }
+            SudokuCpp.Play();
             #region Construct fully populated board
             // Prepare empty board
             string line = "+---+---+---+";
