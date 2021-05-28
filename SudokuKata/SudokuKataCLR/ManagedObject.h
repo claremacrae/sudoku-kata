@@ -10,6 +10,11 @@ namespace CLI {
         return str;
     }
 
+    static String^ char_array_to_string(const char* chars)
+    {
+        return Marshal::PtrToStringAnsi((IntPtr) (char*) chars);
+    }
+
     template<class T>
     public ref class ManagedObject
     {

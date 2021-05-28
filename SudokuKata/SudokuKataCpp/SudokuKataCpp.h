@@ -1,7 +1,11 @@
 #pragma once
 
-
-class Program
+namespace SudokuKataCpp
 {
-};
+    class SudokuCpp
+    {
+    public:
+        static const char* line();
+    };
+}
 
