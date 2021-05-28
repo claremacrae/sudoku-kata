@@ -127,12 +127,12 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="ManagedObject.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="SudokuCpp.h" />
+    <ClInclude Include="SudokuKataCLR.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="SudokuCpp.cpp" />
+    <ClCompile Include="SudokuKataCLR.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

@@ -1,4 +1,4 @@
-﻿#include "SudokuCpp.h"
+﻿#include "SudokuKataCLR.h"
 
 void SudokuKataCLR::SudokuCpp::Play()
 {

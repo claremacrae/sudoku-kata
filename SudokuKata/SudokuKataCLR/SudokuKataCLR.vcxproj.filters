@@ -24,7 +24,7 @@
     <ClInclude Include="Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SudokuCpp.h">
+    <ClInclude Include="SudokuKataCLR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SudokuCpp.cpp">
+    <ClCompile Include="SudokuKataCLR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
