@@ -6,6 +6,7 @@ namespace SudokuKataCpp
     {
     public:
         static const char* line();
+        static const char* middle();
     };
 }
 

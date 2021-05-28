@@ -8,6 +8,7 @@ namespace SudokuKataCLR {
     public:
         static void Play();
         static String^ Line();
+        static String^ Middle();
     };
 }
 

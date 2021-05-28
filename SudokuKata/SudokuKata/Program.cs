@@ -20,7 +20,7 @@ namespace SudokuKata
             #region Construct fully populated board
             // Prepare empty board
             string line = SudokuCpp.Line();
-            string middle = "|...|...|...|";
+            string middle = SudokuCpp.Middle();
             char[][] board = new char[][]
             {
                 line.ToCharArray(),
