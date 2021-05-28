@@ -1,6 +1,4 @@
-﻿#include "pch.h"
-
-#include "Entity.h"
+﻿#include "Entity.h"
 #include <iostream>
 namespace Core
 {
