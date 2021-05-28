@@ -19,7 +19,7 @@ namespace SudokuKata
             SudokuCpp.Play();
             #region Construct fully populated board
             // Prepare empty board
-            string line = "+---+---+---+";
+            string line = SudokuCpp.Line();
             string middle = "|...|...|...|";
             char[][] board = new char[][]
             {
