@@ -1,6 +1,7 @@
 using ApprovalTests;
 using SudokuKata;
 using System;
+using System.IO;
 using ApprovalTests.Namers;
 using SudokuKataTests.TestHelpers;
 using Xunit;
@@ -48,12 +49,23 @@ namespace SudokuKataTests
         
         private static void VerifySudokuForSeed(int seed)
         {
+            var randomValueGenerator = new FileWritingRandomNumber(seed);
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
             {
-                Program.Play(new RandomNumber(seed));
+                Program.Play(randomValueGenerator);
                 string s = consoleOutput.GetOuput();
                 Approvals.Verify(s);
+            }
+
+            {
+                var namer = Approvals.GetDefaultNamer();
+                var basename = Path.Combine(namer.SourcePath, namer.Name);
+                var section = $"{seed:D4}";
+                var seedsFile = basename + "." + section + ".seeds.txt";
+                Console.WriteLine(seedsFile);
+                randomValueGenerator.WriteValuesToFile(seedsFile);
+
             }
             Assert.Equal(currentConsoleOut, Console.Out);
         }
