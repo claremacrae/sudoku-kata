@@ -30,7 +30,7 @@ namespace SudokuKata::Utilities
 
 	std::wstring GridStringifier::ToRow(std::vector<int> &board, int index0, int index1, int index2, int index3, int index4, int index5, int index6, int index7, int index8)
 	{
-		auto row = L"|";
+		std::wstring row = L"|";
 		row += ToTriplet(board, index0, index1, index2);
 		row += L"|";
 		row += ToTriplet(board, index3, index4, index5);
