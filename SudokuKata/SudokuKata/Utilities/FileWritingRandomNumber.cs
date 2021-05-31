@@ -17,15 +17,13 @@ namespace SudokuKata
         public int Next()
         {
             var next = rnd.Next();
-            _results.Add(next);
-            return next;
+            return LogNumber(next);
         }
 
         public int Next(int limit)
         {
             var next = rnd.Next(limit);
-            _results.Add(next);
-            return next;
+            return LogNumber(next);
         }
 
         public void WriteValuesToFile(string seedsFile)
@@ -35,6 +33,12 @@ namespace SudokuKata
                 foreach (int s in _results)
                     tw.WriteLine(s);
             }
+        }
+
+        private int LogNumber(int next)
+        {
+            _results.Add(next);
+            return next;
         }
     }
 }
