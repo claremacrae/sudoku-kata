@@ -35,7 +35,7 @@ namespace SudokuKataTests
                 {
                     try
                     {
-                        VerifySudokuForSeed(seed);
+                        VerifySudokuForSeed(seed, new FileWritingRandomNumber(seed));
                     }
                     catch (Exception e)
                     {
@@ -52,9 +52,8 @@ namespace SudokuKataTests
             return $"{seed:D4}";
         }
 
-        private static void VerifySudokuForSeed(int seed)
+        private static void VerifySudokuForSeed(int seed, FileWritingRandomNumber randomValueGenerator)
         {
-            var randomValueGenerator = new FileWritingRandomNumber(seed);
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
             {
