@@ -66,6 +66,9 @@ namespace SudokuKataTests
             {
                 var namer = Approvals.GetDefaultNamer();
                 var basename = Path.Combine(namer.SourcePath, namer.Name);
+                // TODO I do not understand why I need to manually insert the section name here,
+                //      as this code called from inside a NamerFactory.AsEnvironmentSpecificTest()
+                //      block, so I expected the section name to be added automatically.
                 var section = SeedSectionName(seed);
                 var seedsFile = basename + "." + section + ".seeds.txt";
                 Console.WriteLine(seedsFile);
