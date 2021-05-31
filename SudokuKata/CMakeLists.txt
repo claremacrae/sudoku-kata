@@ -1,1 +1,2 @@
 add_subdirectory(SudokuKataCpp)
+add_subdirectory(SudokuKataTestsCpp)
