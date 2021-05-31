@@ -30,12 +30,14 @@ namespace SudokuKataTests
             var errors = 0;
             for (int seed = 0; seed < 20; seed++)
             {
+                var randomValueGenerator = new FileWritingRandomNumber(seed);
+
                 var section = SeedSectionName(seed);
                 using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
                 {
                     try
                     {
-                        VerifySudokuForSeed(seed, new FileWritingRandomNumber(seed));
+                        VerifySudokuForSeed(seed, randomValueGenerator);
                     }
                     catch (Exception e)
                     {
