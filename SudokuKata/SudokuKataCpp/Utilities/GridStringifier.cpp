@@ -56,6 +56,11 @@ namespace SudokuKata::Utilities
 
 	std::wstring GridStringifier::ConvertToCode(std::vector<int> &board)
 	{
-		return std::wstring::Join(L"", board);
+	    std::wstring result;
+	    for(auto digit : board)
+        {
+	        result += ToCell(digit);
+        }
+	    return result;
 	}
 }
