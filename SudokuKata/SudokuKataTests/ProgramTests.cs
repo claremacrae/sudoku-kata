@@ -30,9 +30,16 @@ namespace SudokuKataTests
             var errors = 0;
             for (int seed = 0; seed < 20; seed++)
             {
-                var randomValueGenerator = new FileWritingRandomNumber(seed);
+                // var randomValueGenerator = new FileWritingRandomNumber(seed);
+                var randomValueGenerator = new FileReadingRandomNumber();
 
                 var section = SeedSectionName(seed);
+
+                using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
+                {
+                    randomValueGenerator.ReadValuesFromFile(GetSeedsFileName(seed));
+                }
+
                 using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
                 {
                     try
@@ -46,11 +53,11 @@ namespace SudokuKataTests
                     }
                 }
 
-                using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
-                {
-                    var seedsFile = GetSeedsFileName(seed);
-                    randomValueGenerator.WriteValuesToFile(seedsFile);
-                }
+                // using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
+                // {
+                //     var seedsFile = GetSeedsFileName(seed);
+                //     randomValueGenerator.WriteValuesToFile(seedsFile);
+                // }
             }
             Assert.Equal(0, errors);
         }
@@ -60,7 +67,7 @@ namespace SudokuKataTests
             return $"{seed:D4}";
         }
 
-        private static void VerifySudokuForSeed(int seed, FileWritingRandomNumber randomValueGenerator)
+        private static void VerifySudokuForSeed(int seed, IRandomValueGenerator randomValueGenerator)
         {
             var currentConsoleOut = Console.Out;
             using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
