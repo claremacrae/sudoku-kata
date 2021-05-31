@@ -59,7 +59,7 @@ namespace SudokuKata::Utilities
 	    std::wstring result;
 	    for(auto digit : board)
         {
-	        result += ToCell(digit);
+	        result += std::to_wstring(digit);
         }
 	    return result;
 	}
