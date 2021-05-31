@@ -30,7 +30,7 @@ namespace SudokuKataTests
             var errors = 0;
             for (int seed = 0; seed < 20; seed++)
             {
-                var section = $"{seed:D4}";
+                var section = SeedSectionName(seed);
                 using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
                 {
                     try
@@ -46,7 +46,12 @@ namespace SudokuKataTests
             }
             Assert.Equal(0, errors);
         }
-        
+
+        private static string SeedSectionName(int seed)
+        {
+            return $"{seed:D4}";
+        }
+
         private static void VerifySudokuForSeed(int seed)
         {
             var randomValueGenerator = new FileWritingRandomNumber(seed);
@@ -61,7 +66,7 @@ namespace SudokuKataTests
             {
                 var namer = Approvals.GetDefaultNamer();
                 var basename = Path.Combine(namer.SourcePath, namer.Name);
-                var section = $"{seed:D4}";
+                var section = SeedSectionName(seed);
                 var seedsFile = basename + "." + section + ".seeds.txt";
                 Console.WriteLine(seedsFile);
                 randomValueGenerator.WriteValuesToFile(seedsFile);
