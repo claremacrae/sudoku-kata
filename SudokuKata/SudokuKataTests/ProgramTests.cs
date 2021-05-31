@@ -45,6 +45,12 @@ namespace SudokuKataTests
                         errors += 1;
                     }
                 }
+
+                using (var cleanup = NamerFactory.AsEnvironmentSpecificTest("" + section))
+                {
+                    var seedsFile = GetSeedsFileName(seed);
+                    randomValueGenerator.WriteValuesToFile(seedsFile);
+                }
             }
             Assert.Equal(0, errors);
         }
@@ -63,13 +69,6 @@ namespace SudokuKataTests
                 string s = consoleOutput.GetOuput();
                 Approvals.Verify(s);
             }
-
-            {
-                var seedsFile = GetSeedsFileName(seed);
-                Console.WriteLine(seedsFile);
-                randomValueGenerator.WriteValuesToFile(seedsFile);
-
-            }
             Assert.Equal(currentConsoleOut, Console.Out);
         }
 
@@ -77,11 +76,7 @@ namespace SudokuKataTests
         {
             var namer = Approvals.GetDefaultNamer();
             var basename = Path.Combine(namer.SourcePath, namer.Name);
-            // TODO I do not understand why I need to manually insert the section name here,
-            //      as this code called from inside a NamerFactory.AsEnvironmentSpecificTest()
-            //      block, so I expected the section name to be added automatically.
-            var section = SeedSectionName(seed);
-            var seedsFile = basename + "." + section + ".seeds.txt";
+            var seedsFile = basename + ".seeds.txt";
             return seedsFile;
         }
     }
