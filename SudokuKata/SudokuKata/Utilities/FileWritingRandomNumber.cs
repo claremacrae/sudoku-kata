@@ -16,14 +16,12 @@ namespace SudokuKata
 
         public int Next()
         {
-            var next = rnd.Next();
-            return LogNumber(next);
+            return LogNumber(rnd.Next());
         }
 
         public int Next(int limit)
         {
-            var next = rnd.Next(limit);
-            return LogNumber(next);
+            return LogNumber(rnd.Next(limit));
         }
 
         public void WriteValuesToFile(string seedsFile)
