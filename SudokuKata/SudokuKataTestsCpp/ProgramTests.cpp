@@ -34,6 +34,9 @@ namespace SudokuKataTests
 			{
 				try
 				{
+//                    auto defaultReporterDisposer =
+//                        Approvals::useAsDefaultReporter(std::make_shared<QuietReporter>());
+
                     ProgramTests::VerifySudokuForSeed(seed, randomValueGenerator);
 				}
 				catch (const std::exception &e)
