@@ -1,7 +1,6 @@
 #pragma once
 
-#include <codecvt>
-#include <locale>
+#include <string>
 
 std::string toString(const std::wstring &wstr);
 

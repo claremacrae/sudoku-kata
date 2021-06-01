@@ -1,5 +1,8 @@
 #include "Utilities/WStringHelpers.h"
 
+#include <codecvt>
+#include <locale>
+
 std::string toString(const std::wstring &wstr)
 {
     static std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8_converter;
