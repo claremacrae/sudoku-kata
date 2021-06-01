@@ -1,7 +1,6 @@
 add_executable(SudokuKataTestsCpp
         main.cpp
         GridStringifierTests.cpp
-        TestHelpers/WStringHelpers.h
         )
 
 # -------------------------------------------------------------------
