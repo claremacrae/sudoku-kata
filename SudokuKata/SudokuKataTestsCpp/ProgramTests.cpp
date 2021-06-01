@@ -25,6 +25,7 @@ namespace SudokuKataTests
 			SECTION(toString(section))
 
 			{
+			    std::cout << "=============================================================" << std::endl;
 				randomValueGenerator->ReadValuesFromFile(ProgramTests::GetSeedsFileName(seed));
 			}
 
@@ -38,6 +39,7 @@ namespace SudokuKataTests
 #if 0
 					_testOutputHelper->WriteLine(e.what());
 #endif
+				    std::wcout << "ERROR: " << e.what() << std::endl;
 					errors += 1;
 				}
 			}
