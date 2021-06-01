@@ -28,7 +28,7 @@ namespace SudokuKataTests
 
 			{
 			    std::cout << "=============================================================" << std::endl;
-				randomValueGenerator->ReadValuesFromFile(ProgramTests::GetSeedsFileName(seed));
+				randomValueGenerator->ReadValuesFromFile(ProgramTests::GetSeedsFileName());
 			}
 
 			{
@@ -79,7 +79,7 @@ namespace SudokuKataTests
         Approvals::verify(toString(console.str()));
 	}
 
-	std::wstring ProgramTests::GetSeedsFileName(int seed)
+	std::wstring ProgramTests::GetSeedsFileName()
 	{
 		auto namer = Approvals::getDefaultNamer();
 //		auto basename = FileSystem::combine(namer->SourcePath, namer->Name);
