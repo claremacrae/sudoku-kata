@@ -27,7 +27,7 @@ namespace SudokuKataTests
             auto sectionDisposer = NamerFactory::appendToOutputFilename(string);
 
 			{
-			    std::cout << "=============================================================" << std::endl;
+			    // std::cout << "=============================================================" << std::endl;
 				randomValueGenerator->ReadValuesFromFile(ProgramTests::GetSeedsFileName());
 			}
 
