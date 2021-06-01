@@ -82,8 +82,6 @@ namespace SudokuKataTests
 	std::wstring ProgramTests::GetSeedsFileName()
 	{
 		auto namer = Approvals::getDefaultNamer();
-//		auto basename = FileSystem::combine(namer->SourcePath, namer->Name);
-//		auto seedsFile = basename + L".seeds.txt";
 		auto seedsFile = toWString(namer->getApprovedFile(".seeds.txt"));
 		return StringHelper::replace(seedsFile, L".approved", L"");
 	}
