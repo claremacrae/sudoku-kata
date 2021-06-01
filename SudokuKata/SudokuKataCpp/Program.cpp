@@ -176,15 +176,15 @@ namespace SudokuKata
 
 		}
 
-		std::wcout << std::endl;
-		std::wcout << L"Final look of the solved board:" << std::endl;
+		console << std::endl;
+		console << L"Final look of the solved board:" << std::endl;
         for (const auto &item : board)
         {
             for (const auto &character : item)
             {
-                std::wcout << character;
+                console << character;
             }
-            std::wcout << '\n';
+            console << '\n';
         }
 
 	//			#endregion
@@ -238,18 +238,18 @@ namespace SudokuKata
 			removedPos += 1;
 		}
 
-		std::wcout << std::endl;
-		std::wcout << L"Starting look of the board to solve:" << std::endl;
-		std::wcout << std::wstring::Join(L"\n", board.Select([&] (std::any s)
+		console << std::endl;
+		console << L"Starting look of the board to solve:" << std::endl;
+		console << std::wstring::Join(L"\n", board.Select([&] (std::any s)
 		{
 			return std::wstring(s);
 		})->ToArray()) << std::endl;
 	//			#endregion
 
 	//			#region Prepare lookup structures that will be used in further execution
-		std::wcout << std::endl;
-		std::wcout << std::wstring(L'=', 80) << std::endl;
-		std::wcout << std::endl;
+		console << std::endl;
+		console << std::wstring(L'=', 80) << std::endl;
+		console << std::endl;
 
 		std::unordered_map<int, int> maskToOnesCount;
 		maskToOnesCount[0] = 0;
@@ -378,7 +378,7 @@ namespace SudokuKata
 					candidateMasks[singleCandidateIndex] = 0;
 					changeMade = true;
 
-					std::wcout << L"(" << row + 1 << L", " << col + 1 << L") can only contain " << candidate + 1 << std::endl;
+					console << L"(" << row + 1 << L", " << col + 1 << L") can only contain " << candidate + 1 << std::endl;
 				}
 
 	//					#endregion
@@ -481,7 +481,7 @@ namespace SudokuKata
 
 						changeMade = true;
 
-						std::wcout << message << std::endl;
+						console << message << std::endl;
 					}
 				}
 
@@ -548,7 +548,7 @@ namespace SudokuKata
 									value += 1;
 								}
 
-								std::wcout << std::wstring::Format(L"Values {0} and {1} in {2} are in cells ({3}, {4}) and ({5}, {6}).", lower, upper, group.Description, maskCells[0].Row + 1, maskCells[0].Column + 1, maskCells[1].Row + 1, maskCells[1].Column + 1) << std::endl;
+								console << std::wstring::Format(L"Values {0} and {1} in {2} are in cells ({3}, {4}) and ({5}, {6}).", lower, upper, group.Description, maskCells[0].Row + 1, maskCells[0].Column + 1, maskCells[1].Row + 1, maskCells[1].Column + 1) << std::endl;
 
 								for (auto cell : cells)
 								{
@@ -566,7 +566,7 @@ namespace SudokuKata
 									}
 
 									std::wstring valuesReport = std::wstring::Join(L", ", valuesToRemove.ToArray());
-									std::wcout << StringHelper::formatSimple(L"{0} cannot appear in ({1}, {2}).", valuesReport, cell.Row + 1, cell.Column + 1) << std::endl;
+									console << StringHelper::formatSimple(L"{0} cannot appear in ({1}, {2}).", valuesReport, cell.Row + 1, cell.Column + 1) << std::endl;
 
 									candidateMasks[cell.Index] &= ~group.Mask;
 									stepChangeMade = true;
@@ -649,7 +649,7 @@ namespace SudokuKata
 
 							message->append(L" and other values cannot appear in those cells.");
 
-							std::wcout << message->toString() << std::endl;
+							console << message->toString() << std::endl;
 
 							delete message;
 						}
@@ -682,7 +682,7 @@ namespace SudokuKata
 							}
 
 							message->append(StringHelper::formatSimple(L" cannot appear in cell ({0}, {1}).", cell->Row + 1, cell->Column + 1));
-							std::wcout << message->toString() << std::endl;
+							console << message->toString() << std::endl;
 
 							delete message;
 						}
@@ -1008,7 +1008,7 @@ namespace SudokuKata
 						}
 					}
 
-					std::wcout << std::wstring::Format(L"Guessing that {0} and {1} are arbitrary in {2} (multiple solutions): Pick {3}->({4}, {5}), {6}->({7}, {8}).", digit1, digit2, description, finalState[index1], row1 + 1, col1 + 1, finalState[index2], row2 + 1, col2 + 1) << std::endl;
+					console << std::wstring::Format(L"Guessing that {0} and {1} are arbitrary in {2} (multiple solutions): Pick {3}->({4}, {5}), {6}->({7}, {8}).", digit1, digit2, description, finalState[index1], row1 + 1, col1 + 1, finalState[index2], row2 + 1, col2 + 1) << std::endl;
 				}
 			}
 	//				#endregion
@@ -1016,7 +1016,7 @@ namespace SudokuKata
 			if (changeMade)
 			{
 	//					#region Print the board as it looks after one change was made to it
-				std::wcout << std::wstring::Join(L"\r\n", board.Select([&] (std::any s)
+				console << std::wstring::Join(L"\r\n", board.Select([&] (std::any s)
 				{
 					return std::wstring(s);
 				})->ToArray()) << std::endl;
@@ -1025,8 +1025,8 @@ namespace SudokuKata
 					return std::wstring(s);
 				})->ToArray()), L"-", L""), L"+", L""), L"|", L""), L".", L"0");
 
-				std::wcout << L"Code: " << code << std::endl;
-				std::wcout << std::endl;
+				console << L"Code: " << code << std::endl;
+				console << std::endl;
 	//					#endregion
 			}
 		}
