@@ -3,7 +3,7 @@ add_executable(SudokuKataTestsCpp
         GridStringifierTests.cpp
         ProgramTests.cpp
         ProgramTests.h
-        )
+        WStringHelpersTests.cpp)
 
 # -------------------------------------------------------------------
 include(FetchContent)
