@@ -6,6 +6,7 @@
 #include "Program.h"
 #include "Utilities/FileReadingRandomNumber.h"
 #include "Utilities/WStringHelpers.h"
+#include "stringhelper.h"
 
 using namespace ApprovalTests;
 using namespace SudokuKata;
@@ -21,8 +22,9 @@ namespace SudokuKataTests
 			// var randomValueGenerator = new FileWritingRandomNumber(seed);
 			auto randomValueGenerator = new FileReadingRandomNumber();
 
-			auto section = ProgramTests::SeedSectionName(seed);
-			SECTION(toString(section))
+			std::wstring section = ProgramTests::SeedSectionName(seed);
+            const std::string string = toString(section);
+            auto sectionDisposer = NamerFactory::appendToOutputFilename(string);
 
 			{
 			    std::cout << "=============================================================" << std::endl;
