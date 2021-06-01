@@ -49,7 +49,7 @@ namespace SudokuKata
                 ifs >> r;
 				_results.push_back(r);
             }
-            std::wcout << _results.size() << L" lines read from " << seedsFile << '\n';
+            // std::wcout << _results.size() << L" lines read from " << seedsFile << '\n';
         }
 	}
 }
