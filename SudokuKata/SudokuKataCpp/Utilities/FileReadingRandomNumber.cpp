@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <cstring>
+#include <iostream>
 
 #include "Utilities/WStringHelpers.h"
 
@@ -15,7 +16,12 @@ namespace SudokuKata
 
 	int FileReadingRandomNumber::Next()
 	{
+	    if (_results.empty())
+        {
+	        throw std::runtime_error("No more values left in FileReadingRandomNumber");
+        }
 		auto result = _results.front();
+	    // std::wcout << ">>> Next random number: "<< result << ".\n" << std::endl;
 		_results.pop_front();
 		return result;
 	}
@@ -43,6 +49,7 @@ namespace SudokuKata
                 ifs >> r;
 				_results.push_back(r);
             }
+            std::wcout << _results.size() << L" lines read from " << seedsFile << '\n';
         }
 	}
 }
