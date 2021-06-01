@@ -4,20 +4,7 @@
 #include "ApprovalTests.hpp"
 
 #include "Utilities/GridStringifier.h"
-
-#include <codecvt>
-
-namespace ApprovalTests {
-    std::string toString(const std::wstring &wstr) {
-        static std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8_converter;
-        return utf8_converter.to_bytes(wstr);
-    }
-
-    std::string toString(const wchar_t *wstr) {
-        static std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8_converter;
-        return utf8_converter.to_bytes(wstr);
-    }
-}
+#include "TestHelpers/WStringHelpers.h"
 
 using namespace SudokuKataTests;
 
