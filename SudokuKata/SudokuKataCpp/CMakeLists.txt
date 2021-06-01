@@ -1,6 +1,7 @@
 add_library(SudokuKataCpp
         Utilities/GridStringifier.cpp
         Utilities/GridStringifier.h
+        Utilities/WStringHelpers.cpp
         Utilities/WStringHelpers.h
         Program.cpp
         Program.h
