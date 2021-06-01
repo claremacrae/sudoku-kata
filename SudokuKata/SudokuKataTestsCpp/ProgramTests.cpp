@@ -19,8 +19,6 @@ namespace SudokuKataTests
 		auto errors = 0;
 		for (int seed = 0; seed < 20; seed++)
 		{
-		    std::wstringstream output;
-
 			// var randomValueGenerator = new FileWritingRandomNumber(seed);
 			auto randomValueGenerator = new FileReadingRandomNumber();
 
@@ -36,11 +34,13 @@ namespace SudokuKataTests
 			{
 				try
 				{
-                    ProgramTests::VerifySudokuForSeed(output, seed, randomValueGenerator);
+                    ProgramTests::VerifySudokuForSeed(seed, randomValueGenerator);
 				}
 				catch (const std::exception &e)
 				{
-				    output << "ERROR: " << e.what() << std::endl;
+				    // The Approval Test failed - log the output on the console, and continue.
+				    // so that we can review all failures in one session:
+				    std::wcout << "ERROR: " << e.what() << std::endl;
 					errors += 1;
 				}
 			}
@@ -61,15 +61,19 @@ namespace SudokuKataTests
         return s.str();
     }
 
-	void ProgramTests::VerifySudokuForSeed(std::wstringstream &console,
-                                           int seed,
-                                           SudokuKata::IRandomValueGenerator *randomValueGenerator)
+	void ProgramTests::VerifySudokuForSeed(int seed, SudokuKata::IRandomValueGenerator *randomValueGenerator)
 	{
+	    std::wstringstream console;
+	    try
 		{
 			Program::Play(randomValueGenerator);
 			std::wstring s = console.str();
-			Approvals::verify(toString(s));
 		}
+        catch (const std::exception &e)
+        {
+            console << "ERROR: " << e.what() << std::endl;
+        }
+        Approvals::verify(toString(console.str()));
 	}
 
 	std::wstring ProgramTests::GetSeedsFileName(int seed)
