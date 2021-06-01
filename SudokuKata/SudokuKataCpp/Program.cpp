@@ -1,7 +1,4 @@
 ﻿#include "Program.h"
-#include "Utilities/RandomNumber.h"
-
-using namespace SudokuKata::Utilities;
 
 namespace SudokuKata
 {
@@ -85,10 +82,7 @@ namespace SudokuKata
 							}
 						} // for (i = 0..8)
 
-						int candidatesCount = isDigitUsed.Where([&] (std::any used)
-						{
-							return !used;
-						})->Count();
+                        auto candidatesCount = std::count(isDigitUsed.begin(), isDigitUsed.end(), true);
 
 						if (candidatesCount == 0)
 						{
@@ -138,7 +132,8 @@ namespace SudokuKata
 
 				int rowToMove = rowIndexStack.top();
 				int colToMove = colIndexStack.top();
-				int digitToMove = lastDigitStack.pop();
+				int digitToMove = lastDigitStack.top();
+				lastDigitStack.pop();
 
 				int rowToWrite = rowToMove + rowToMove / 3 + 1;
 				int colToWrite = colToMove + colToMove / 3 + 1;
@@ -183,12 +178,18 @@ namespace SudokuKata
 
 		std::wcout << std::endl;
 		std::wcout << L"Final look of the solved board:" << std::endl;
-		std::wcout << std::wstring::Join(L"\r\n", board.Select([&] (std::any s)
-		{
-			return std::wstring(s);
-		})->ToArray()) << std::endl;
+        for (const auto &item : board)
+        {
+            for (const auto &character : item)
+            {
+                std::wcout << character;
+            }
+            std::wcout << '\n';
+        }
+
 	//			#endregion
 
+#if 0
 	//			#region Generate initial board from the completely solved one
 		// Board is solved at this point.
 		// Now pick subset of digits as the starting position.
@@ -267,7 +268,9 @@ namespace SudokuKata
 
 		int allOnes = (1 << 9) - 1;
 	//			#endregion
+#endif
 
+#if 0
 		bool changeMade = true;
 		while (changeMade)
 		{
@@ -1027,15 +1030,18 @@ namespace SudokuKata
 	//					#endregion
 			}
 		}
+#endif
 	}
 
 	void Program::Main(std::vector<std::wstring> &args)
 	{
+#if 0
 		RandomNumber tempVar();
 		Play(&tempVar);
 
 		std::wcout << std::endl;
 		// Console.Write("Press ENTER to exit... ");
 		// Console.ReadLine();
+#endif
 	}
 }

@@ -12,8 +12,6 @@
 #include "stringhelper.h"
 #include "stringbuilder.h"
 
-using namespace SudokuKata::Utilities;
-
 namespace SudokuKata
 {
 	class Program
