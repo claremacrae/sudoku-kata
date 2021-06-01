@@ -82,7 +82,7 @@ namespace SudokuKata
 							}
 						} // for (i = 0..8)
 
-                        auto candidatesCount = std::count(isDigitUsed.begin(), isDigitUsed.end(), true);
+                        auto candidatesCount = std::count(isDigitUsed.begin(), isDigitUsed.end(), false);
 
 						if (candidatesCount == 0)
 						{
