@@ -37,7 +37,7 @@ namespace SudokuKataTests
 //                    auto defaultReporterDisposer =
 //                        Approvals::useAsDefaultReporter(std::make_shared<QuietReporter>());
 
-                    ProgramTests::VerifySudokuForSeed(seed, randomValueGenerator);
+                    ProgramTests::VerifySudokuForSeed(randomValueGenerator);
 				}
 				catch (const std::exception &e)
 				{
@@ -64,7 +64,7 @@ namespace SudokuKataTests
         return s.str();
     }
 
-	void ProgramTests::VerifySudokuForSeed(int seed, SudokuKata::IRandomValueGenerator *randomValueGenerator)
+	void ProgramTests::VerifySudokuForSeed(SudokuKata::IRandomValueGenerator *randomValueGenerator)
 	{
 	    std::wstringstream console;
 	    try
