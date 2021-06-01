@@ -138,8 +138,8 @@ namespace SudokuKata
 				int rowToWrite = rowToMove + rowToMove / 3 + 1;
 				int colToWrite = colToMove + colToMove / 3 + 1;
 
-				std::vector<bool> usedDigits = usedDigitsStack.top();
-				std::vector<int> currentState = stateStack.top();
+				std::vector<bool>& usedDigits = usedDigitsStack.top();
+				std::vector<int>& currentState = stateStack.top();
 				int currentStateIndex = 9 * rowToMove + colToMove;
 
 				int movedToDigit = digitToMove + 1;
