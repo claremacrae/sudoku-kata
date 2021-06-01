@@ -1,6 +1,8 @@
 add_executable(SudokuKataTestsCpp
         main.cpp
         GridStringifierTests.cpp
+        ProgramTests.cpp
+        ProgramTests.h
         )
 
 # -------------------------------------------------------------------

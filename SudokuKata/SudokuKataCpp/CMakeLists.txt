@@ -5,6 +5,8 @@ add_library(SudokuKataCpp
         Utilities/WStringHelpers.h
         Program.cpp
         Program.h
+        Utilities/FileReadingRandomNumber.cpp
+        Utilities/FileReadingRandomNumber.h
         )
 target_compile_features(SudokuKataCpp PUBLIC cxx_std_17)
 target_include_directories(SudokuKataCpp

@@ -1,5 +1,10 @@
 ﻿#include "FileReadingRandomNumber.h"
 
+#include <fstream>
+#include <cstring>
+
+#include "Utilities/WStringHelpers.h"
+
 namespace SudokuKata
 {
 
@@ -10,7 +15,8 @@ namespace SudokuKata
 
 	int FileReadingRandomNumber::Next()
 	{
-		auto result = _results.pop_front();
+		auto result = _results.front();
+		_results.pop_front();
 		return result;
 	}
 
@@ -25,13 +31,18 @@ namespace SudokuKata
 //C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
 //ORIGINAL LINE: using (TextReader reader = File.OpenText(seedsFile))
 		{
-			TextReader reader = File::OpenText(seedsFile);
-			std::wstring line;
-			while ((line = reader.ReadLine()) != L"")
-			{
-				int r = std::stoi(line);
+		    std::string filepath = toString(seedsFile);
+		    std::ifstream ifs(filepath);
+
+            if(!ifs)
+                throw std::runtime_error(filepath + ": " + std::strerror(errno));
+
+            while (ifs)
+            {
+                int r;
+                ifs >> r;
 				_results.push_back(r);
-			}
-		}
+            }
+        }
 	}
 }
