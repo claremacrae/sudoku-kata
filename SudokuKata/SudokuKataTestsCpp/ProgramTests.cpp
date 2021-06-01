@@ -54,7 +54,7 @@ namespace SudokuKataTests
 	std::wstring ProgramTests::SeedSectionName(int seed)
 	{
 		std::wstringstream s;
-		s << std::setfill ( L' ' ) << std::setw (2) << seed;
+		s << std::setfill ( L'0' ) << std::setw (4) << seed;
         return s.str();
     }
 
@@ -82,6 +82,6 @@ namespace SudokuKataTests
 //		auto basename = FileSystem::combine(namer->SourcePath, namer->Name);
 //		auto seedsFile = basename + L".seeds.txt";
 		auto seedsFile = toWString(namer->getApprovedFile(".seeds.txt"));
-		return seedsFile;
+		return StringHelper::replace(seedsFile, L".approved", L"");
 	}
 }
