@@ -3,7 +3,7 @@
 namespace SudokuKata
 {
 
-	void Program::Play(IRandomValueGenerator *rng)
+	void Program::Play(std::wostream &console, IRandomValueGenerator *rng)
 	{
 	//			#region Construct fully populated board
 		// Prepare empty board

@@ -66,7 +66,7 @@ namespace SudokuKataTests
 	    std::wstringstream console;
 	    try
 		{
-			Program::Play(randomValueGenerator);
+            Program::Play(console, randomValueGenerator);
 			std::wstring s = console.str();
 		}
         catch (const std::exception &e)
