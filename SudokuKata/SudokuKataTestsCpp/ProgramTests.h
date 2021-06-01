@@ -13,7 +13,9 @@ namespace SudokuKataTests
 	public:
 		static std::wstring SeedSectionName(int seed);
 
-		static void VerifySudokuForSeed(int seed, SudokuKata::IRandomValueGenerator *randomValueGenerator);
+		static void VerifySudokuForSeed(std::wstringstream &console,
+                                        int seed,
+                                        SudokuKata::IRandomValueGenerator *randomValueGenerator);
 
 		static std::wstring GetSeedsFileName(int seed);
 	};

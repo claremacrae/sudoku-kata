@@ -19,6 +19,8 @@ namespace SudokuKataTests
 		auto errors = 0;
 		for (int seed = 0; seed < 20; seed++)
 		{
+		    std::wstringstream output;
+
 			// var randomValueGenerator = new FileWritingRandomNumber(seed);
 			auto randomValueGenerator = new FileReadingRandomNumber();
 
@@ -34,14 +36,11 @@ namespace SudokuKataTests
 			{
 				try
 				{
-					ProgramTests::VerifySudokuForSeed(seed, randomValueGenerator);
+                    ProgramTests::VerifySudokuForSeed(output, seed, randomValueGenerator);
 				}
-				catch (const std::runtime_error &e)
+				catch (const std::exception &e)
 				{
-#if 0
-					_testOutputHelper->WriteLine(e.what());
-#endif
-				    std::wcout << "ERROR: " << e.what() << std::endl;
+				    output << "ERROR: " << e.what() << std::endl;
 					errors += 1;
 				}
 			}
@@ -62,22 +61,15 @@ namespace SudokuKataTests
         return s.str();
     }
 
-	void ProgramTests::VerifySudokuForSeed(int seed, IRandomValueGenerator *randomValueGenerator)
+	void ProgramTests::VerifySudokuForSeed(std::wstringstream &console,
+                                           int seed,
+                                           SudokuKata::IRandomValueGenerator *randomValueGenerator)
 	{
-#if 0
-		auto currentConsoleOut = Console::Out;
-//C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
-//ORIGINAL LINE: using (var consoleOutput = new ConsoleUtilities.ConsoleOutput())
 		{
-			auto consoleOutput = ConsoleUtilities::ConsoleOutput();
-#endif
 			Program::Play(randomValueGenerator);
-#if 0
-			std::wstring s = consoleOutput.GetOuput();
-			Approvals::Verify(s);
+			std::wstring s = console.str();
+			Approvals::verify(toString(s));
 		}
-		Assert::Equal(currentConsoleOut, Console::Out);
-#endif
 	}
 
 	std::wstring ProgramTests::GetSeedsFileName(int seed)
