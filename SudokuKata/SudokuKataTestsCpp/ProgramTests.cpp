@@ -43,7 +43,7 @@ namespace SudokuKataTests
 				{
 				    // The Approval Test failed - log the output on the console, and continue.
 				    // so that we can review all failures in one session:
-				    std::wcout << "ERROR: " << e.what() << std::endl;
+				    std::wcout << "ERROR: " << e.what() << std::endl << std::endl;
 					errors += 1;
 				}
 			}
