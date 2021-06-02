@@ -1171,12 +1171,16 @@ namespace SudokuKata
 
             if (changeMade)
             {
-#if 0
                 //					#region Print the board as it looks after one change was made to it
-                console << std::wstring::Join(
-                               L"\r\n",
-                               board.Select([&](std::any s) { return std::wstring(s); })->ToArray())
-                        << std::endl;
+                for (const auto& item : board)
+                {
+                    for (const auto& character : item)
+                    {
+                        console << character;
+                    }
+                    console << '\n';
+                }
+#if 0
                 std::wstring code = StringHelper::replace(
                     StringHelper::replace(
                         StringHelper::replace(
