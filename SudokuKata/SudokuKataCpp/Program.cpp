@@ -413,7 +413,6 @@ namespace SudokuKata
                     }
                 }
 
-#if 0
                 if (singleCandidateIndices.size() > 0)
                 {
                     int pickSingleCandidateIndex = rng->Next(singleCandidateIndices.size());
@@ -437,6 +436,7 @@ namespace SudokuKata
                 }
 
                 //					#endregion
+#if 0
 
                 //					#region Try to find a number which can only appear in one place in a row/column/block
 
