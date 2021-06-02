@@ -552,13 +552,19 @@ namespace SudokuKata
                 //					#region Try to find pairs of digits in the same row/column/block and remove them from other colliding cells
                 if (!changeMade)
                 {
-#if 0
-                    std::vector<int> twoDigitMasks =
-                        candidateMasks
-                            .Where([&](std::any mask) { return maskToOnesCount[mask] == 2; })
-                            ->Distinct()
-                            ->ToList();
+                    std::vector<int> twoDigitMasks;
+                    std::copy_if(candidateMasks.begin(),
+                                 candidateMasks.end(),
+                                 std::back_inserter(twoDigitMasks),
+                                 [&](int mask)
+                                 {
+                                     bool alreadySeen = std::find(twoDigitMasks.begin(),
+                                                                  twoDigitMasks.end(),
+                                                                  mask) != twoDigitMasks.end();
+                                     return maskToOnesCount[mask] == 2 && (!alreadySeen);
+                                 });
 
+#if 0
                     auto groups =
                         twoDigitMasks
                             .SelectMany(
