@@ -14,11 +14,11 @@
 
 namespace SudokuKata
 {
-	class Program
-	{
-	public:
-		static void Play(std::wostream &console, IRandomValueGenerator *rng);
+    class Program
+    {
+    public:
+        static void Play(std::wostream& console, IRandomValueGenerator* rng);
 
-		static void Main(std::vector<std::wstring> &args);
-	};
+        static void Main(std::vector<std::wstring>& args);
+    };
 }

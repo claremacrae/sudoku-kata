@@ -4,22 +4,23 @@
 
 namespace SudokuKata
 {
-	class RandomNumber : public IRandomValueGenerator
-	{
-	private:
-		Random *rnd;
-	public:
-		virtual ~RandomNumber()
-		{
-			delete rnd;
-		}
+    class RandomNumber : public IRandomValueGenerator
+    {
+    private:
+        Random* rnd;
 
-		RandomNumber();
+    public:
+        virtual ~RandomNumber()
+        {
+            delete rnd;
+        }
 
-		RandomNumber(int seed);
+        RandomNumber();
 
-		int Next() override;
+        RandomNumber(int seed);
 
-		int Next(int limit) override;
-	};
+        int Next() override;
+
+        int Next(int limit) override;
+    };
 }

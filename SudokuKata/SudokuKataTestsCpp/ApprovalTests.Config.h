@@ -10,4 +10,3 @@ using namespace ApprovalTests::Namers;
 // [assembly: UseReporter(typeof(AllFailingTestsClipboardReporter))]
 //C# TO C++ CONVERTER NOTE: The following .NET attribute has no direct equivalent in C++:
 //ORIGINAL LINE: [assembly: UseApprovalSubdirectory("approval_tests")]
-

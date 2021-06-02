@@ -7,27 +7,27 @@
 
 namespace SudokuKata
 {
-	class FileWritingRandomNumber : public IRandomValueGenerator
-	{
-	private:
-		RandomNumber *rnd;
-		std::vector<int> _results = std::vector<int>();
+    class FileWritingRandomNumber : public IRandomValueGenerator
+    {
+    private:
+        RandomNumber* rnd;
+        std::vector<int> _results = std::vector<int>();
 
-	public:
-		virtual ~FileWritingRandomNumber()
-		{
-			delete rnd;
-		}
+    public:
+        virtual ~FileWritingRandomNumber()
+        {
+            delete rnd;
+        }
 
-		FileWritingRandomNumber(int seed);
+        FileWritingRandomNumber(int seed);
 
-		int Next() override;
+        int Next() override;
 
-		int Next(int limit) override;
+        int Next(int limit) override;
 
-		void WriteValuesToFile(const std::wstring &seedsFile);
+        void WriteValuesToFile(const std::wstring& seedsFile);
 
-	private:
-		int LogNumber(int next);
-	};
+    private:
+        int LogNumber(int next);
+    };
 }

@@ -5,28 +5,28 @@
 
 namespace SudokuKataTests::TestHelpers
 {
-	class ConsoleUtilities
-	{
-		// From http://www.vtrifonov.com/2012/11/getting-console-output-within-unit-test.html
-	public:
-		class ConsoleOutput : public Disposable
-		{
-		private:
-			StringWriter *stringWriter;
-			TextWriter *originalOutput;
+    class ConsoleUtilities
+    {
+        // From http://www.vtrifonov.com/2012/11/getting-console-output-within-unit-test.html
+    public:
+        class ConsoleOutput : public Disposable
+        {
+        private:
+            StringWriter* stringWriter;
+            TextWriter* originalOutput;
 
-		public:
-			virtual ~ConsoleOutput()
-			{
-				delete stringWriter;
-				delete originalOutput;
-			}
+        public:
+            virtual ~ConsoleOutput()
+            {
+                delete stringWriter;
+                delete originalOutput;
+            }
 
-			ConsoleOutput();
+            ConsoleOutput();
 
-			std::wstring GetOuput();
+            std::wstring GetOuput();
 
-			void Dispose() override;
-		};
-	};
+            void Dispose() override;
+        };
+    };
 }
