@@ -275,7 +275,6 @@ namespace SudokuKata
         console << std::wstring(80, L'=') << std::endl;
         console << std::endl;
 
-#if 0
         std::unordered_map<int, int> maskToOnesCount;
         maskToOnesCount[0] = 0;
         for (int i = 1; i < (1 << 9); i++)
@@ -293,7 +292,6 @@ namespace SudokuKata
 
         int allOnes = (1 << 9) - 1;
         //			#endregion
-#endif
 
 #if 0
         bool changeMade = true;
