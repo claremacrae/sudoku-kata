@@ -31,4 +31,6 @@ Starting look of the board to solve:
 
 ================================================================================
 
+single candidate 0 = 36
+single candidate 1 = 64
 

@@ -31,4 +31,8 @@ Starting look of the board to solve:
 
 ================================================================================
 
+single candidate 0 = 15
+single candidate 1 = 52
+single candidate 2 = 61
+single candidate 3 = 66
 
