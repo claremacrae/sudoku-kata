@@ -393,15 +393,6 @@ namespace SudokuKata
                     }
                 }
             }
-
-            for (const auto& groups : cellGroups)
-            {
-                console << fmt::format(L"CellGroup key: {0}", groups.first) << '\n';
-                for (const auto& group : groups.second)
-                {
-                    console << group.ToString() << '\n';
-                }
-            }
             //				#endregion
 
 #if 0
