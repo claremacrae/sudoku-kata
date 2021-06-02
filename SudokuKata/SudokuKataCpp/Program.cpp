@@ -395,12 +395,12 @@ namespace SudokuKata
             }
             //				#endregion
 
-#if 0
             bool stepChangeMade = true;
             while (stepChangeMade)
             {
                 stepChangeMade = false;
 
+#if 0
                 //					#region Pick cells with only one candidate left
 
                 std::vector<int> singleCandidateIndices =
@@ -1190,8 +1190,8 @@ namespace SudokuKata
                 console << L"Code: " << code << std::endl;
                 console << std::endl;
                 //					#endregion
-            }
 #endif
+            }
         }
     }
 
