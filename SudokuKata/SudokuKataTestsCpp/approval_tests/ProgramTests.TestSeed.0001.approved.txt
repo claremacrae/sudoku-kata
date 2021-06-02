@@ -1,4 +1,4 @@
-﻿
+
 Final look of the solved board:
 +---+---+---+
 |586|479|213|
@@ -301,3 +301,4 @@ Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
 Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
 Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
 Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+
