@@ -333,6 +333,14 @@ namespace SudokuKata
                 }
             }
 
+            console << L"Number of candidates: " << candidateMasks.size() << std::endl;
+            for (int index = 0; index < candidateMasks.size(); index++)
+            {
+                console << fmt::format(L"candidate mask {0}: {1}", index, candidateMasks[index])
+                        << '\n';
+            }
+            return;
+
             // Console.WriteLine("Candidates remaining:");
             // Console.WriteLine(CandidatesStringifier.ConvertToString(candidateMasks));
             //				#endregion
