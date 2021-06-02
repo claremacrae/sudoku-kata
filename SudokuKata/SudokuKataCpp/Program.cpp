@@ -370,6 +370,30 @@ namespace SudokuKata
                 }
             }
 
+            {
+                for (int block_row = 0; block_row < 3; ++block_row)
+                {
+                    for (int block_col = 0; block_col < 3; ++block_col)
+                    {
+                        std::vector<CellGroups> groups;
+                        for (int cell_number = 0; cell_number < 9; ++cell_number)
+                        {
+                            int row = (3 * block_row) + (cell_number / 3);
+                            int col = (3 * block_col) + (cell_number % 3);
+                            int index = row * 9 + col;
+                            groups.push_back(CellGroups(
+                                discriminator,
+                                fmt::format(L"block ({0}, {1})", block_row + 1, block_col + 1),
+                                index,
+                                row,
+                                col));
+                        }
+                        cellGroups[discriminator] = groups;
+                        discriminator += 1;
+                    }
+                }
+            }
+
             for (const auto& groups : cellGroups)
             {
                     console << fmt::format(L"CellGroup key: {0}", groups.first) << '\n';
