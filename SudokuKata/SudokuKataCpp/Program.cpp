@@ -1,5 +1,8 @@
 ﻿#include <numeric>
+#include <map>
+#include <fmt/format.h>
 #include "Program.h"
+#include "CellGroups.h"
 
 namespace SudokuKata
 {
@@ -330,12 +333,36 @@ namespace SudokuKata
                 }
             }
 
-#if 0
             // Console.WriteLine("Candidates remaining:");
             // Console.WriteLine(CandidatesStringifier.ConvertToString(candidateMasks));
             //				#endregion
 
             //				#region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
+            std::map<int, std::vector<CellGroups>> cellGroups;
+            {
+                for (int row = 0; row != 9; ++row)
+                {
+                    int discriminator = row;
+                    std::vector<CellGroups> groups;
+                    for (int col = 0; col != 9; col++)
+                    {
+                        int index = row * 9 + col;
+                        groups.push_back(CellGroups(
+                            discriminator, fmt::format(L"row #{0}", row + 1), index, row, col));
+                    }
+                    cellGroups[discriminator] = groups;
+                }
+            }
+
+            for (const auto& groups : cellGroups)
+            {
+                    console << fmt::format(L"CellGroup key: {0}", groups.first) << '\n';
+                    for (const auto& group : groups.second)
+                    {
+                        console << group.ToString() << '\n';
+                    }
+            }
+#if 0
             auto rowsIndices = state
                                    .Select(
                                        [&](value, index)
