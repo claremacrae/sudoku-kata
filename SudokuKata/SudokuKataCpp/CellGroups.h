@@ -18,5 +18,5 @@ public:
 
     CellGroups(int discriminator, const std::wstring& description, int index, int row, int column);
 
-    std::wstring ToString();
+    std::wstring ToString() const;
 };
