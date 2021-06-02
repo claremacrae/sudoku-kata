@@ -402,55 +402,9 @@ namespace SudokuKata
                         console << group.ToString() << '\n';
                     }
             }
-#if 0
-            auto rowsIndices = state
-                                   .Select(
-                                       [&](value, index)
-                                       {
-                                           new {Discriminator = index / 9,
-                                                Description = StringHelper::formatSimple(
-                                                    L"row #{0}", index / 9 + 1),
-                                                Index = index,
-                                                Row = index / 9,
-                                                Column = index % 9};
-                                       })
-                                   ->GroupBy([&](std::any tuple) { tuple::Discriminator; });
-
-            auto columnIndices = state
-                                     .Select(
-                                         [&](value, index)
-                                         {
-                                             new {Discriminator = 9 + index % 9,
-                                                  Description = StringHelper::formatSimple(
-                                                      L"column #{0}", index % 9 + 1),
-                                                  Index = index,
-                                                  Row = index / 9,
-                                                  Column = index % 9};
-                                         })
-                                     ->GroupBy([&](std::any tuple) { tuple::Discriminator; });
-
-            auto blockIndices =
-                state
-                    .Select(
-                        [&](value, index) {
-                            new {Row = index / 9, Column = index % 9, Index = index};
-                        })
-                    ->Select(
-                        [&](std::any tuple)
-                        {
-                            new {Discriminator = 18 + 3 * (tuple::Row / 3) + tuple::Column / 3,
-                                 Description = StringHelper::formatSimple(L"block ({0}, {1})",
-                                                                          tuple::Row / 3 + 1,
-                                                                          tuple::Column / 3 + 1),
-                                 Index = tuple::Index,
-                                 Row = tuple::Row,
-                                 Column = tuple::Column};
-                        })
-                    ->GroupBy([&](std::any tuple) { tuple::Discriminator; });
-
-            auto cellGroups = rowsIndices->Concat(columnIndices)->Concat(blockIndices)->ToList();
             //				#endregion
 
+#if 0
             bool stepChangeMade = true;
             while (stepChangeMade)
             {
