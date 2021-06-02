@@ -1180,28 +1180,30 @@ namespace SudokuKata
                     }
                     console << '\n';
                 }
-#if 0
-                std::wstring code = StringHelper::replace(
-                    StringHelper::replace(
-                        StringHelper::replace(
-                            StringHelper::replace(
-                                std::wstring::Join(
-                                    L"",
-                                    board.Select([&](std::any s) { return std::wstring(s); })
-                                        ->ToArray()),
-                                L"-",
-                                L""),
-                            L"+",
-                            L""),
-                        L"|",
-                        L""),
-                    L".",
-                    L"0");
+
+                std::wstring code;
+                for (const auto& item : board)
+                {
+                    for (const auto& character : item)
+                    {
+                        if (character == '-' || character == '+' || character == '|')
+                        {
+                            continue;
+                        }
+                        if (character == '.')
+                        {
+                            code += '0';
+                        }
+                        else
+                        {
+                            code += character;
+                        }
+                    }
+                }
 
                 console << L"Code: " << code << std::endl;
                 console << std::endl;
                 //					#endregion
-#endif
             }
         }
     }
