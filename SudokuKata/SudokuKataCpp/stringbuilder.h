@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+// clang-format off
+
 //----------------------------------------------------------------------------------------
 //	Copyright © 2004 - 2021 Tangible Software Solutions, Inc.
 //	This class can be used by anyone provided that the copyright notice remains intact.
@@ -144,3 +146,5 @@ private:
 		return ss.str();
 	}
 };
+
+// clang-format on
