@@ -298,7 +298,6 @@ namespace SudokuKata
         {
             changeMade = false;
 
-#if 0
             //				#region Calculate candidates for current state of the board
             std::vector<int> candidateMasks(state.size());
 
@@ -331,6 +330,7 @@ namespace SudokuKata
                 }
             }
 
+#if 0
             // Console.WriteLine("Candidates remaining:");
             // Console.WriteLine(CandidatesStringifier.ConvertToString(candidateMasks));
             //				#endregion
