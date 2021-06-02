@@ -1,4 +1,5 @@
-﻿#include "Program.h"
+﻿#include <numeric>
+#include "Program.h"
 
 namespace SudokuKata
 {
@@ -206,7 +207,6 @@ namespace SudokuKata
 
         //			#endregion
 
-#if 0
         //			#region Generate initial board from the completely solved one
         // Board is solved at this point.
         // Now pick subset of digits as the starting position.
@@ -216,7 +216,9 @@ namespace SudokuKata
         //ORIGINAL LINE: int[,] removedPerBlock = new int[3, 3];
         std::vector<std::vector<int>> removedPerBlock =
             RectangularVectors::RectangularIntVector(3, 3);
-        std::vector<int> positions = Enumerable::Range(0, 9 * 9).ToArray();
+        std::vector<int> positions(9*9);
+        std::iota(positions.begin(), positions.end(), 0);
+
         std::vector<int> state = stateStack.top();
 
         std::vector<int> finalState(state.size());
@@ -258,12 +260,15 @@ namespace SudokuKata
 
         console << std::endl;
         console << L"Starting look of the board to solve:" << std::endl;
-        console << std::wstring::Join(
-                       L"\n", board.Select([&](std::any s) { return std::wstring(s); })->ToArray())
-                << std::endl;
+        for (const auto& item : board)
+        {
+            for (const auto& character : item)
+            {
+                console << character;
+            }
+            console << '\n';
+        }
         //			#endregion
-
-#endif
 
 #if 0
         //			#region Prepare lookup structures that will be used in further execution
