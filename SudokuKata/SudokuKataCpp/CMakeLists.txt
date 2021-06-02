@@ -3,6 +3,8 @@ add_library(SudokuKataCpp
         Utilities/GridStringifier.h
         Utilities/WStringHelpers.cpp
         Utilities/WStringHelpers.h
+        CellGroups.cpp
+        CellGroups.h
         Program.cpp
         Program.h
         Utilities/FileReadingRandomNumber.cpp
