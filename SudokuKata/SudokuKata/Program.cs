@@ -361,6 +361,14 @@ namespace SudokuKata
                             .Select(tuple => tuple.Index)
                             .ToArray();
 
+                    for (int index = 0; index < singleCandidateIndices.Length; index++)
+                    {
+                        int singleCandidateIndex = singleCandidateIndices[index];
+                        Console.WriteLine($"single candidate {index} = {singleCandidateIndex}");
+                    }
+
+                    return;
+
                     if (singleCandidateIndices.Length > 0)
                     {
                         int pickSingleCandidateIndex = rng.Next(singleCandidateIndices.Length);
