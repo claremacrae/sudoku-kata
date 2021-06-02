@@ -8,24 +8,6 @@ namespace SudokuKata
 {
     public class Program
     {
-        public class CellGroups
-        {
-            public int Discriminator { get; }
-            public string Description { get; }
-            public int Index { get; }
-            public int Row { get; }
-            public int Column { get; }
-
-            public CellGroups(int discriminator, string description, int index, int row, int column)
-            {
-                Discriminator = discriminator;
-                Description = description;
-                Index = index;
-                Row = row;
-                Column = column;
-            }
-        }
-
         public static void Play(IRandomValueGenerator rng)
         {
             #region Construct fully populated board
@@ -320,11 +302,25 @@ namespace SudokuKata
 
                 #region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
                 var rowsIndices = state
-                    .Select((value, index) => new CellGroups(index / 9, $"row #{index / 9 + 1}", index, index / 9, index % 9))
+                    .Select((value, index) => new
+                    {
+                        Discriminator = index / 9,
+                        Description = $"row #{index / 9 + 1}",
+                        Index = index,
+                        Row = index / 9,
+                        Column = index % 9
+                    })
                     .GroupBy(tuple => tuple.Discriminator);
 
                 var columnIndices = state
-                    .Select((value, index) => new CellGroups(9 + index % 9, $"column #{index % 9 + 1}", index, index / 9, index % 9))
+                    .Select((value, index) => new
+                    {
+                        Discriminator = 9 + index % 9,
+                        Description = $"column #{index % 9 + 1}",
+                        Index = index,
+                        Row = index / 9,
+                        Column = index % 9
+                    })
                     .GroupBy(tuple => tuple.Discriminator);
 
                 var blockIndices = state
@@ -334,7 +330,14 @@ namespace SudokuKata
                         Column = index % 9,
                         Index = index
                     })
-                    .Select(tuple => new CellGroups(18 + 3 * (tuple.Row / 3) + tuple.Column / 3, $"block ({tuple.Row / 3 + 1}, {tuple.Column / 3 + 1})", tuple.Index, tuple.Row, tuple.Column))
+                    .Select(tuple => new
+                    {
+                        Discriminator = 18 + 3 * (tuple.Row / 3) + tuple.Column / 3,
+                        Description = $"block ({tuple.Row / 3 + 1}, {tuple.Column / 3 + 1})",
+                        Index = tuple.Index,
+                        Row = tuple.Row,
+                        Column = tuple.Column
+                    })
                     .GroupBy(tuple => tuple.Discriminator);
 
                 var cellGroups = rowsIndices.Concat(columnIndices).Concat(blockIndices).ToList();
