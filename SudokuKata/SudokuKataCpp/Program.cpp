@@ -339,10 +339,10 @@ namespace SudokuKata
 
             //				#region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
             std::map<int, std::vector<CellGroups>> cellGroups;
+            int discriminator = 0;
             {
                 for (int row = 0; row != 9; ++row)
                 {
-                    int discriminator = row;
                     std::vector<CellGroups> groups;
                     for (int col = 0; col != 9; col++)
                     {
@@ -351,6 +351,22 @@ namespace SudokuKata
                             discriminator, fmt::format(L"row #{0}", row + 1), index, row, col));
                     }
                     cellGroups[discriminator] = groups;
+                    discriminator += 1;
+                }
+            }
+
+            {
+                for (int col = 0; col != 9; col++)
+                {
+                    std::vector<CellGroups> groups;
+                    for (int row = 0; row != 9; ++row)
+                    {
+                        int index = row * 9 + col;
+                        groups.push_back(CellGroups(
+                            discriminator, fmt::format(L"column #{0}", col + 1), index, row, col));
+                    }
+                    cellGroups[discriminator] = groups;
+                    discriminator += 1;
                 }
             }
 
