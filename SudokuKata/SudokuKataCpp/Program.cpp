@@ -293,12 +293,12 @@ namespace SudokuKata
         int allOnes = (1 << 9) - 1;
         //			#endregion
 
-#if 0
         bool changeMade = true;
         while (changeMade)
         {
             changeMade = false;
 
+#if 0
             //				#region Calculate candidates for current state of the board
             std::vector<int> candidateMasks(state.size());
 
@@ -1179,8 +1179,8 @@ namespace SudokuKata
                 console << std::endl;
                 //					#endregion
             }
-        }
 #endif
+        }
     }
 
     void Program::Main(std::vector<std::wstring>& args)
