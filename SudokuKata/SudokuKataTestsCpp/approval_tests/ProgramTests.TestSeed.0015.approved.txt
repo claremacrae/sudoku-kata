@@ -31,7 +31,4 @@ Starting look of the board to solve:
 
 ================================================================================
 
-single candidate 0 = 39
-single candidate 1 = 54
-single candidate 2 = 56
 

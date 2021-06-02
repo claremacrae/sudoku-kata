@@ -413,14 +413,6 @@ namespace SudokuKata
                     }
                 }
 
-                for (int index = 0; index < singleCandidateIndices.size(); index++)
-                {
-                    int singleCandidateIndex = singleCandidateIndices[index];
-                    console << fmt::format(
-                                   L"single candidate {0} = {1}", index, singleCandidateIndex)
-                            << '\n';
-                }
-
 #if 0
 
                 std::vector<int> singleCandidateIndices =
