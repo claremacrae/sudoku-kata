@@ -31,273 +31,787 @@ Starting look of the board to solve:
 
 ================================================================================
 
-CellGroup key: 0
-Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
-Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
-Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
-Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
-Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
-Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
-Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
-Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
-Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
-CellGroup key: 1
-Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
-Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
-Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
-Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
-Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
-Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
-Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
-Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
-Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
-CellGroup key: 2
-Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
-Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
-Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
-Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
-Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
-Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
-Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
-Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
-Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
-CellGroup key: 3
-Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
-Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
-Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
-Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
-Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
-Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
-Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
-Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
-Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
-CellGroup key: 4
-Discriminator: 4, Description: row #5, Index: 36, Row: 4, Column: 0
-Discriminator: 4, Description: row #5, Index: 37, Row: 4, Column: 1
-Discriminator: 4, Description: row #5, Index: 38, Row: 4, Column: 2
-Discriminator: 4, Description: row #5, Index: 39, Row: 4, Column: 3
-Discriminator: 4, Description: row #5, Index: 40, Row: 4, Column: 4
-Discriminator: 4, Description: row #5, Index: 41, Row: 4, Column: 5
-Discriminator: 4, Description: row #5, Index: 42, Row: 4, Column: 6
-Discriminator: 4, Description: row #5, Index: 43, Row: 4, Column: 7
-Discriminator: 4, Description: row #5, Index: 44, Row: 4, Column: 8
-CellGroup key: 5
-Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
-Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
-Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
-Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
-Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
-Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
-Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
-Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
-Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
-CellGroup key: 6
-Discriminator: 6, Description: row #7, Index: 54, Row: 6, Column: 0
-Discriminator: 6, Description: row #7, Index: 55, Row: 6, Column: 1
-Discriminator: 6, Description: row #7, Index: 56, Row: 6, Column: 2
-Discriminator: 6, Description: row #7, Index: 57, Row: 6, Column: 3
-Discriminator: 6, Description: row #7, Index: 58, Row: 6, Column: 4
-Discriminator: 6, Description: row #7, Index: 59, Row: 6, Column: 5
-Discriminator: 6, Description: row #7, Index: 60, Row: 6, Column: 6
-Discriminator: 6, Description: row #7, Index: 61, Row: 6, Column: 7
-Discriminator: 6, Description: row #7, Index: 62, Row: 6, Column: 8
-CellGroup key: 7
-Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
-Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
-Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
-Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
-Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
-Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
-Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
-Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
-Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
-CellGroup key: 8
-Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0
-Discriminator: 8, Description: row #9, Index: 73, Row: 8, Column: 1
-Discriminator: 8, Description: row #9, Index: 74, Row: 8, Column: 2
-Discriminator: 8, Description: row #9, Index: 75, Row: 8, Column: 3
-Discriminator: 8, Description: row #9, Index: 76, Row: 8, Column: 4
-Discriminator: 8, Description: row #9, Index: 77, Row: 8, Column: 5
-Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
-Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
-Discriminator: 8, Description: row #9, Index: 80, Row: 8, Column: 8
-CellGroup key: 9
-Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
-Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
-Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
-Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
-Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
-Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
-Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
-Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
-Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
-CellGroup key: 10
-Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
-Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
-Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
-Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
-Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
-Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
-Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
-Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
-Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
-CellGroup key: 11
-Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
-Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
-Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
-Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
-Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
-Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
-Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
-Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
-Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
-CellGroup key: 12
-Discriminator: 12, Description: column #4, Index: 3, Row: 0, Column: 3
-Discriminator: 12, Description: column #4, Index: 12, Row: 1, Column: 3
-Discriminator: 12, Description: column #4, Index: 21, Row: 2, Column: 3
-Discriminator: 12, Description: column #4, Index: 30, Row: 3, Column: 3
-Discriminator: 12, Description: column #4, Index: 39, Row: 4, Column: 3
-Discriminator: 12, Description: column #4, Index: 48, Row: 5, Column: 3
-Discriminator: 12, Description: column #4, Index: 57, Row: 6, Column: 3
-Discriminator: 12, Description: column #4, Index: 66, Row: 7, Column: 3
-Discriminator: 12, Description: column #4, Index: 75, Row: 8, Column: 3
-CellGroup key: 13
-Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
-Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
-Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
-Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
-Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
-Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
-Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
-Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
-Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
-CellGroup key: 14
-Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5
-Discriminator: 14, Description: column #6, Index: 14, Row: 1, Column: 5
-Discriminator: 14, Description: column #6, Index: 23, Row: 2, Column: 5
-Discriminator: 14, Description: column #6, Index: 32, Row: 3, Column: 5
-Discriminator: 14, Description: column #6, Index: 41, Row: 4, Column: 5
-Discriminator: 14, Description: column #6, Index: 50, Row: 5, Column: 5
-Discriminator: 14, Description: column #6, Index: 59, Row: 6, Column: 5
-Discriminator: 14, Description: column #6, Index: 68, Row: 7, Column: 5
-Discriminator: 14, Description: column #6, Index: 77, Row: 8, Column: 5
-CellGroup key: 15
-Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
-Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
-Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
-Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
-Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
-Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
-Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
-Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
-Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
-CellGroup key: 16
-Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
-Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
-Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
-Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
-Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
-Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
-Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
-Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
-Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
-CellGroup key: 17
-Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
-Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
-Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
-Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
-Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
-Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
-Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
-Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
-Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
-CellGroup key: 18
-Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
-Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
-Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
-Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
-Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
-Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
-Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
-Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
-Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
-CellGroup key: 19
-Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
-Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
-Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
-CellGroup key: 20
-Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
-Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
-Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
-Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
-Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
-Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
-Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
-Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
-Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
-CellGroup key: 21
-Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
-Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
-Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
-Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
-Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
-Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
-Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
-Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
-Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
-CellGroup key: 22
-Discriminator: 22, Description: block (2, 2), Index: 30, Row: 3, Column: 3
-Discriminator: 22, Description: block (2, 2), Index: 31, Row: 3, Column: 4
-Discriminator: 22, Description: block (2, 2), Index: 32, Row: 3, Column: 5
-Discriminator: 22, Description: block (2, 2), Index: 39, Row: 4, Column: 3
-Discriminator: 22, Description: block (2, 2), Index: 40, Row: 4, Column: 4
-Discriminator: 22, Description: block (2, 2), Index: 41, Row: 4, Column: 5
-Discriminator: 22, Description: block (2, 2), Index: 48, Row: 5, Column: 3
-Discriminator: 22, Description: block (2, 2), Index: 49, Row: 5, Column: 4
-Discriminator: 22, Description: block (2, 2), Index: 50, Row: 5, Column: 5
-CellGroup key: 23
-Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
-Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
-Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
-Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
-Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
-Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
-Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
-Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
-Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
-CellGroup key: 24
-Discriminator: 24, Description: block (3, 1), Index: 54, Row: 6, Column: 0
-Discriminator: 24, Description: block (3, 1), Index: 55, Row: 6, Column: 1
-Discriminator: 24, Description: block (3, 1), Index: 56, Row: 6, Column: 2
-Discriminator: 24, Description: block (3, 1), Index: 63, Row: 7, Column: 0
-Discriminator: 24, Description: block (3, 1), Index: 64, Row: 7, Column: 1
-Discriminator: 24, Description: block (3, 1), Index: 65, Row: 7, Column: 2
-Discriminator: 24, Description: block (3, 1), Index: 72, Row: 8, Column: 0
-Discriminator: 24, Description: block (3, 1), Index: 73, Row: 8, Column: 1
-Discriminator: 24, Description: block (3, 1), Index: 74, Row: 8, Column: 2
-CellGroup key: 25
-Discriminator: 25, Description: block (3, 2), Index: 57, Row: 6, Column: 3
-Discriminator: 25, Description: block (3, 2), Index: 58, Row: 6, Column: 4
-Discriminator: 25, Description: block (3, 2), Index: 59, Row: 6, Column: 5
-Discriminator: 25, Description: block (3, 2), Index: 66, Row: 7, Column: 3
-Discriminator: 25, Description: block (3, 2), Index: 67, Row: 7, Column: 4
-Discriminator: 25, Description: block (3, 2), Index: 68, Row: 7, Column: 5
-Discriminator: 25, Description: block (3, 2), Index: 75, Row: 8, Column: 3
-Discriminator: 25, Description: block (3, 2), Index: 76, Row: 8, Column: 4
-Discriminator: 25, Description: block (3, 2), Index: 77, Row: 8, Column: 5
-CellGroup key: 26
-Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
-Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
-Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
-Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
-Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
-Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
-Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
-Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
-Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+(4, 1) can only contain 7.
++---+---+---+
+|.9.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4..|
+|8..|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|..6|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 090040063640500010302009000750001400800000007400607080200900070006350008900070600
+
+(8, 1) can only contain 1.
++---+---+---+
+|.9.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4..|
+|8..|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|1.6|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 090040063640500010302009000750001400800000007400607080200900070106350008900070600
+
+(1, 1) can only contain 5.
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4..|
+|8..|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|1.6|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001400800000007400607080200900070106350008900070600
+
+(8, 2) can only contain 7.
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4..|
+|8..|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001400800000007400607080200900070176350008900070600
+
+Block (2, 3) can contain 6 only at (4, 9).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4.6|
+|8..|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001406800000007400607080200900070176350008900070600
+
+Column #2 can contain 6 only at (5, 2).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|...|..7|
+|4..|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001406860000007400607080200900070176350008900070600
+
+Block (2, 1) can contain 2 only at (6, 2).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|...|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001406860000007420607080200900070176350008900070600
+
+Block (2, 2) can contain 5 only at (5, 6).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|..5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001406860005007420607080200900070176350008900070600
+
+Block (2, 2) can contain 4 only at (5, 4).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|..9|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302009000750001406860405007420607080200900070176350008900070600
+
+Row #3 can contain 6 only at (3, 5).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|9..|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302069000750001406860405007420607080200900070176350008900070600
+
+Column #5 can contain 1 only at (7, 5).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|91.|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302069000750001406860405007420607080200910070176350008900070600
+
+Row #7 can contain 6 only at (7, 6).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|3.2|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010302069000750001406860405007420607080200916070176350008900070600
+
+Column #2 can contain 1 only at (3, 2).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|312|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6..|
++---+---+---+
+Code: 590040063640500010312069000750001406860405007420607080200916070176350008900070600
+
+Block (3, 3) can contain 1 only at (9, 9).
++---+---+---+
+|59.|.4.|.63|
+|64.|5..|.1.|
+|312|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590040063640500010312069000750001406860405007420607080200916070176350008900070601
+
+Row #1 can contain 1 only at (1, 4).
++---+---+---+
+|59.|14.|.63|
+|64.|5..|.1.|
+|312|.69|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590140063640500010312069000750001406860405007420607080200916070176350008900070601
+
+Column #4 can contain 7 only at (3, 4).
++---+---+---+
+|59.|14.|.63|
+|64.|5..|.1.|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590140063640500010312769000750001406860405007420607080200916070176350008900070601
+
+Column #6 can contain 3 only at (2, 6).
++---+---+---+
+|59.|14.|.63|
+|64.|5.3|.1.|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590140063640503010312769000750001406860405007420607080200916070176350008900070601
+
+Column #9 can contain 2 only at (2, 9).
++---+---+---+
+|59.|14.|.63|
+|64.|5.3|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590140063640503012312769000750001406860405007420607080200916070176350008900070601
+
+(2, 5) can only contain 8.
++---+---+---+
+|59.|14.|.63|
+|64.|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590140063640583012312769000750001406860405007420607080200916070176350008900070601
+
+(1, 6) can only contain 2.
++---+---+---+
+|59.|142|.63|
+|64.|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590142063640583012312769000750001406860405007420607080200916070176350008900070601
+
+(2, 3) can only contain 7.
++---+---+---+
+|59.|142|.63|
+|647|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|35.|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590142063647583012312769000750001406860405007420607080200916070176350008900070601
+
+(8, 6) can only contain 4.
++---+---+---+
+|59.|142|.63|
+|647|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|..8|
+|9..|.7.|6.1|
++---+---+---+
+Code: 590142063647583012312769000750001406860405007420607080200916070176354008900070601
+
+(9, 6) can only contain 8.
++---+---+---+
+|59.|142|.63|
+|647|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|..8|
+|9..|.78|6.1|
++---+---+---+
+Code: 590142063647583012312769000750001406860405007420607080200916070176354008900078601
+
+(9, 2) can only contain 3.
++---+---+---+
+|59.|142|.63|
+|647|583|.12|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|..8|
+|93.|.78|6.1|
++---+---+---+
+Code: 590142063647583012312769000750001406860405007420607080200916070176354008930078601
+
+(2, 7) can only contain 9.
++---+---+---+
+|59.|142|.63|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|..8|
+|93.|.78|6.1|
++---+---+---+
+Code: 590142063647583912312769000750001406860405007420607080200916070176354008930078601
+
+(8, 7) can only contain 2.
++---+---+---+
+|59.|142|.63|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|2.8|
+|93.|.78|6.1|
++---+---+---+
+Code: 590142063647583912312769000750001406860405007420607080200916070176354208930078601
+
+(1, 3) can only contain 8.
++---+---+---+
+|598|142|.63|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|2.8|
+|93.|.78|6.1|
++---+---+---+
+Code: 598142063647583912312769000750001406860405007420607080200916070176354208930078601
+
+(9, 4) can only contain 2.
++---+---+---+
+|598|142|.63|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|2.8|
+|93.|278|6.1|
++---+---+---+
+Code: 598142063647583912312769000750001406860405007420607080200916070176354208930278601
+
+(1, 7) can only contain 7.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|2..|916|.7.|
+|176|354|2.8|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750001406860405007420607080200916070176354208930278601
+
+(7, 2) can only contain 8.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|28.|916|.7.|
+|176|354|2.8|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750001406860405007420607080280916070176354208930278601
+
+(8, 8) can only contain 9.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|..1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750001406860405007420607080280916070176354298930278601
+
+(4, 4) can only contain 8.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.8.|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750801406860405007420607080280916070176354298930278601
+
+Column #9 can contain 9 only at (6, 9).
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|42.|6.7|.89|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750801406860405007420607089280916070176354298930278601
+
+(6, 5) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|42.|637|.89|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750801406860405007420637089280916070176354298930278601
+
+(6, 3) can only contain 1.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|421|637|.89|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750801406860405007421637089280916070176354298930278601
+
+(6, 7) can only contain 5.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|...|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|421|637|589|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769000750801406860405007421637589280916070176354298930278601
+
+(3, 7) can only contain 8.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|421|637|589|
++---+---+---+
+|28.|916|.7.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769800750801406860405007421637589280916070176354298930278601
+
+(7, 7) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|..7|
+|421|637|589|
++---+---+---+
+|28.|916|37.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769800750801406860405007421637589280916370176354298930278601
+
+(5, 7) can only contain 1.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|28.|916|37.|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589280916370176354298930278601
+
+Guessing that 4 and 5 are arbitrary in row #7 (multiple solutions): Pick 5->(7, 3), 4->(7, 9).
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298930278601
+
+(9, 8) can only contain 5.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|93.|278|651|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298930278651
+
+(9, 3) can only contain 4.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298934278651
+
+(3, 8) can only contain 4.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|84.|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769840750801406860405107421637589285916374176354298934278651
+
+(3, 9) can only contain 5.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750801406860405107421637589285916374176354298934278651
+
+Guessing that 2 and 9 are arbitrary in column #5 (multiple solutions): Pick 9->(4, 5), 2->(5, 5).
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|4.6|
+|86.|425|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891406860425107421637589285916374176354298934278651
+
+(5, 8) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|4.6|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891406860425137421637589285916374176354298934278651
+
+(4, 8) can only contain 2.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|426|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891426860425137421637589285916374176354298934278651
+
+(4, 3) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|753|891|426|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845753891426860425137421637589285916374176354298934278651
+
+(5, 3) can only contain 9.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|753|891|426|
+|869|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845753891426869425137421637589285916374176354298934278651
+
