@@ -407,7 +407,7 @@ namespace SudokuKata
                 {
                     auto mask = candidateMasks[index];
                     auto bitsSet = maskToOnesCount[mask];
-                    if ( bitsSet == 1)
+                    if (bitsSet == 1)
                     {
                         singleCandidateIndices.push_back(index);
                     }
