@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using SudokuKata.Utilities;
 
 namespace SudokuKata
@@ -23,6 +24,11 @@ namespace SudokuKata
                 Index = index;
                 Row = row;
                 Column = column;
+            }
+
+            public override string ToString()
+            {
+                return $"{nameof(Discriminator)}: {Discriminator}, {nameof(Description)}: {Description}, {nameof(Index)}: {Index}, {nameof(Row)}: {Row}, {nameof(Column)}: {Column}";
             }
         }
 
@@ -338,7 +344,18 @@ namespace SudokuKata
                     .GroupBy(tuple => tuple.Discriminator);
 
                 var cellGroups = rowsIndices.Concat(columnIndices).Concat(blockIndices).ToList();
+                
+                foreach (var groups in cellGroups)
+                {
+                    Console.WriteLine("CellGroup key: {0}", groups.Key);
+                    foreach (var @group in groups)
+                    {
+                        Console.WriteLine(group);
+                    }
+                }
                 #endregion
+
+                break;
 
                 bool stepChangeMade = true;
                 while (stepChangeMade)
