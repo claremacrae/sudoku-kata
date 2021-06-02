@@ -414,17 +414,6 @@ namespace SudokuKata
                 }
 
 #if 0
-
-                std::vector<int> singleCandidateIndices =
-                    candidateMasks
-                        .Select(
-                            [&](mask, index) {
-                                new {CandidatesCount = maskToOnesCount[mask], Index = index};
-                            })
-                        ->Where([&](std::any tuple) { return tuple->CandidatesCount == 1; })
-                        ->Select([&](std::any tuple) { return tuple::Index; })
-                        ->ToArray();
-
                 if (singleCandidateIndices.size() > 0)
                 {
                     int pickSingleCandidateIndex = rng->Next(singleCandidateIndices.size());
