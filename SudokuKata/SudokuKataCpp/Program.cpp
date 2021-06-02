@@ -219,7 +219,7 @@ namespace SudokuKata
         //ORIGINAL LINE: int[,] removedPerBlock = new int[3, 3];
         std::vector<std::vector<int>> removedPerBlock =
             RectangularVectors::RectangularIntVector(3, 3);
-        std::vector<int> positions(9*9);
+        std::vector<int> positions(9 * 9);
         std::iota(positions.begin(), positions.end(), 0);
 
         std::vector<int> state = stateStack.top();
@@ -396,11 +396,11 @@ namespace SudokuKata
 
             for (const auto& groups : cellGroups)
             {
-                    console << fmt::format(L"CellGroup key: {0}", groups.first) << '\n';
-                    for (const auto& group : groups.second)
-                    {
-                        console << group.ToString() << '\n';
-                    }
+                console << fmt::format(L"CellGroup key: {0}", groups.first) << '\n';
+                for (const auto& group : groups.second)
+                {
+                    console << group.ToString() << '\n';
+                }
             }
             //				#endregion
 
