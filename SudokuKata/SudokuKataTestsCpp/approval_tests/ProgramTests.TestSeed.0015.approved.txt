@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(7, 3) can only contain 9
+(7, 3) can only contain 9.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(5, 4) can only contain 3
+(5, 4) can only contain 3.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(7, 1) can only contain 2
+(7, 1) can only contain 2.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(7, 4) can only contain 6
+(7, 4) can only contain 6.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -87,7 +87,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(5, 5) can only contain 4
+(5, 5) can only contain 4.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -101,7 +101,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(7, 5) can only contain 5
+(7, 5) can only contain 5.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -115,7 +115,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(5, 8) can only contain 8
+(5, 8) can only contain 8.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -129,7 +129,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4..|...|
 +---+---+---+
-(9, 6) can only contain 2
+(9, 6) can only contain 2.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -143,7 +143,7 @@ Starting look of the board to solve:
 |..5|.8.|...|
 |368|4.2|...|
 +---+---+---+
-(8, 4) can only contain 9
+(8, 4) can only contain 9.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -157,7 +157,7 @@ Starting look of the board to solve:
 |..5|98.|...|
 |368|4.2|...|
 +---+---+---+
-(6, 6) can only contain 8
+(6, 6) can only contain 8.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -171,7 +171,7 @@ Starting look of the board to solve:
 |..5|98.|...|
 |368|4.2|...|
 +---+---+---+
-(5, 2) can only contain 5
+(5, 2) can only contain 5.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -185,7 +185,7 @@ Starting look of the board to solve:
 |..5|98.|...|
 |368|4.2|...|
 +---+---+---+
-(8, 6) can only contain 3
+(8, 6) can only contain 3.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -199,7 +199,7 @@ Starting look of the board to solve:
 |..5|983|...|
 |368|4.2|...|
 +---+---+---+
-(9, 5) can only contain 1
+(9, 5) can only contain 1.
 +---+---+---+
 |9..|...|85.|
 |5..|8.4|..6|
@@ -213,7 +213,7 @@ Starting look of the board to solve:
 |..5|983|...|
 |368|412|...|
 +---+---+---+
-(1, 6) can only contain 6
+(1, 6) can only contain 6.
 +---+---+---+
 |9..|..6|85.|
 |5..|8.4|..6|
@@ -227,7 +227,7 @@ Starting look of the board to solve:
 |..5|983|...|
 |368|412|...|
 +---+---+---+
-(3, 6) can only contain 5
+(3, 6) can only contain 5.
 +---+---+---+
 |9..|..6|85.|
 |5..|8.4|..6|

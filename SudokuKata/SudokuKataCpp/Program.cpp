@@ -432,7 +432,7 @@ namespace SudokuKata
                     changeMade = true;
 
                     console << L"(" << row + 1 << L", " << col + 1 << L") can only contain "
-                            << candidate + 1 << std::endl;
+                            << candidate + 1 << '.' << std::endl;
                 }
 
                 //					#endregion

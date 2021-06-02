@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(7, 1) can only contain 3
+(7, 1) can only contain 3.
 +---+---+---+
 |586|.79|2..|
 |..1|..2|.7.|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |8..|.2.|...|
 |.1.|65.|..8|
 +---+---+---+
-(9, 1) can only contain 9
+(9, 1) can only contain 9.
 +---+---+---+
 |586|.79|2..|
 |..1|..2|.7.|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |8..|.2.|...|
 |91.|65.|..8|
 +---+---+---+
-(2, 1) can only contain 4
+(2, 1) can only contain 4.
 +---+---+---+
 |586|.79|2..|
 |4.1|..2|.7.|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |8..|.2.|...|
 |91.|65.|..8|
 +---+---+---+
-(6, 1) can only contain 1
+(6, 1) can only contain 1.
 +---+---+---+
 |586|.79|2..|
 |4.1|..2|.7.|
@@ -115,7 +115,7 @@ Block (2, 2) can contain 2 only at (5, 4).
 |8..|92.|...|
 |91.|65.|..8|
 +---+---+---+
-(5, 2) can only contain 4
+(5, 2) can only contain 4.
 +---+---+---+
 |586|.79|2..|
 |4.1|..2|.7.|
@@ -129,7 +129,7 @@ Block (2, 2) can contain 2 only at (5, 4).
 |8..|92.|...|
 |91.|65.|..8|
 +---+---+---+
-(5, 3) can only contain 8
+(5, 3) can only contain 8.
 +---+---+---+
 |586|.79|2..|
 |4.1|..2|.7.|

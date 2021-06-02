@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(2, 8) can only contain 6
+(2, 8) can only contain 6.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |95.|...|4..|
 |.6.|..5|...|
 +---+---+---+
-(4, 8) can only contain 2
+(4, 8) can only contain 2.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |95.|...|4..|
 |.6.|..5|...|
 +---+---+---+
-(5, 8) can only contain 5
+(5, 8) can only contain 5.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |95.|...|4..|
 |.6.|..5|...|
 +---+---+---+
-(8, 8) can only contain 7
+(8, 8) can only contain 7.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -87,7 +87,7 @@ Starting look of the board to solve:
 |95.|...|47.|
 |.6.|..5|...|
 +---+---+---+
-(9, 8) can only contain 9
+(9, 8) can only contain 9.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -101,7 +101,7 @@ Starting look of the board to solve:
 |95.|...|47.|
 |.6.|..5|.9.|
 +---+---+---+
-(3, 8) can only contain 4
+(3, 8) can only contain 4.
 +---+---+---+
 |...|..4|.8.|
 |492|..8|.67|
@@ -297,7 +297,7 @@ Block (1, 2) can contain 3 only at (2, 5).
 |95.|...|47.|
 |76.|..5|29.|
 +---+---+---+
-(2, 7) can only contain 1
+(2, 7) can only contain 1.
 +---+---+---+
 |..5|.74|982|
 |492|538|167|
@@ -311,7 +311,7 @@ Block (1, 2) can contain 3 only at (2, 5).
 |95.|...|47.|
 |76.|..5|29.|
 +---+---+---+
-(3, 7) can only contain 3
+(3, 7) can only contain 3.
 +---+---+---+
 |..5|.74|982|
 |492|538|167|

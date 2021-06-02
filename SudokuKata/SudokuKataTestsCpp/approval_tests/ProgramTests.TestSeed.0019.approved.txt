@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(9, 5) can only contain 7
+(9, 5) can only contain 7.
 +---+---+---+
 |..8|...|...|
 |..5|.61|.29|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |..7|31.|...|
 |14.|.79|53.|
 +---+---+---+
-(9, 4) can only contain 6
+(9, 4) can only contain 6.
 +---+---+---+
 |..8|...|...|
 |..5|.61|.29|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |..7|31.|...|
 |14.|679|53.|
 +---+---+---+
-(9, 3) can only contain 2
+(9, 3) can only contain 2.
 +---+---+---+
 |..8|...|...|
 |..5|.61|.29|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |..7|31.|...|
 |142|679|53.|
 +---+---+---+
-(9, 9) can only contain 8
+(9, 9) can only contain 8.
 +---+---+---+
 |..8|...|...|
 |..5|.61|.29|
@@ -87,7 +87,7 @@ Starting look of the board to solve:
 |..7|31.|...|
 |142|679|538|
 +---+---+---+
-(8, 6) can only contain 4
+(8, 6) can only contain 4.
 +---+---+---+
 |..8|...|...|
 |..5|.61|.29|

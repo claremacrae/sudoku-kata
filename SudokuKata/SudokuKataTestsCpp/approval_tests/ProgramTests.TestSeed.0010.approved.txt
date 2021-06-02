@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(5, 1) can only contain 8
+(5, 1) can only contain 8.
 +---+---+---+
 |...|214|..7|
 |..8|...|...|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |7.2|86.|...|
 |4.1|9..|.62|
 +---+---+---+
-(8, 2) can only contain 5
+(8, 2) can only contain 5.
 +---+---+---+
 |...|214|..7|
 |..8|...|...|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |752|86.|...|
 |4.1|9..|.62|
 +---+---+---+
-(9, 2) can only contain 8
+(9, 2) can only contain 8.
 +---+---+---+
 |...|214|..7|
 |..8|...|...|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |752|86.|...|
 |481|9..|.62|
 +---+---+---+
-(7, 2) can only contain 6
+(7, 2) can only contain 6.
 +---+---+---+
 |...|214|..7|
 |..8|...|...|
@@ -143,7 +143,7 @@ Block (1, 1) can contain 6 only at (1, 1).
 |752|86.|...|
 |481|9..|.62|
 +---+---+---+
-(4, 1) can only contain 3
+(4, 1) can only contain 3.
 +---+---+---+
 |6.5|214|..7|
 |2.8|...|...|

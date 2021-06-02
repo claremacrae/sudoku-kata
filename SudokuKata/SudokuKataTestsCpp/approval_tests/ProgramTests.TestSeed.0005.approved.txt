@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(7, 7) can only contain 8
+(7, 7) can only contain 8.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.5.|...|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |...|...|4..|
 |41.|7..|...|
 +---+---+---+
-(9, 7) can only contain 5
+(9, 7) can only contain 5.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.5.|...|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |...|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(2, 7) can only contain 7
+(2, 7) can only contain 7.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.5.|7..|
@@ -241,7 +241,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(4, 8) can only contain 5
+(4, 8) can only contain 5.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|
@@ -255,7 +255,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(4, 9) can only contain 4
+(4, 9) can only contain 4.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|
@@ -269,7 +269,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(4, 2) can only contain 2
+(4, 2) can only contain 2.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|
@@ -283,7 +283,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(5, 9) can only contain 8
+(5, 9) can only contain 8.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|
@@ -297,7 +297,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(5, 4) can only contain 4
+(5, 4) can only contain 4.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|
@@ -311,7 +311,7 @@ Column #3 can contain 8 only at (4, 3).
 |857|...|4..|
 |41.|7..|5..|
 +---+---+---+
-(6, 2) can only contain 4
+(6, 2) can only contain 4.
 +---+---+---+
 |.8.|.97|24.|
 |.9.|.54|7..|

@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(8, 9) can only contain 3
+(8, 9) can only contain 3.
 +---+---+---+
 |9..|...|.8.|
 |8..|7.5|1..|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |..4|.97|..3|
 |7..|...|6..|
 +---+---+---+
-(8, 7) can only contain 8
+(8, 7) can only contain 8.
 +---+---+---+
 |9..|...|.8.|
 |8..|7.5|1..|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6..|
 +---+---+---+
-(2, 2) can only contain 3
+(2, 2) can only contain 3.
 +---+---+---+
 |9..|...|.8.|
 |83.|7.5|1..|
@@ -73,7 +73,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6..|
 +---+---+---+
-(2, 3) can only contain 2
+(2, 3) can only contain 2.
 +---+---+---+
 |9..|...|.8.|
 |832|7.5|1..|
@@ -87,7 +87,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6..|
 +---+---+---+
-(9, 9) can only contain 9
+(9, 9) can only contain 9.
 +---+---+---+
 |9..|...|.8.|
 |832|7.5|1..|
@@ -101,7 +101,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6.9|
 +---+---+---+
-(3, 1) can only contain 5
+(3, 1) can only contain 5.
 +---+---+---+
 |9..|...|.8.|
 |832|7.5|1..|
@@ -115,7 +115,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6.9|
 +---+---+---+
-(1, 3) can only contain 1
+(1, 3) can only contain 1.
 +---+---+---+
 |9.1|...|.8.|
 |832|7.5|1..|
@@ -129,7 +129,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6.9|
 +---+---+---+
-(1, 2) can only contain 7
+(1, 2) can only contain 7.
 +---+---+---+
 |971|...|.8.|
 |832|7.5|1..|
@@ -143,7 +143,7 @@ Starting look of the board to solve:
 |..4|.97|8.3|
 |7..|...|6.9|
 +---+---+---+
-(7, 9) can only contain 7
+(7, 9) can only contain 7.
 +---+---+---+
 |971|...|.8.|
 |832|7.5|1..|
@@ -213,7 +213,7 @@ Row #8 can contain 6 only at (8, 1).
 |654|.97|8.3|
 |7..|.5.|6.9|
 +---+---+---+
-(5, 1) can only contain 3
+(5, 1) can only contain 3.
 +---+---+---+
 |971|...|.8.|
 |832|7.5|19.|
@@ -227,7 +227,7 @@ Row #8 can contain 6 only at (8, 1).
 |654|.97|8.3|
 |7..|.5.|6.9|
 +---+---+---+
-(6, 1) can only contain 1
+(6, 1) can only contain 1.
 +---+---+---+
 |971|...|.8.|
 |832|7.5|19.|

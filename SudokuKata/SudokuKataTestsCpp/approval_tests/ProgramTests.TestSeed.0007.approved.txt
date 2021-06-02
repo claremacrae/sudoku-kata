@@ -31,7 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
-(7, 3) can only contain 6
+(7, 3) can only contain 6.
 +---+---+---+
 |.58|.19|2.7|
 |..9|...|...|
@@ -45,7 +45,7 @@ Starting look of the board to solve:
 |.1.|5..|...|
 |...|...|..6|
 +---+---+---+
-(7, 9) can only contain 8
+(7, 9) can only contain 8.
 +---+---+---+
 |.58|.19|2.7|
 |..9|...|...|
@@ -59,7 +59,7 @@ Starting look of the board to solve:
 |.1.|5..|...|
 |...|...|..6|
 +---+---+---+
-(2, 2) can only contain 2
+(2, 2) can only contain 2.
 +---+---+---+
 |.58|.19|2.7|
 |.29|...|...|
