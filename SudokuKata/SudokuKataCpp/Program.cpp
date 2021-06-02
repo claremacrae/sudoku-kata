@@ -270,12 +270,12 @@ namespace SudokuKata
         }
         //			#endregion
 
-#if 0
         //			#region Prepare lookup structures that will be used in further execution
         console << std::endl;
-        console << std::wstring(L'=', 80) << std::endl;
+        console << std::wstring(80, L'=') << std::endl;
         console << std::endl;
 
+#if 0
         std::unordered_map<int, int> maskToOnesCount;
         maskToOnesCount[0] = 0;
         for (int i = 1; i < (1 << 9); i++)
