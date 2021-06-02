@@ -677,7 +677,9 @@ namespace SudokuKata
                     }
                 }
                 //					#endregion
+#endif
 
+#if 0
                 //					#region Try to find groups of digits of size N which only appear in N cells within row/column/block
                 // When a set of N digits only appears in N cells within row/column/block, then no other digit can appear in the same set of cells
                 // All other candidates can then be removed from those cells
@@ -823,8 +825,10 @@ namespace SudokuKata
                 }
 
                 //					#endregion
+#endif
             }
 
+#if 0
             //				#region Final attempt - look if the board has multiple solutions
             if (!changeMade)
             {
@@ -1163,9 +1167,11 @@ namespace SudokuKata
                 }
             }
             //				#endregion
+#endif
 
             if (changeMade)
             {
+#if 0
                 //					#region Print the board as it looks after one change was made to it
                 console << std::wstring::Join(
                                L"\r\n",
