@@ -263,6 +263,9 @@ namespace SudokuKata
                 << std::endl;
         //			#endregion
 
+#endif
+
+#if 0
         //			#region Prepare lookup structures that will be used in further execution
         console << std::endl;
         console << std::wstring(L'=', 80) << std::endl;
