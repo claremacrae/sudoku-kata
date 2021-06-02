@@ -31,4 +31,14 @@ Starting look of the board to solve:
 
 ================================================================================
 
+Column #7 can contain 3 only at (7, 7).
+Block (3, 1) can contain 3 only at (8, 3).
+Column #3 can contain 5 only at (4, 3).
+Column #6 can contain 5 only at (7, 6).
+Block (1, 3) can contain 1 only at (1, 8).
+Column #2 can contain 1 only at (7, 2).
+Column #8 can contain 6 only at (8, 8).
+Column #9 can contain 6 only at (6, 9).
+Column #9 can contain 5 only at (2, 9).
+Row #6 can contain 5 only at (6, 7).
 

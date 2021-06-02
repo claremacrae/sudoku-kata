@@ -31,4 +31,9 @@ Starting look of the board to solve:
 
 ================================================================================
 
+(4, 9) can only contain 2
+Block (1, 3) can contain 3 only at (2, 7).
+Row #8 can contain 3 only at (8, 1).
+Column #3 can contain 5 only at (7, 3).
+Column #8 can contain 9 only at (1, 8).
 

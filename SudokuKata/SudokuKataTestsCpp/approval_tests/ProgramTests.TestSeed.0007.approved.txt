@@ -31,4 +31,13 @@ Starting look of the board to solve:
 
 ================================================================================
 
+(7, 3) can only contain 6
+(7, 9) can only contain 8
+(2, 2) can only contain 2
+Row #6 can contain 1 only at (6, 9).
+Block (3, 2) can contain 1 only at (9, 6).
+Row #9 can contain 5 only at (9, 8).
+Block (1, 2) can contain 2 only at (3, 5).
+Row #2 can contain 1 only at (2, 7).
+Block (1, 1) can contain 1 only at (3, 3).
 

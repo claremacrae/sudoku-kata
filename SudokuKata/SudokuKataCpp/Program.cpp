@@ -436,7 +436,6 @@ namespace SudokuKata
                 }
 
                 //					#endregion
-#if 0
 
                 //					#region Try to find a number which can only appear in one place in a row/column/block
 
@@ -523,19 +522,19 @@ namespace SudokuKata
                     if (candidates.size() > 0)
                     {
                         int index = rng->Next(candidates.size());
-                        std::wstring description = groupDescriptions.ElementAt(index);
-                        int row = candidateRowIndices.ElementAt(index);
-                        int col = candidateColIndices.ElementAt(index);
-                        int digit = candidates.ElementAt(index);
+                        std::wstring description = groupDescriptions.at(index);
+                        int row = candidateRowIndices.at(index);
+                        int col = candidateColIndices.at(index);
+                        int digit = candidates.at(index);
                         int rowToWrite = row + row / 3 + 1;
                         int colToWrite = col + col / 3 + 1;
 
                         std::wstring message =
-                            std::wstring::Format(L"{0} can contain {1} only at ({2}, {3}).",
-                                                 description,
-                                                 digit,
-                                                 row + 1,
-                                                 col + 1);
+                            fmt::format(L"{0} can contain {1} only at ({2}, {3}).",
+                                        description,
+                                        digit,
+                                        row + 1,
+                                        col + 1);
 
                         int stateIndex = 9 * row + col;
                         state[stateIndex] = digit;
@@ -550,6 +549,7 @@ namespace SudokuKata
 
                 //					#endregion
 
+#if 0
                 //					#region Try to find pairs of digits in the same row/column/block and remove them from other colliding cells
                 if (!changeMade)
                 {

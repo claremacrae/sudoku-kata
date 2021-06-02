@@ -31,4 +31,20 @@ Starting look of the board to solve:
 
 ================================================================================
 
+(7, 3) can only contain 9
+(5, 4) can only contain 3
+(7, 1) can only contain 2
+(7, 4) can only contain 6
+(5, 5) can only contain 4
+(7, 5) can only contain 5
+(5, 8) can only contain 8
+(9, 6) can only contain 2
+(8, 4) can only contain 9
+(6, 6) can only contain 8
+(5, 2) can only contain 5
+(8, 6) can only contain 3
+(9, 5) can only contain 1
+(1, 6) can only contain 6
+(3, 6) can only contain 5
+Row #9 can contain 5 only at (9, 9).
 

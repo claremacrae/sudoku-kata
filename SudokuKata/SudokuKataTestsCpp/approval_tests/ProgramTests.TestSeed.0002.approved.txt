@@ -31,4 +31,7 @@ Starting look of the board to solve:
 
 ================================================================================
 
+Block (2, 3) can contain 4 only at (4, 7).
+Block (1, 1) can contain 4 only at (1, 1).
+Column #1 can contain 6 only at (3, 1).
 
