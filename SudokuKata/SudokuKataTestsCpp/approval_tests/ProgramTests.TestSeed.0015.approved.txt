@@ -309,4 +309,7 @@ Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
 Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
 Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
 
+Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
+7 cannot appear in (8, 7).
+7 cannot appear in (8, 8).
 

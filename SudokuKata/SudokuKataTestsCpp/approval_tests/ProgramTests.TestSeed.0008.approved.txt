@@ -427,4 +427,30 @@ Discriminator: 24, Description: block (3, 1), Index: 72, Row: 8, Column: 0
 Discriminator: 24, Description: block (3, 1), Index: 73, Row: 8, Column: 1
 Discriminator: 24, Description: block (3, 1), Index: 74, Row: 8, Column: 2
 
+Values 1 and 6 in column #4 are in cells (1, 4) and (3, 4).
+6 cannot appear in (6, 4).
+1, 6 cannot appear in (8, 4).
+1 cannot appear in (9, 4).
+Values 6 and 8 in row #5 are in cells (5, 5) and (5, 7).
+6, 8 cannot appear in (5, 1).
+8 cannot appear in (5, 2).
+6 cannot appear in (5, 6).
+Values 2 and 8 in column #2 are in cells (6, 2) and (7, 2).
+2 cannot appear in (5, 2).
+Values 2 and 8 in block (3, 1) are in cells (7, 1) and (7, 2).
+8 cannot appear in (8, 3).
+8 cannot appear in (9, 3).
+Mask: 5, Discriminator: 11, Description: column #3
+Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+
+Values 1 and 3 in column #3 are in cells (8, 3) and (9, 3).
+1 cannot appear in (3, 3).
 

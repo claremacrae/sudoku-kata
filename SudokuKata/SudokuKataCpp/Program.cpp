@@ -616,27 +616,28 @@ namespace SudokuKata
                         console << group.ToString() << '\n';
                     }
 
-#if 0
                     if (!groups.empty())
                     {
-                        for (auto group : groups)
+                        for (const TwoDigitMaskGroups& group : groups)
                         {
-                            auto cells =
-                                group
-                                    .Cells::Where(
-                                        [&](std::any cell)
-                                        {
-                                            return candidateMasks[cell::Index] != group.Mask &&
-                                                   (candidateMasks[cell::Index] & group.Mask) > 0;
-                                        })
-                                    ->ToList();
+                            std::vector<CellGroups> cells;
+                            for (const CellGroups& cell : group.CellGroups())
+                            {
+                                if (candidateMasks[cell.Index] != group.Mask &&
+                                    (candidateMasks[cell.Index] & group.Mask) > 0)
+                                {
+                                    cells.push_back(cell);
+                                }
+                            }
 
-                            auto maskCells =
-                                group
-                                    .Cells::Where(
-                                        [&](std::any cell)
-                                        { return candidateMasks[cell::Index] == group.Mask; })
-                                    ->ToArray();
+                            std::vector<CellGroups> maskCells;
+                            for (const CellGroups& cell : group.CellGroups())
+                            {
+                                if (candidateMasks[cell.Index] == group.Mask)
+                                {
+                                    maskCells.push_back(cell);
+                                }
+                            }
 
                             if (!cells.empty())
                             {
@@ -656,18 +657,18 @@ namespace SudokuKata
                                     value += 1;
                                 }
 
-                                console << std::wstring::Format(L"Values {0} and {1} in {2} are in "
-                                                                L"cells ({3}, {4}) and ({5}, {6}).",
-                                                                lower,
-                                                                upper,
-                                                                group.Description,
-                                                                maskCells[0].Row + 1,
-                                                                maskCells[0].Column + 1,
-                                                                maskCells[1].Row + 1,
-                                                                maskCells[1].Column + 1)
+                                console << fmt::format(L"Values {0} and {1} in {2} are in "
+                                                       L"cells ({3}, {4}) and ({5}, {6}).",
+                                                       lower,
+                                                       upper,
+                                                       group.Description,
+                                                       maskCells[0].Row + 1,
+                                                       maskCells[0].Column + 1,
+                                                       maskCells[1].Row + 1,
+                                                       maskCells[1].Column + 1)
                                         << std::endl;
 
-                                for (auto cell : cells)
+                                for (const auto& cell : cells)
                                 {
                                     int maskToRemove = candidateMasks[cell.Index] & group.Mask;
                                     std::vector<int> valuesToRemove;
@@ -682,8 +683,7 @@ namespace SudokuKata
                                         curValue += 1;
                                     }
 
-                                    std::wstring valuesReport =
-                                        std::wstring::Join(L", ", valuesToRemove.ToArray());
+                                    std::wstring valuesReport = fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
                                     console << StringHelper::formatSimple(
                                                    L"{0} cannot appear in ({1}, {2}).",
                                                    valuesReport,
@@ -697,7 +697,6 @@ namespace SudokuKata
                             }
                         }
                     }
-#endif
                 }
                 //					#endregion
 

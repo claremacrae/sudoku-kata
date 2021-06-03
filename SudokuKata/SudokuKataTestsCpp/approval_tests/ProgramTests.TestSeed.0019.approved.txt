@@ -357,4 +357,9 @@ Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
 Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
 Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
 
+Values 3 and 7 in column #6 are in cells (1, 6) and (3, 6).
+7 cannot appear in (4, 6).
+7 cannot appear in (6, 6).
+Values 3 and 7 in block (1, 2) are in cells (1, 6) and (3, 6).
+7 cannot appear in (1, 4).
 

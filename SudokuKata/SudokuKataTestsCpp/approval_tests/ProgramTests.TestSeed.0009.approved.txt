@@ -485,4 +485,9 @@ Discriminator: 25, Description: block (3, 2), Index: 75, Row: 8, Column: 3
 Discriminator: 25, Description: block (3, 2), Index: 76, Row: 8, Column: 4
 Discriminator: 25, Description: block (3, 2), Index: 77, Row: 8, Column: 5
 
+Values 3 and 5 in column #6 are in cells (4, 6) and (9, 6).
+3, 5 cannot appear in (1, 6).
+5 cannot appear in (2, 6).
+Values 3 and 5 in block (3, 2) are in cells (9, 5) and (9, 6).
+5 cannot appear in (7, 5).
 
