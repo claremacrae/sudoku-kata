@@ -621,7 +621,7 @@ namespace SudokuKata
                         for (const TwoDigitMaskGroups& group : groups)
                         {
                             std::vector<CellGroups> cells;
-                            for (const CellGroups& cell : group.CellGroups())
+                            for (const CellGroups& cell : group.Cells)
                             {
                                 if (candidateMasks[cell.Index] != group.Mask &&
                                     (candidateMasks[cell.Index] & group.Mask) > 0)
@@ -631,7 +631,7 @@ namespace SudokuKata
                             }
 
                             std::vector<CellGroups> maskCells;
-                            for (const CellGroups& cell : group.CellGroups())
+                            for (const CellGroups& cell : group.Cells)
                             {
                                 if (candidateMasks[cell.Index] == group.Mask)
                                 {

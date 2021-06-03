@@ -26,8 +26,3 @@ std::wstring TwoDigitMaskGroups::ToString() const
     }
     return result;
 }
-
-std::vector<CellGroups> TwoDigitMaskGroups::CellGroups() const
-{
-    return Cells;
-}
