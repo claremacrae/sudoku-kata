@@ -617,42 +617,6 @@ namespace SudokuKata
                     }
 
 #if 0
-                    auto groups =
-                        twoDigitMasks
-                            .SelectMany(
-                                [&](std::any mask)
-                                {
-                                    cellGroups
-                                        .Where(
-                                            [&](std::any group) {
-                                                return group->Count(
-                                                           [&](std::any tuple) {
-                                                               return candidateMasks
-                                                                          [tuple::Index] == mask;
-                                                           }) == 2;
-                                            })
-                                        ->Where(
-                                            [&](std::any group)
-                                            {
-                                                group::Any(
-                                                    [&](std::any tuple) {
-                                                        return candidateMasks[tuple::Index] !=
-                                                                   mask &&
-                                                               (candidateMasks[tuple::Index] &
-                                                                mask) > 0;
-                                                    });
-                                            })
-                                        ->Select(
-                                            [&](std::any group)
-                                            {
-                                                new {Mask = mask,
-                                                     Discriminator = group::Key,
-                                                     Description = group::First()->Description,
-                                                     Cells = group};
-                                            });
-                                })
-                            ->ToList();
-
                     if (groups.Any())
                     {
                         for (auto group : groups)
