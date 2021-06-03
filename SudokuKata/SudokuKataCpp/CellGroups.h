@@ -6,7 +6,7 @@
 
 class CellGroups
 {
-private:
+public:
     int Discriminator = 0;
     std::wstring Description;
     int Index = 0;
@@ -14,6 +14,7 @@ private:
     int Column = 0;
 
 public:
+    // TODO Remove accessors - inline?
     int getDiscriminator() const;
     std::wstring getDescription() const;
     int getIndex() const;
