@@ -13,7 +13,7 @@ public:
     const int Discriminator = 0;
     const std::wstring Description;
 private:
-    const CellGroupsMap Cells;
+    const std::vector<CellGroups> Cells;
 
 public:
     TwoDigitMaskGroups(int mask,
