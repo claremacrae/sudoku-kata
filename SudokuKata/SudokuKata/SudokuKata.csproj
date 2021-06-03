@@ -52,6 +52,7 @@
     <Compile Include="Utilities\CandidatesStringifier.cs" />
     <Compile Include="Utilities\IRandomValueGenerator.cs" />
     <Compile Include="Utilities\RandomNumber.cs" />
+    <Compile Include="Utilities\TwoDigitMaskGroups.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
