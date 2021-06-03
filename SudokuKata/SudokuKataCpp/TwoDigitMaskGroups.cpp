@@ -12,19 +12,13 @@ TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
 
 std::wstring TwoDigitMaskGroups::ToString() const
 {
-    int result1;
-    result1 = Mask;
-    int result2;
-    result2 = Discriminator;
-    std::wstring result3;
-    result3 = Description;
     auto result = fmt::format(L"{0}: {1}, {2}: {3}, {4}: {5}\n",
                               L"Mask",
-                              result1,
+                              Mask,
                               L"Discriminator",
-                              result2,
+                              Discriminator,
                               L"Description",
-                              result3);
+                              Description);
     for (auto cellGroups : Cells)
     {
         for (const auto& cell : cellGroups.second)
