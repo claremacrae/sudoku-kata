@@ -281,7 +281,7 @@ namespace SudokuKata
         console << std::wstring(80, L'=') << std::endl;
         console << std::endl;
 
-        std::unordered_map<int, int> maskToOnesCount;
+        std::map<int, int> maskToOnesCount;
         maskToOnesCount[0] = 0;
         for (int i = 1; i < (1 << 9); i++)
         {
@@ -703,11 +703,16 @@ namespace SudokuKata
 
                 if (!changeMade && !stepChangeMade)
                 {
+                    std::vector<int> masks;
+                    for (const auto& keyAndValue : maskToOnesCount)
+                    {
+                        if (keyAndValue.second > 1)
+                        {
+                            masks.push_back(keyAndValue.first);
+                        }
+                    }
+
 #if 0
-                    std::vector<int> masks =
-                        maskToOnesCount.Where([&](std::any tuple) { return tuple->Value > 1; })
-                            ->Select([&](std::any tuple) { tuple::Key; })
-                            ->ToList();
 
                     auto groupsWithNMasks =
                         masks
