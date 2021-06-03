@@ -287,6 +287,28 @@ Row #9 can contain 5 only at (9, 9).
 +---+---+---+
 Code: 900006850500804006006105000000061500652349187100508000219657438005983000368412005
 
+Mask: 72, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
+Mask: 320, Discriminator: 26, Description: block (3, 3)
+   Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+
 Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
 7 cannot appear in (8, 7).
 7 cannot appear in (8, 8).
@@ -322,6 +344,28 @@ Code: 90020685050080400600610500000076150065234918710050800021965743800598300036
 +---+---+---+
 Code: 900206850500804006006105000000761500652349187100528000219657438005983000368412005
 
+Mask: 72, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
+Mask: 320, Discriminator: 26, Description: block (3, 3)
+   Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+
 Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
 7 cannot appear in (8, 7).
 7 cannot appear in (8, 8).
@@ -340,6 +384,17 @@ Guessing that 4 and 7 are arbitrary in row #8 (multiple solutions): Pick 7->(8, 
 |368|412|..5|
 +---+---+---+
 Code: 900206850500804006006105000000761500652349187100528000219657438745983000368412005
+
+Mask: 68, Discriminator: 0, Description: row #1
+   Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+   Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+   Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+   Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+   Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+   Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+   Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+   Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+   Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
 
 Values 3 and 7 in row #1 are in cells (1, 2) and (1, 5).
 3, 7 cannot appear in (1, 3).

@@ -239,6 +239,17 @@ Row #6 can contain 5 only at (6, 8).
 +---+---+---+
 Code: 586079200401502070200000500600000002748205390123890050364000925800920000912650008
 
+Mask: 80, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
 Values 5 and 7 in row #8 are in cells (8, 2) and (8, 3).
 7 cannot appear in (8, 6).
 7 cannot appear in (8, 7).
@@ -275,10 +286,32 @@ Block (2, 3) can contain 7 only at (6, 9).
 +---+---+---+
 Code: 586079200401502070200000500600000002748205390123890057364000925800920000912650708
 
+Mask: 80, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
 Values 5 and 7 in row #8 are in cells (8, 2) and (8, 3).
 7 cannot appear in (8, 6).
 In block (3, 2) values 3, 4 appear only in cells (8, 6) (9, 6) and other values cannot appear in those cells.
 1 cannot appear in cell (8, 6).
+Mask: 12, Discriminator: 14, Description: column #6
+   Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5
+   Discriminator: 14, Description: column #6, Index: 14, Row: 1, Column: 5
+   Discriminator: 14, Description: column #6, Index: 23, Row: 2, Column: 5
+   Discriminator: 14, Description: column #6, Index: 32, Row: 3, Column: 5
+   Discriminator: 14, Description: column #6, Index: 41, Row: 4, Column: 5
+   Discriminator: 14, Description: column #6, Index: 50, Row: 5, Column: 5
+   Discriminator: 14, Description: column #6, Index: 59, Row: 6, Column: 5
+   Discriminator: 14, Description: column #6, Index: 68, Row: 7, Column: 5
+   Discriminator: 14, Description: column #6, Index: 77, Row: 8, Column: 5
+
 Values 3 and 4 in column #6 are in cells (8, 6) and (9, 6).
 3, 4 cannot appear in (3, 6).
 3, 4 cannot appear in (4, 6).
@@ -474,6 +507,28 @@ Row #2 can contain 6 only at (2, 5).
 |912|65.|7.8|
 +---+---+---+
 Code: 586079200401562870200008560600000182748215396123896457364080925800920600912650708
+
+Mask: 65, Discriminator: 25, Description: block (3, 2)
+   Discriminator: 25, Description: block (3, 2), Index: 57, Row: 6, Column: 3
+   Discriminator: 25, Description: block (3, 2), Index: 58, Row: 6, Column: 4
+   Discriminator: 25, Description: block (3, 2), Index: 59, Row: 6, Column: 5
+   Discriminator: 25, Description: block (3, 2), Index: 66, Row: 7, Column: 3
+   Discriminator: 25, Description: block (3, 2), Index: 67, Row: 7, Column: 4
+   Discriminator: 25, Description: block (3, 2), Index: 68, Row: 7, Column: 5
+   Discriminator: 25, Description: block (3, 2), Index: 75, Row: 8, Column: 3
+   Discriminator: 25, Description: block (3, 2), Index: 76, Row: 8, Column: 4
+   Discriminator: 25, Description: block (3, 2), Index: 77, Row: 8, Column: 5
+
+Mask: 80, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
 
 Values 1 and 7 in block (3, 2) are in cells (7, 4) and (7, 6).
 1, 7 cannot appear in (8, 6).

@@ -482,6 +482,11 @@ namespace SudokuKata
                                         .Select(group => new TwoDigitMaskGroups(mask, @group.Key, @group.First().Description, @group)))
                                 .ToList();
 
+                         foreach (var group in groups)
+                         {
+                             Console.WriteLine(group);
+                         }
+
                         if (groups.Any())
                         {
                             foreach (var group in groups)

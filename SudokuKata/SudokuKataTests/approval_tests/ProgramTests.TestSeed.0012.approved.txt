@@ -147,6 +147,28 @@ Column #2 can contain 3 only at (6, 2).
 +---+---+---+
 Code: 763040098000007350058300040591734862800000030030008070005003009380009500019070003
 
+Mask: 10, Discriminator: 1, Description: row #2
+   Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+   Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+   Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+   Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+   Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+   Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+   Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+   Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+   Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+
+Mask: 10, Discriminator: 18, Description: block (1, 1)
+   Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+   Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+   Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+   Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+   Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+   Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+   Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+   Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+   Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+
 Values 2 and 4 in row #2 are in cells (2, 2) and (2, 3).
 2, 4 cannot appear in (2, 1).
 2 cannot appear in (2, 4).
@@ -188,6 +210,17 @@ Row #3 can contain 9 only at (3, 5).
 |.19|.7.|..3|
 +---+---+---+
 Code: 763040098900007350158390040591734862800000030030008070005003009380009500019070003
+
+Mask: 10, Discriminator: 1, Description: row #2
+   Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+   Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+   Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+   Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+   Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+   Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+   Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+   Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+   Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
 
 Values 2 and 4 in row #2 are in cells (2, 2) and (2, 3).
 2 cannot appear in (2, 4).
@@ -330,6 +363,17 @@ Code: 76304009892400735015839004759173486287000003043000807064500370938700950021
 |219|.7.|.83|
 +---+---+---+
 Code: 763040098924007350158390047591734862870000030430008070645003709387009500219070083
+
+Mask: 3, Discriminator: 26, Description: block (3, 3)
+   Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
 
 Values 1 and 2 in block (3, 3) are in cells (7, 8) and (8, 8).
 1 cannot appear in (8, 9).

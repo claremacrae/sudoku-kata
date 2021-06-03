@@ -303,6 +303,17 @@ Column #5 can contain 2 only at (1, 5).
 +---+---+---+
 Code: 971020080832705190546819002400001200327500901100002008200006457654097803700050609
 
+Mask: 68, Discriminator: 20, Description: block (1, 3)
+   Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+   Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+   Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+   Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+   Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+   Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+   Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+   Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+   Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+
 Values 3 and 7 in block (1, 3) are in cells (3, 7) and (3, 8).
 3 cannot appear in (1, 7).
 (1, 7) can only contain 5.

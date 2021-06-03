@@ -431,6 +431,17 @@ Code: 00200006334967512800132890423548761901653928700820043500400300210780039600
 +---+---+---+
 Code: 002000063349675128001328904235487619416539287008200435004003002107800396003700841
 
+Mask: 80, Discriminator: 6, Description: row #7
+   Discriminator: 6, Description: row #7, Index: 54, Row: 6, Column: 0
+   Discriminator: 6, Description: row #7, Index: 55, Row: 6, Column: 1
+   Discriminator: 6, Description: row #7, Index: 56, Row: 6, Column: 2
+   Discriminator: 6, Description: row #7, Index: 57, Row: 6, Column: 3
+   Discriminator: 6, Description: row #7, Index: 58, Row: 6, Column: 4
+   Discriminator: 6, Description: row #7, Index: 59, Row: 6, Column: 5
+   Discriminator: 6, Description: row #7, Index: 60, Row: 6, Column: 6
+   Discriminator: 6, Description: row #7, Index: 61, Row: 6, Column: 7
+   Discriminator: 6, Description: row #7, Index: 62, Row: 6, Column: 8
+
 Values 5 and 7 in row #7 are in cells (7, 7) and (7, 8).
 5 cannot appear in (7, 1).
 5 cannot appear in (7, 2).

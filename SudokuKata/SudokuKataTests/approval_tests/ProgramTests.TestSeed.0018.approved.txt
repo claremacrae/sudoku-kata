@@ -463,6 +463,17 @@ Block (2, 2) can contain 6 only at (4, 5).
 +---+---+---+
 Code: 903706841080103970010900320100560283538219467006300519861495732300871694000632158
 
+Mask: 18, Discriminator: 10, Description: column #2
+   Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+   Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+   Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+   Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+   Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+   Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+   Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+   Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+   Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+
 Values 2 and 5 in column #2 are in cells (1, 2) and (8, 2).
 2 cannot appear in (6, 2).
 Row #6 can contain 2 only at (6, 1).
