@@ -1,4 +1,6 @@
+#include <map>
 #include <string>
+#include <vector>
 
 class CellGroups
 {
@@ -20,3 +22,6 @@ public:
 
     std::wstring ToString() const;
 };
+
+// TODO Maybe remove after porting, for more realistic Kata!
+using CellGroupsMap = std::map<int, std::vector<CellGroups>>;
