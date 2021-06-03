@@ -700,13 +700,13 @@ namespace SudokuKata
                 }
                 //					#endregion
 
-#if 0
                 //					#region Try to find groups of digits of size N which only appear in N cells within row/column/block
                 // When a set of N digits only appears in N cells within row/column/block, then no other digit can appear in the same set of cells
                 // All other candidates can then be removed from those cells
 
                 if (!changeMade && !stepChangeMade)
                 {
+#if 0
                     std::vector<int> masks =
                         maskToOnesCount.Where([&](std::any tuple) { return tuple->Value > 1; })
                             ->Select([&](std::any tuple) { tuple::Key; })
@@ -843,10 +843,10 @@ namespace SudokuKata
                             delete message;
                         }
                     }
+#endif
                 }
 
                 //					#endregion
-#endif
             }
 
 #if 0
