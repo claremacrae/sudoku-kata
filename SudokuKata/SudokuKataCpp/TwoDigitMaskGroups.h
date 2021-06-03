@@ -15,11 +15,6 @@ public:
     const CellGroupsMap Cells;
 
 public:
-    int getMask() const;
-    int getDiscriminator() const;
-    std::wstring getDescription() const;
-    const CellGroupsMap& getCells() const;
-
     TwoDigitMaskGroups(int mask,
                        int discriminator,
                        const std::wstring& description,

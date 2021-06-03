@@ -1,26 +1,6 @@
 #include "TwoDigitMaskGroups.h"
 #include <fmt/format.h>
 
-int TwoDigitMaskGroups::getMask() const
-{
-    return Mask;
-}
-
-int TwoDigitMaskGroups::getDiscriminator() const
-{
-    return Discriminator;
-}
-
-std::wstring TwoDigitMaskGroups::getDescription() const
-{
-    return Description;
-}
-
-const CellGroupsMap& TwoDigitMaskGroups::getCells() const
-{
-    return Cells;
-}
-
 TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
                                        int discriminator,
                                        const std::wstring& description,
@@ -32,14 +12,20 @@ TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
 
 std::wstring TwoDigitMaskGroups::ToString() const
 {
+    int result1;
+    result1 = Mask;
+    int result2;
+    result2 = Discriminator;
+    std::wstring result3;
+    result3 = Description;
     auto result = fmt::format(L"{0}: {1}, {2}: {3}, {4}: {5}\n",
                               L"Mask",
-                              getMask(),
+                              result1,
                               L"Discriminator",
-                              getDiscriminator(),
+                              result2,
                               L"Description",
-                              getDescription());
-    for (auto cellGroups : getCells())
+                              result3);
+    for (auto cellGroups : Cells)
     {
         for (const auto& cell : cellGroups.second)
         {
