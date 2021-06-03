@@ -12,6 +12,7 @@ public:
     const int Mask = 0;
     const int Discriminator = 0;
     const std::wstring Description;
+private:
     const CellGroupsMap Cells;
 
 public:
