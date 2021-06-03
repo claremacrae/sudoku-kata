@@ -383,4 +383,48 @@ Block (2, 3) can contain 1 only at (4, 9).
 +---+---+---+
 Code: 005074982492538167070029345049750021007900054500001739004397516950000470760005290
 
+Mask: 33, Discriminator: 12, Description: column #4
+Discriminator: 12, Description: column #4, Index: 3, Row: 0, Column: 3
+Discriminator: 12, Description: column #4, Index: 12, Row: 1, Column: 3
+Discriminator: 12, Description: column #4, Index: 21, Row: 2, Column: 3
+Discriminator: 12, Description: column #4, Index: 30, Row: 3, Column: 3
+Discriminator: 12, Description: column #4, Index: 39, Row: 4, Column: 3
+Discriminator: 12, Description: column #4, Index: 48, Row: 5, Column: 3
+Discriminator: 12, Description: column #4, Index: 57, Row: 6, Column: 3
+Discriminator: 12, Description: column #4, Index: 66, Row: 7, Column: 3
+Discriminator: 12, Description: column #4, Index: 75, Row: 8, Column: 3
+
+Mask: 160, Discriminator: 4, Description: row #5
+Discriminator: 4, Description: row #5, Index: 36, Row: 4, Column: 0
+Discriminator: 4, Description: row #5, Index: 37, Row: 4, Column: 1
+Discriminator: 4, Description: row #5, Index: 38, Row: 4, Column: 2
+Discriminator: 4, Description: row #5, Index: 39, Row: 4, Column: 3
+Discriminator: 4, Description: row #5, Index: 40, Row: 4, Column: 4
+Discriminator: 4, Description: row #5, Index: 41, Row: 4, Column: 5
+Discriminator: 4, Description: row #5, Index: 42, Row: 4, Column: 6
+Discriminator: 4, Description: row #5, Index: 43, Row: 4, Column: 7
+Discriminator: 4, Description: row #5, Index: 44, Row: 4, Column: 8
+
+Mask: 130, Discriminator: 10, Description: column #2
+Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+
+Mask: 130, Discriminator: 24, Description: block (3, 1)
+Discriminator: 24, Description: block (3, 1), Index: 54, Row: 6, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 55, Row: 6, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 56, Row: 6, Column: 2
+Discriminator: 24, Description: block (3, 1), Index: 63, Row: 7, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 64, Row: 7, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 65, Row: 7, Column: 2
+Discriminator: 24, Description: block (3, 1), Index: 72, Row: 8, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 73, Row: 8, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 74, Row: 8, Column: 2
+
 

@@ -7,6 +7,8 @@ add_library(SudokuKataCpp
         CellGroups.h
         Program.cpp
         Program.h
+        TwoDigitMaskGroups.cpp
+        TwoDigitMaskGroups.h
         Utilities/FileReadingRandomNumber.cpp
         Utilities/FileReadingRandomNumber.h
         )

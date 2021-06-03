@@ -239,4 +239,15 @@ Row #6 can contain 5 only at (6, 8).
 +---+---+---+
 Code: 586079200401502070200000500600000002748205390123890050364000925800920000912650008
 
+Mask: 80, Discriminator: 7, Description: row #8
+Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
 

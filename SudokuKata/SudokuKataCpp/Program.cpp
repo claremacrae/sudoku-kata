@@ -1,8 +1,11 @@
-﻿#include <numeric>
+﻿#include <algorithm>
+#include <numeric>
 #include <map>
 #include <fmt/format.h>
+#include <cassert>
 #include "Program.h"
 #include "CellGroups.h"
+#include "TwoDigitMaskGroups.h"
 
 namespace SudokuKata
 {
@@ -563,6 +566,55 @@ namespace SudokuKata
                                                                   mask) != twoDigitMasks.end();
                                      return maskToOnesCount[mask] == 2 && (!alreadySeen);
                                  });
+
+
+                    std::vector<TwoDigitMaskGroups> groups;
+                    for (int mask : twoDigitMasks)
+                    {
+                        for (const CellGroupsMap::value_type& keyAndValue : cellGroups)
+                        {
+                            const int key = keyAndValue.first;
+                            const std::vector<CellGroups> cellsInGroup = keyAndValue.second;
+
+                            int cellsMatchingMask =
+                                std::count_if(cellsInGroup.begin(),
+                                              cellsInGroup.end(),
+                                              [&](const CellGroups& cell) {
+                                                  return (candidateMasks[cell.getIndex()] == mask);
+                                              });
+                            if (cellsMatchingMask != 2)
+                            {
+                                continue;
+                            }
+
+                            bool anyValid =
+                                std::any_of(cellsInGroup.begin(),
+                                            cellsInGroup.end(),
+                                            [&](const CellGroups& cell)
+                                            {
+                                                int cellMask = candidateMasks[cell.getIndex()];
+                                                return cellMask != mask && (cellMask & mask) > 0;
+                                            });
+                            if (!anyValid)
+                            {
+                                continue;
+                            }
+
+                            const CellGroups& front = cellsInGroup.front();
+                            assert(key == front.getDiscriminator());
+
+                            CellGroupsMap cells;
+                            cells[key] = cellsInGroup;
+
+                            groups.push_back(TwoDigitMaskGroups(
+                                mask, key, cellsInGroup.front().getDescription(), cells));
+                        }
+                    }
+
+                    for (const auto& group : groups)
+                    {
+                        console << group.ToString() << '\n';
+                    }
 
 #if 0
                     auto groups =

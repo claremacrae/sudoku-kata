@@ -383,4 +383,37 @@ Column #3 can contain 7 only at (3, 3).
 +---+---+---+
 Code: 105090462004562007627014050361050020050201600472639581510006290700125046246980005
 
+Mask: 132, Discriminator: 6, Description: row #7
+Discriminator: 6, Description: row #7, Index: 54, Row: 6, Column: 0
+Discriminator: 6, Description: row #7, Index: 55, Row: 6, Column: 1
+Discriminator: 6, Description: row #7, Index: 56, Row: 6, Column: 2
+Discriminator: 6, Description: row #7, Index: 57, Row: 6, Column: 3
+Discriminator: 6, Description: row #7, Index: 58, Row: 6, Column: 4
+Discriminator: 6, Description: row #7, Index: 59, Row: 6, Column: 5
+Discriminator: 6, Description: row #7, Index: 60, Row: 6, Column: 6
+Discriminator: 6, Description: row #7, Index: 61, Row: 6, Column: 7
+Discriminator: 6, Description: row #7, Index: 62, Row: 6, Column: 8
+
+Mask: 132, Discriminator: 26, Description: block (3, 3)
+Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+
+Mask: 384, Discriminator: 4, Description: row #5
+Discriminator: 4, Description: row #5, Index: 36, Row: 4, Column: 0
+Discriminator: 4, Description: row #5, Index: 37, Row: 4, Column: 1
+Discriminator: 4, Description: row #5, Index: 38, Row: 4, Column: 2
+Discriminator: 4, Description: row #5, Index: 39, Row: 4, Column: 3
+Discriminator: 4, Description: row #5, Index: 40, Row: 4, Column: 4
+Discriminator: 4, Description: row #5, Index: 41, Row: 4, Column: 5
+Discriminator: 4, Description: row #5, Index: 42, Row: 4, Column: 6
+Discriminator: 4, Description: row #5, Index: 43, Row: 4, Column: 7
+Discriminator: 4, Description: row #5, Index: 44, Row: 4, Column: 8
+
 

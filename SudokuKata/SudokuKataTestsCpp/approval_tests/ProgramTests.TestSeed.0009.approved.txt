@@ -463,4 +463,26 @@ Row #3 can contain 6 only at (3, 2).
 +---+---+---+
 Code: 270000601803100472461027903714080269928671345536200718100402830340010520682700194
 
+Mask: 20, Discriminator: 14, Description: column #6
+Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5
+Discriminator: 14, Description: column #6, Index: 14, Row: 1, Column: 5
+Discriminator: 14, Description: column #6, Index: 23, Row: 2, Column: 5
+Discriminator: 14, Description: column #6, Index: 32, Row: 3, Column: 5
+Discriminator: 14, Description: column #6, Index: 41, Row: 4, Column: 5
+Discriminator: 14, Description: column #6, Index: 50, Row: 5, Column: 5
+Discriminator: 14, Description: column #6, Index: 59, Row: 6, Column: 5
+Discriminator: 14, Description: column #6, Index: 68, Row: 7, Column: 5
+Discriminator: 14, Description: column #6, Index: 77, Row: 8, Column: 5
+
+Mask: 20, Discriminator: 25, Description: block (3, 2)
+Discriminator: 25, Description: block (3, 2), Index: 57, Row: 6, Column: 3
+Discriminator: 25, Description: block (3, 2), Index: 58, Row: 6, Column: 4
+Discriminator: 25, Description: block (3, 2), Index: 59, Row: 6, Column: 5
+Discriminator: 25, Description: block (3, 2), Index: 66, Row: 7, Column: 3
+Discriminator: 25, Description: block (3, 2), Index: 67, Row: 7, Column: 4
+Discriminator: 25, Description: block (3, 2), Index: 68, Row: 7, Column: 5
+Discriminator: 25, Description: block (3, 2), Index: 75, Row: 8, Column: 3
+Discriminator: 25, Description: block (3, 2), Index: 76, Row: 8, Column: 4
+Discriminator: 25, Description: block (3, 2), Index: 77, Row: 8, Column: 5
+
 

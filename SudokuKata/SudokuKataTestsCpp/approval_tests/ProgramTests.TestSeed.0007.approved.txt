@@ -175,4 +175,26 @@ Block (1, 1) can contain 1 only at (3, 3).
 +---+---+---+
 Code: 058019207029000100071620080140000070000100004067042501536294718010500000000001056
 
+Mask: 10, Discriminator: 11, Description: column #3
+Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+
+Mask: 10, Discriminator: 24, Description: block (3, 1)
+Discriminator: 24, Description: block (3, 1), Index: 54, Row: 6, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 55, Row: 6, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 56, Row: 6, Column: 2
+Discriminator: 24, Description: block (3, 1), Index: 63, Row: 7, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 64, Row: 7, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 65, Row: 7, Column: 2
+Discriminator: 24, Description: block (3, 1), Index: 72, Row: 8, Column: 0
+Discriminator: 24, Description: block (3, 1), Index: 73, Row: 8, Column: 1
+Discriminator: 24, Description: block (3, 1), Index: 74, Row: 8, Column: 2
+
 
