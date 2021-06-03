@@ -4,7 +4,7 @@
 #include "stringhelper.h"
 #include "CellGroups.h"
 
-#include <map>
+#include <vector>
 
 class TwoDigitMaskGroups
 {
