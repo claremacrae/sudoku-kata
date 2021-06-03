@@ -25,11 +25,9 @@ TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
                                        int discriminator,
                                        const std::wstring& description,
                                        const CellGroupsMap& cells)
+    : Mask(mask), Discriminator(discriminator), Description(description), Cells(cells)
+
 {
-    Mask = mask;
-    Discriminator = discriminator;
-    Description = description;
-    Cells = cells;
 }
 
 std::wstring TwoDigitMaskGroups::ToString() const

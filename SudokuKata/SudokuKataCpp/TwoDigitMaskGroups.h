@@ -8,11 +8,11 @@
 
 class TwoDigitMaskGroups
 {
-private:
-    int Mask = 0;
-    int Discriminator = 0;
-    std::wstring Description;
-    CellGroupsMap Cells;
+public:
+    const int Mask = 0;
+    const int Discriminator = 0;
+    const std::wstring Description;
+    const CellGroupsMap Cells;
 
 public:
     int getMask() const;
