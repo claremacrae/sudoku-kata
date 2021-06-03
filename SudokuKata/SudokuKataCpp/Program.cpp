@@ -617,7 +617,7 @@ namespace SudokuKata
                     }
 
 #if 0
-                    if (groups.Any())
+                    if (!groups.empty())
                     {
                         for (auto group : groups)
                         {
@@ -638,7 +638,7 @@ namespace SudokuKata
                                         { return candidateMasks[cell::Index] == group.Mask; })
                                     ->ToArray();
 
-                            if (cells.Any())
+                            if (!cells.empty())
                             {
                                 int upper = 0;
                                 int lower = 0;
@@ -914,7 +914,7 @@ namespace SudokuKata
                 std::vector<int> value1;
                 std::vector<int> value2;
 
-                while (candidateIndex1.Any())
+                while (!candidateIndex1.empty())
                 {
                     int index1 = candidateIndex1.pop_front();
                     int index2 = candidateIndex2.pop_front();
@@ -951,7 +951,7 @@ namespace SudokuKata
                         {
                             std::vector<int> currentState(9 * 9);
 
-                            if (stateStack.Any())
+                            if (!stateStack.empty())
                             {
                                 std::copy_n(stateStack.top().begin(),
                                             currentState.size(),
@@ -1053,7 +1053,7 @@ namespace SudokuKata
                             usedDigitsStack.pop();
                             lastDigitStack.pop();
 
-                            if (stateStack.Any())
+                            if (!stateStack.empty())
                             {
                                 command = L"move"; // Always try to move after collapse
                             }
@@ -1123,9 +1123,9 @@ namespace SudokuKata
                         value1.push_back(digit1);
                         value2.push_back(digit2);
                     }
-                } // while (candidateIndex1.Any())
+                } // while (!candidateIndex1.empty())
 
-                if (stateIndex1.Any())
+                if (!stateIndex1.empty())
                 {
                     int pos = rng->Next(stateIndex1.size()());
                     int index1 = stateIndex1.ElementAt(pos);
