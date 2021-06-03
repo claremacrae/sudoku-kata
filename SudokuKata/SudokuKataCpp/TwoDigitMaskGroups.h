@@ -18,7 +18,7 @@ public:
     TwoDigitMaskGroups(int mask,
                        int discriminator,
                        const std::wstring& description,
-                       const CellGroupsMap& cells);
+                       const std::vector<CellGroups>& cells);
 
     std::wstring ToString() const;
 };

@@ -5,10 +5,10 @@
 TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
                                        int discriminator,
                                        const std::wstring& description,
-                                       const CellGroupsMap& cells)
-    : Mask(mask), Discriminator(discriminator), Description(description), Cells(cells.begin()->second)
+                                       const std::vector<CellGroups>& cells)
+    : Mask(mask), Discriminator(discriminator), Description(description), Cells(cells)
 {
-    assert(cells.size() == 1);
+    assert(cells.size() == 9);
 }
 
 std::wstring TwoDigitMaskGroups::ToString() const

@@ -603,11 +603,8 @@ namespace SudokuKata
                             const CellGroups& front = cellsInGroup.front();
                             assert(key == front.getDiscriminator());
 
-                            CellGroupsMap cells;
-                            cells[key] = cellsInGroup;
-
                             groups.push_back(TwoDigitMaskGroups(
-                                mask, key, cellsInGroup.front().getDescription(), cells));
+                                mask, key, cellsInGroup.front().getDescription(), cellsInGroup));
                         }
                     }
 
