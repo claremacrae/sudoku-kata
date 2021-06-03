@@ -28,12 +28,8 @@ int CellGroups::getColumn() const
 
 CellGroups::CellGroups(
     int discriminator, const std::wstring& description, int index, int row, int column)
+    : Discriminator(discriminator), Description(description), Index(index), Row(row), Column(column)
 {
-    Discriminator = discriminator;
-    Description = description;
-    Index = index;
-    Row = row;
-    Column = column;
 }
 
 std::wstring CellGroups::ToString() const
