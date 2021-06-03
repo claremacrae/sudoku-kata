@@ -21,4 +21,6 @@ public:
                        const CellGroupsMap& cells);
 
     std::wstring ToString() const;
+
+    std::vector<CellGroups> CellGroups() const;
 };
