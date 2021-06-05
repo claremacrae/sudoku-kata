@@ -314,6 +314,7 @@ Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
 7 cannot appear in (8, 8).
 
 ---------------------
+
 { Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0

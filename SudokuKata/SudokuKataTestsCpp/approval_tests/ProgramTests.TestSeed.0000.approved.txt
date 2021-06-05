@@ -366,6 +366,7 @@ Code: 97102058083270519054681900240000120532750090110500200820000645765409780370
 
 
 ---------------------
+
 { Mask = 3, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0

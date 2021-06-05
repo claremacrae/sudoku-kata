@@ -193,6 +193,7 @@ Code: 00050801760701002505000003907568010006005700300810057601600530059304176000
 
 
 ---------------------
+
 { Mask = 130, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
@@ -705,6 +706,7 @@ Code: 00050801760701002505000003907568010006005708300810057601600530059304176000
 
 
 ---------------------
+
 { Mask = 130, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
@@ -1198,6 +1200,7 @@ In column #7 values 2, 9 appear only in cells (5, 7) (9, 7) and other values can
 4, 8 cannot appear in cell (9, 7).
 
 ---------------------
+
 { Mask = 130, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0

@@ -529,6 +529,7 @@ Code: 97006510058641723940009865729587641376000300280000207614872936535968472162
 
 
 ---------------------
+
 { Mask = 5, Description = column #2, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1

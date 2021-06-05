@@ -289,6 +289,7 @@ Code: 63521400720800014610460025334600000582030561051000600096300007075286000048
 
 
 ---------------------
+
 { Mask = 84, Description = row #9, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
    Cells:
       Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0

@@ -364,6 +364,7 @@ Values 3 and 7 in block (1, 2) are in cells (1, 6) and (3, 6).
 7 cannot appear in (1, 4).
 
 ---------------------
+
 { Mask = 34, Description = column #6, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5

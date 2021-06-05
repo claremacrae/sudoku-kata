@@ -454,6 +454,7 @@ Values 8 and 9 in row #5 are in cells (5, 1) and (5, 3).
 9 cannot appear in (5, 9).
 
 ---------------------
+
 { Mask = 65, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0

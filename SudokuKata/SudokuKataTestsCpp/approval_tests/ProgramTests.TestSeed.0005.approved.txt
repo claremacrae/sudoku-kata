@@ -369,6 +369,7 @@ Code: 08009724009005470007400090072893165493647512814500637906054081785700040041
 
 
 ---------------------
+
 { Mask = 53, Description = row #1, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
    Cells:
       Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0

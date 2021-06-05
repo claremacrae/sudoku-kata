@@ -301,6 +301,7 @@ Values 5 and 7 in row #8 are in cells (8, 2) and (8, 3).
 7 cannot appear in (8, 6).
 
 ---------------------
+
 { Mask = 12, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0
@@ -1112,6 +1113,7 @@ Code: 58607920040156287020000856060000718274821539612389645736478192580092060091
 
 
 ---------------------
+
 { Mask = 12, Description = row #4, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0

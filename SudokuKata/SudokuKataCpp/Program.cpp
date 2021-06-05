@@ -764,6 +764,7 @@ namespace SudokuKata
                     {
                         auto div = "\n---------------------\n";
                         console << div;
+                        console << L"\n";
 
                         for (const auto& item : groupsWithNMasks)
                         {

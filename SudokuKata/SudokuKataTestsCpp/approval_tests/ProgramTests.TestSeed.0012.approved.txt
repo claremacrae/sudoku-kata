@@ -113,6 +113,7 @@ Code: 76304009800000735005830004050170486280000003000000807000500300938000950001
 
 
 ---------------------
+
 { Mask = 19, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
    Cells:
       Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
@@ -626,6 +627,7 @@ In block (3, 3) values 4, 6, 7 appear only in cells (7, 7) (8, 9) (9, 7) and oth
 2 cannot appear in cell (9, 7).
 
 ---------------------
+
 { Mask = 19, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
    Cells:
       Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0

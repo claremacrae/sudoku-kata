@@ -466,6 +466,7 @@ Values 3 and 9 in column #8 are in cells (5, 8) and (6, 8).
 3 cannot appear in (2, 8).
 
 ---------------------
+
 { Mask = 20, Description = column #3, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2

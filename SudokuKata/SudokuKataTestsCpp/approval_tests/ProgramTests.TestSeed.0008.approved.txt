@@ -455,6 +455,7 @@ Values 1 and 3 in column #3 are in cells (8, 3) and (9, 3).
 1 cannot appear in (3, 3).
 
 ---------------------
+
 { Mask = 5, Description = column #2, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1

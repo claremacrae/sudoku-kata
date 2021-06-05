@@ -492,6 +492,7 @@ Values 3 and 5 in block (3, 2) are in cells (9, 5) and (9, 6).
 5 cannot appear in (7, 5).
 
 ---------------------
+
 { Mask = 20, Description = row #4, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
    Cells:
       Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0

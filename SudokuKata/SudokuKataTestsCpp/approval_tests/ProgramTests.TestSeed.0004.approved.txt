@@ -448,6 +448,7 @@ Values 5 and 7 in row #7 are in cells (7, 7) and (7, 8).
 5 cannot appear in (7, 5).
 
 ---------------------
+
 { Mask = 26, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
    Cells:
       Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
