@@ -62,7 +62,7 @@ namespace SudokuKata
             {
                 std::vector<int> currentState(9 * 9);
 
-                if (stateStack.size() > 0)
+                if (!stateStack.empty())
                 {
                     std::copy_n(
                         stateStack.top().begin(), currentState.size(), currentState.begin());
@@ -418,7 +418,7 @@ namespace SudokuKata
                     }
                 }
 
-                if (singleCandidateIndices.size() > 0)
+                if (!singleCandidateIndices.empty())
                 {
                     int pickSingleCandidateIndex = rng->Next(singleCandidateIndices.size());
                     int singleCandidateIndex = singleCandidateIndices[pickSingleCandidateIndex];
@@ -523,7 +523,7 @@ namespace SudokuKata
                         } // for (cellGroup = 0..8)
                     }     // for (digit = 1..9)
 
-                    if (candidates.size() > 0)
+                    if (!candidates.empty())
                     {
                         int index = rng->Next(candidates.size());
                         std::string description = groupDescriptions.at(index);
