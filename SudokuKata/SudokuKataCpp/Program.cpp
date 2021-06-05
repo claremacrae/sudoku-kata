@@ -753,14 +753,15 @@ namespace SudokuKata
                                                          (candidateMasks[cell.Index] & ~mask) != 0;
                                               }
                                 );
-                            GroupsWithNMasks groupWithNMasks(
-                                mask,
-                                groups.front().Description,
-                                groups,
-                                cellsWithMask,
-                                cleanableCellsCount
-                                );
-                            groupsWithNMasks.push_back(groupWithNMasks);
+                            if (cellsWithMask.size() == maskToOnesCount[mask])
+                            {
+                                GroupsWithNMasks groupWithNMasks(mask,
+                                                                 groups.front().Description,
+                                                                 groups,
+                                                                 cellsWithMask,
+                                                                 cleanableCellsCount);
+                                groupsWithNMasks.push_back(groupWithNMasks);
+                            }
                         }
                     }
                     if (!groupsWithNMasks.empty())

@@ -689,8 +689,6 @@ Code: 51380940792647138587430519025874361914769825363951274806298450149513780008
 
 
 ---------------------
-{ Mask = 6, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 6, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
 { Mask = 34, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 34, Description = row #3, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 34, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
@@ -700,26 +698,12 @@ Code: 51380940792647138587430519025874361914769825363951274806298450149513780008
 { Mask = 34, Description = block (1, 2), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 34, Description = block (1, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 34, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
-{ Mask = 36, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 36, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 38, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 38, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 66, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 66, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
 { Mask = 68, Description = row #7, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 68, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 68, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 68, Description = column #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 68, Description = block (3, 1), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
 { Mask = 68, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
-{ Mask = 70, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 70, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 96, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 96, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 4 }
-{ Mask = 98, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 98, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 100, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
-{ Mask = 100, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 2 }
 { Mask = 102, Description = column #8, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
 { Mask = 102, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
 
