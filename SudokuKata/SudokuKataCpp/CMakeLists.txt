@@ -19,7 +19,6 @@ add_library(SudokuKataCpp
 #        NotYetPorted/FileWritingRandomNumber.h    # TODO Needs C++ equivalent of C#'s Random
         Utilities/GridStringifier.cpp
         Utilities/GridStringifier.h
-        Utilities/IRandomValueGenerator.cpp
         Utilities/IRandomValueGenerator.h
 #        NotYetPorted/RandomNumber.cpp # TODO Needs C++ equivalent of C#'s Random
 #        NotYetPorted/RandomNumber.h   # TODO Needs C++ equivalent of C#'s Random
