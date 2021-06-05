@@ -5,6 +5,7 @@
 #include <cassert>
 #include "Program.h"
 #include "CellGroups.h"
+#include "GroupsWithNMasks.h"
 #include "TwoDigitMaskGroups.h"
 
 namespace SudokuKata
@@ -712,8 +713,57 @@ namespace SudokuKata
                         }
                     }
 
-#if 0
+                    std::vector<GroupsWithNMasks> groupsWithNMasks;
+                    for (const auto& mask : masks)
+                    {
+                        for (const CellGroupsMap::value_type & pair : cellGroups)
+                        {
+                            int key = pair.first;
+                            std::vector<CellGroups> groups = pair.second;
+                            bool allMatching =
+                                std::all_of(
+                                    groups.begin(),
+                                    groups.end(),
+                                    [](const auto& group){return true;}
+                                    );
+//                            TODO here next
+                            if ( !allMatching )
+                            {
+                                continue;
+                            }
+                            std::vector<CellGroups> cellsWithMask;
+                            std::map<int, CellGroups> cells;
+//                            cells.insert(pair.first, pair.second);
+                            int cleanableCellsCount = 0;
+                            GroupsWithNMasks groupWithNMasks(
+                                mask,
+                                groups.front().Description
+//                                cells
+//                                cellsWithMask,
+//                                cleanableCellsCount
+                                );
+                            groupsWithNMasks.push_back(groupWithNMasks);
+                        }
+                    }
+                    if (!groupsWithNMasks.empty())
+                    {
+                        auto div = "\n---------------------\n";
+                        console << div;
 
+                        int nprint = 0;
+                        for (const auto& item : groupsWithNMasks)
+                        {
+
+                            console << item.ToString() << L"\n";
+                            nprint += 1;
+                            if (nprint > 10)
+                            {
+//                                break;
+                            }
+                        }
+                        console << div;
+                    }
+#if 0
                     auto groupsWithNMasks =
                         masks
                             .SelectMany(

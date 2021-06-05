@@ -5,6 +5,8 @@ add_library(SudokuKataCpp
         Utilities/WStringHelpers.h
         CellGroups.cpp
         CellGroups.h
+        GroupsWithNMasks.cpp
+        GroupsWithNMasks.h
         Program.cpp
         Program.h
         TwoDigitMaskGroups.cpp
