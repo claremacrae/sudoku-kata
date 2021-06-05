@@ -608,11 +608,6 @@ namespace SudokuKata
                         }
                     }
 
-                    for (const auto& group : groups)
-                    {
-                        console << group.ToString() << '\n';
-                    }
-
                     if (!groups.empty())
                     {
                         for (const TwoDigitMaskGroups& group : groups)
@@ -759,18 +754,6 @@ namespace SudokuKata
                                 groupsWithNMasks.push_back(groupWithNMasks);
                             }
                         }
-                    }
-                    if (!groupsWithNMasks.empty())
-                    {
-                        auto div = "\n---------------------\n";
-                        console << div;
-                        console << L"\n";
-
-                        for (const auto& item : groupsWithNMasks)
-                        {
-                            console << item.ToString() << L"\n";
-                        }
-                        console << div;
                     }
 
                     for (auto groupWithNMasks : groupsWithNMasks)
@@ -985,9 +968,6 @@ namespace SudokuKata
 
                             for (int index = 0; index < currentState.size(); index++)
                             {
-                                console << fmt::format(L"index = {0}, currentState[index] = {1}\n",
-                                                       index,
-                                                       currentState[index]);
                                 if (currentState[index] == 0)
                                 {
 
@@ -1019,13 +999,9 @@ namespace SudokuKata
                                             isDigitUsed[blockDigit - 1] = true;
                                         }
                                     } // for (i = 0..8)
-                                    console << fmt::format(L"isDigitUsed: {}\n",
-                                                           fmt::join(isDigitUsed, L", "));
 
                                     int candidatesCount =
                                         std::count(isDigitUsed.begin(), isDigitUsed.end(), false);
-                                    console
-                                        << fmt::format(L"candidatesCount = {}\n", candidatesCount);
 
                                     if (candidatesCount == 0)
                                     {
@@ -1118,7 +1094,6 @@ namespace SudokuKata
 
                                 bool matchingDigits =
                                     std::count(currentState.begin(), currentState.end(), 0) > 0;
-                                console << fmt::format(L"matchingDigits = {0}\n", matchingDigits);
                                 if (matchingDigits)
                                 {
                                     command = L"expand";
@@ -1150,7 +1125,6 @@ namespace SudokuKata
                 if (!stateIndex1.empty())
                 {
                     int pos = rng->Next(stateIndex1.size());
-                    console << fmt::format(L"pos = {0}\n", pos);
                     int index1 = stateIndex1.at(pos);
                     int index2 = stateIndex2.at(pos);
                     int digit1 = value1.at(pos);
