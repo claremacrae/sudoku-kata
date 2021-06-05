@@ -5,7 +5,6 @@
 
 #include "Program.h"
 #include "Utilities/FileReadingRandomNumber.h"
-#include "Utilities/WStringHelpers.h"
 #include "TestHelpers/FirstNFailuresReporter.h"
 
 #include <iostream>
@@ -85,7 +84,7 @@ namespace SudokuKataTests
     std::string ProgramTests::GetSeedsFileName()
     {
         auto namer = Approvals::getDefaultNamer();
-        auto seedsFile = toWString(namer->getApprovedFile(".seeds.txt"));
+        auto seedsFile = namer->getApprovedFile(".seeds.txt");
         return std::regex_replace(seedsFile, std::regex("\\.approved"), "");
     }
 }
