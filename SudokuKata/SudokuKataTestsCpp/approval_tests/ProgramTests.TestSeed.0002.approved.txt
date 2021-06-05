@@ -80,15 +80,15 @@ Column #1 can contain 6 only at (3, 1).
 Code: 471038000580000030600057048000000400004020070760014820006000900207980064900003000
 
 Mask: 3, Discriminator: 2, Description: row #3
-Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
-Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
-Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
-Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
-Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
-Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
-Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
-Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
-Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+   Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+   Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+   Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+   Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+   Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+   Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+   Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+   Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
 
 Values 1 and 2 in row #3 are in cells (3, 4) and (3, 7).
 2 cannot appear in (3, 2).

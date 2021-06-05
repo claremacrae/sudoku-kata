@@ -336,26 +336,26 @@ Row #3 can contain 4 only at (3, 9).
 Code: 008000150405861029901520084083000015510038000000150803000285471857314000142679538
 
 Mask: 68, Discriminator: 14, Description: column #6
-Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5
-Discriminator: 14, Description: column #6, Index: 14, Row: 1, Column: 5
-Discriminator: 14, Description: column #6, Index: 23, Row: 2, Column: 5
-Discriminator: 14, Description: column #6, Index: 32, Row: 3, Column: 5
-Discriminator: 14, Description: column #6, Index: 41, Row: 4, Column: 5
-Discriminator: 14, Description: column #6, Index: 50, Row: 5, Column: 5
-Discriminator: 14, Description: column #6, Index: 59, Row: 6, Column: 5
-Discriminator: 14, Description: column #6, Index: 68, Row: 7, Column: 5
-Discriminator: 14, Description: column #6, Index: 77, Row: 8, Column: 5
+   Discriminator: 14, Description: column #6, Index: 5, Row: 0, Column: 5
+   Discriminator: 14, Description: column #6, Index: 14, Row: 1, Column: 5
+   Discriminator: 14, Description: column #6, Index: 23, Row: 2, Column: 5
+   Discriminator: 14, Description: column #6, Index: 32, Row: 3, Column: 5
+   Discriminator: 14, Description: column #6, Index: 41, Row: 4, Column: 5
+   Discriminator: 14, Description: column #6, Index: 50, Row: 5, Column: 5
+   Discriminator: 14, Description: column #6, Index: 59, Row: 6, Column: 5
+   Discriminator: 14, Description: column #6, Index: 68, Row: 7, Column: 5
+   Discriminator: 14, Description: column #6, Index: 77, Row: 8, Column: 5
 
 Mask: 68, Discriminator: 19, Description: block (1, 2)
-Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
-Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
-Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
-Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
-Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
+   Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
+   Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+   Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
+   Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
+   Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+   Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
+   Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
+   Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+   Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
 
 Values 3 and 7 in column #6 are in cells (1, 6) and (3, 6).
 7 cannot appear in (4, 6).

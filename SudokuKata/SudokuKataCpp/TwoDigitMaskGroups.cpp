@@ -22,7 +22,7 @@ std::wstring TwoDigitMaskGroups::ToString() const
                               Description);
     for (const auto& cell : Cells)
     {
-        result += StringHelper::formatSimple(L"{0}\n", cell.ToString());
+        result += StringHelper::formatSimple(L"   {0}\n", cell.ToString());
     }
     return result;
 }
