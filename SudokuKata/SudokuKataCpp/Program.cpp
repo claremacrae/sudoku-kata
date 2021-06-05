@@ -568,7 +568,6 @@ namespace SudokuKata
                                      return maskToOnesCount[mask] == 2 && (!alreadySeen);
                                  });
 
-
                     std::vector<TwoDigitMaskGroups> groups;
                     for (int mask : twoDigitMasks)
                     {
@@ -681,7 +680,8 @@ namespace SudokuKata
                                         curValue += 1;
                                     }
 
-                                    std::wstring valuesReport = fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
+                                    std::wstring valuesReport =
+                                        fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
                                     console << StringHelper::formatSimple(
                                                    L"{0} cannot appear in ({1}, {2}).",
                                                    valuesReport,
@@ -777,14 +777,12 @@ namespace SudokuKata
                     {
                         int mask = groupWithNMasks.Mask;
 
-                        if (std::count_if(
-                                groupWithNMasks.Cells.begin(),
-                                groupWithNMasks.Cells.end(),
-                                [&](auto cell)
-                                {
-                                    return (candidateMasks[cell.Index] & mask) != 0 &&
-                                           (candidateMasks[cell.Index] & ~mask) != 0;
-                                }))
+                        if (std::count_if(groupWithNMasks.Cells.begin(),
+                                          groupWithNMasks.Cells.end(),
+                                          [&](auto cell) {
+                                              return (candidateMasks[cell.Index] & mask) != 0 &&
+                                                     (candidateMasks[cell.Index] & ~mask) != 0;
+                                          }))
                         {
                             StringBuilder* message = new StringBuilder();
                             message->append(StringHelper::formatSimple(
