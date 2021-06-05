@@ -1092,9 +1092,7 @@ namespace SudokuKata
                                 board[rowToWrite][colToWrite] =
                                     static_cast<wchar_t>(L'0' + movedToDigit);
 
-                                bool matchingDigits =
-                                    std::count(currentState.begin(), currentState.end(), 0) > 0;
-                                if (matchingDigits)
+                                if (std::count(currentState.begin(), currentState.end(), 0) > 0)
                                 {
                                     command = L"expand";
                                 }
