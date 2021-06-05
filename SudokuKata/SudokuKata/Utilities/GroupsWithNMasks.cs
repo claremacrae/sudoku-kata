@@ -16,7 +16,7 @@ namespace SudokuKata
             // string result
             //     = $"{{ Mask = {Mask}, Description = {Description}, Cells = {Cells}, CellsWithMask =\n{string.Join("\n", CellsWithMask)}, CleanableCellsCount =\n{string.Join("\n", CleanableCellsCount)} }}";
             string result
-                = $"{{ Mask = {Mask}, Description = {Description}, Cells = {Cells.Count()}, CellsWithMask = {CellsWithMask.Count}, CleanableCellsCount = {CleanableCellsCount}";
+                = $"{{ Mask = {Mask}, Description = {Description}, Cells = {Cells.Count()}, CellsWithMask = {CellsWithMask.Count}, CleanableCellsCount = {CleanableCellsCount} }}";
             
             return result;
         }
