@@ -952,3 +952,291 @@ Code: 59814276364758391231276980075080140686040510742163758928091637017635429893
 
 ---------------------
 
+Guessing that 4 and 5 are arbitrary in row #7 (multiple solutions): Pick 5->(7, 3), 4->(7, 9).
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|93.|278|6.1|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298930278601
+
+(9, 8) can only contain 5.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|93.|278|651|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298930278651
+
+(9, 3) can only contain 4.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|8..|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769800750801406860405107421637589285916374176354298934278651
+
+(3, 8) can only contain 4.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|84.|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769840750801406860405107421637589285916374176354298934278651
+
+(3, 9) can only contain 5.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|8.1|4.6|
+|86.|4.5|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750801406860405107421637589285916374176354298934278651
+
+
+---------------------
+
+{ Mask = 6, Description = column #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+}
+{ Mask = 6, Description = block (2, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+}
+{ Mask = 258, Description = column #5, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
+      Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
+      Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
+      Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
+   CellsWithMask:
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+}
+{ Mask = 258, Description = block (2, 2), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 22, Description: block (2, 2), Index: 30, Row: 3, Column: 3
+      Discriminator: 22, Description: block (2, 2), Index: 31, Row: 3, Column: 4
+      Discriminator: 22, Description: block (2, 2), Index: 32, Row: 3, Column: 5
+      Discriminator: 22, Description: block (2, 2), Index: 39, Row: 4, Column: 3
+      Discriminator: 22, Description: block (2, 2), Index: 40, Row: 4, Column: 4
+      Discriminator: 22, Description: block (2, 2), Index: 41, Row: 4, Column: 5
+      Discriminator: 22, Description: block (2, 2), Index: 48, Row: 5, Column: 3
+      Discriminator: 22, Description: block (2, 2), Index: 49, Row: 5, Column: 4
+      Discriminator: 22, Description: block (2, 2), Index: 50, Row: 5, Column: 5
+   CellsWithMask:
+      Discriminator: 22, Description: block (2, 2), Index: 31, Row: 3, Column: 4
+      Discriminator: 22, Description: block (2, 2), Index: 40, Row: 4, Column: 4
+}
+{ Mask = 260, Description = column #3, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+}
+{ Mask = 260, Description = block (2, 1), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+}
+{ Mask = 262, Description = row #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+}
+{ Mask = 262, Description = row #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 4, Description: row #5, Index: 36, Row: 4, Column: 0
+      Discriminator: 4, Description: row #5, Index: 37, Row: 4, Column: 1
+      Discriminator: 4, Description: row #5, Index: 38, Row: 4, Column: 2
+      Discriminator: 4, Description: row #5, Index: 39, Row: 4, Column: 3
+      Discriminator: 4, Description: row #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 4, Description: row #5, Index: 41, Row: 4, Column: 5
+      Discriminator: 4, Description: row #5, Index: 42, Row: 4, Column: 6
+      Discriminator: 4, Description: row #5, Index: 43, Row: 4, Column: 7
+      Discriminator: 4, Description: row #5, Index: 44, Row: 4, Column: 8
+   CellsWithMask:
+      Discriminator: 4, Description: row #5, Index: 38, Row: 4, Column: 2
+      Discriminator: 4, Description: row #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 4, Description: row #5, Index: 43, Row: 4, Column: 7
+}
+
+---------------------
+
+Guessing that 2 and 9 are arbitrary in column #5 (multiple solutions): Pick 9->(4, 5), 2->(5, 5).
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|4.6|
+|86.|425|1.7|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891406860425107421637589285916374176354298934278651
+
+(5, 8) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|4.6|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891406860425137421637589285916374176354298934278651
+
+(4, 8) can only contain 2.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|75.|891|426|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845750891426860425137421637589285916374176354298934278651
+
+(4, 3) can only contain 3.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|753|891|426|
+|86.|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845753891426860425137421637589285916374176354298934278651
+
+(5, 3) can only contain 9.
++---+---+---+
+|598|142|763|
+|647|583|912|
+|312|769|845|
++---+---+---+
+|753|891|426|
+|869|425|137|
+|421|637|589|
++---+---+---+
+|285|916|374|
+|176|354|298|
+|934|278|651|
++---+---+---+
+Code: 598142763647583912312769845753891426869425137421637589285916374176354298934278651
+

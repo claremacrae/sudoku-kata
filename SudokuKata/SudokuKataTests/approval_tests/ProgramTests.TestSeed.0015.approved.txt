@@ -784,3 +784,2023 @@ Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
 
 ---------------------
 
+Guessing that 2 and 7 are arbitrary in column #4 (multiple solutions): Pick 2->(1, 4), 7->(4, 4).
++---+---+---+
+|9..|2.6|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1..|5.8|...|
++---+---+---+
+|219|657|438|
+|..5|983|...|
+|368|412|..5|
++---+---+---+
+Code: 900206850500804006006105000000761500652349187100508000219657438005983000368412005
+
+(6, 5) can only contain 2.
++---+---+---+
+|9..|2.6|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1..|528|...|
++---+---+---+
+|219|657|438|
+|..5|983|...|
+|368|412|..5|
++---+---+---+
+Code: 900206850500804006006105000000761500652349187100528000219657438005983000368412005
+
+Mask: 72, Discriminator: 7, Description: row #8
+   Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+   Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+   Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+   Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+   Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+   Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+   Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+   Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+   Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+
+Mask: 320, Discriminator: 26, Description: block (3, 3)
+   Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+   Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+   Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+   Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+
+Values 4 and 7 in row #8 are in cells (8, 1) and (8, 2).
+7 cannot appear in (8, 7).
+7 cannot appear in (8, 8).
+
+---------------------
+
+{ Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 35, Description = block (3, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+}
+{ Mask = 72, Description = row #8, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+}
+{ Mask = 72, Description = block (3, 1), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 24, Description: block (3, 1), Index: 54, Row: 6, Column: 0
+      Discriminator: 24, Description: block (3, 1), Index: 55, Row: 6, Column: 1
+      Discriminator: 24, Description: block (3, 1), Index: 56, Row: 6, Column: 2
+      Discriminator: 24, Description: block (3, 1), Index: 63, Row: 7, Column: 0
+      Discriminator: 24, Description: block (3, 1), Index: 64, Row: 7, Column: 1
+      Discriminator: 24, Description: block (3, 1), Index: 65, Row: 7, Column: 2
+      Discriminator: 24, Description: block (3, 1), Index: 72, Row: 8, Column: 0
+      Discriminator: 24, Description: block (3, 1), Index: 73, Row: 8, Column: 1
+      Discriminator: 24, Description: block (3, 1), Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 24, Description: block (3, 1), Index: 63, Row: 7, Column: 0
+      Discriminator: 24, Description: block (3, 1), Index: 64, Row: 7, Column: 1
+}
+{ Mask = 77, Description = row #1, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 77, Description = column #3, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+}
+{ Mask = 107, Description = row #8, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 200, Description = column #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
+      Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
+      Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+      Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
+   CellsWithMask:
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+}
+{ Mask = 207, Description = block (1, 1), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+   CellsWithMask:
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+}
+{ Mask = 271, Description = column #9, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+      Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 302, Description = block (2, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+}
+{ Mask = 320, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0
+      Discriminator: 8, Description: row #9, Index: 73, Row: 8, Column: 1
+      Discriminator: 8, Description: row #9, Index: 74, Row: 8, Column: 2
+      Discriminator: 8, Description: row #9, Index: 75, Row: 8, Column: 3
+      Discriminator: 8, Description: row #9, Index: 76, Row: 8, Column: 4
+      Discriminator: 8, Description: row #9, Index: 77, Row: 8, Column: 5
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+      Discriminator: 8, Description: row #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 320, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 324, Description = column #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
+      Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
+      Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
+      Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
+   CellsWithMask:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+}
+{ Mask = 324, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
+   CellsWithMask:
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+}
+{ Mask = 327, Description = row #2, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+      Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+   CellsWithMask:
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+}
+{ Mask = 335, Description = block (1, 3), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+}
+{ Mask = 355, Description = block (3, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 358, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
+      Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+   CellsWithMask:
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+}
+{ Mask = 363, Description = column #8, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 364, Description = row #6, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
+      Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
+      Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+}
+{ Mask = 398, Description = row #4, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+}
+{ Mask = 460, Description = block (2, 1), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+}
+{ Mask = 462, Description = row #3, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+}
+{ Mask = 462, Description = column #2, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+      Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+   CellsWithMask:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+}
+
+---------------------
+
+Guessing that 4 and 7 are arbitrary in row #8 (multiple solutions): Pick 7->(8, 1), 4->(8, 2).
++---+---+---+
+|9..|2.6|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1..|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|..5|
++---+---+---+
+Code: 900206850500804006006105000000761500652349187100528000219657438745983000368412005
+
+Mask: 68, Discriminator: 0, Description: row #1
+   Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+   Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+   Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+   Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+   Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+   Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+   Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+   Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+   Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+
+Values 3 and 7 in row #1 are in cells (1, 2) and (1, 5).
+3, 7 cannot appear in (1, 3).
+3 cannot appear in (1, 9).
+
+---------------------
+
+{ Mask = 9, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 35, Description = block (3, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+}
+{ Mask = 68, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+}
+{ Mask = 77, Description = row #1, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 77, Description = column #3, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+}
+{ Mask = 136, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
+      Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
+      Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+      Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
+   CellsWithMask:
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+}
+{ Mask = 207, Description = block (1, 1), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+   CellsWithMask:
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+}
+{ Mask = 271, Description = column #9, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+      Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 302, Description = block (2, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+}
+{ Mask = 320, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0
+      Discriminator: 8, Description: row #9, Index: 73, Row: 8, Column: 1
+      Discriminator: 8, Description: row #9, Index: 74, Row: 8, Column: 2
+      Discriminator: 8, Description: row #9, Index: 75, Row: 8, Column: 3
+      Discriminator: 8, Description: row #9, Index: 76, Row: 8, Column: 4
+      Discriminator: 8, Description: row #9, Index: 77, Row: 8, Column: 5
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+      Discriminator: 8, Description: row #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 320, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 324, Description = column #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
+      Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
+      Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
+      Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
+   CellsWithMask:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+}
+{ Mask = 324, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
+   CellsWithMask:
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+}
+{ Mask = 327, Description = row #2, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+      Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+   CellsWithMask:
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+}
+{ Mask = 335, Description = block (1, 3), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+}
+{ Mask = 355, Description = block (3, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 358, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
+      Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+   CellsWithMask:
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+}
+{ Mask = 363, Description = column #8, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 364, Description = row #6, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
+      Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
+      Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+}
+{ Mask = 398, Description = row #4, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+}
+{ Mask = 454, Description = column #2, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+      Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+   CellsWithMask:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+}
+{ Mask = 460, Description = block (2, 1), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+}
+{ Mask = 462, Description = row #3, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+}
+
+---------------------
+
+Guessing that 3 and 7 are arbitrary in row #1 (multiple solutions): Pick 7->(1, 2), 3->(1, 5).
++---+---+---+
+|97.|236|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1..|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|..5|
++---+---+---+
+Code: 970236850500804006006105000000761500652349187100528000219657438745983000368412005
+
+Block (2, 1) can contain 7 only at (6, 3).
++---+---+---+
+|97.|236|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1.7|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|..5|
++---+---+---+
+Code: 970236850500804006006105000000761500652349187107528000219657438745983000368412005
+
+
+---------------------
+
+{ Mask = 9, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 13, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+}
+{ Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 35, Description = block (3, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+}
+{ Mask = 136, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
+      Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
+      Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+      Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
+   CellsWithMask:
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+}
+{ Mask = 143, Description = block (1, 1), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+   CellsWithMask:
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+}
+{ Mask = 271, Description = column #9, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+      Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 300, Description = row #6, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
+      Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
+      Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+}
+{ Mask = 302, Description = block (2, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+}
+{ Mask = 320, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 8, Description: row #9, Index: 72, Row: 8, Column: 0
+      Discriminator: 8, Description: row #9, Index: 73, Row: 8, Column: 1
+      Discriminator: 8, Description: row #9, Index: 74, Row: 8, Column: 2
+      Discriminator: 8, Description: row #9, Index: 75, Row: 8, Column: 3
+      Discriminator: 8, Description: row #9, Index: 76, Row: 8, Column: 4
+      Discriminator: 8, Description: row #9, Index: 77, Row: 8, Column: 5
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+      Discriminator: 8, Description: row #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 8, Description: row #9, Index: 78, Row: 8, Column: 6
+      Discriminator: 8, Description: row #9, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 320, Description = column #5, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
+      Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
+      Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
+      Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
+   CellsWithMask:
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+}
+{ Mask = 320, Description = block (1, 2), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
+   CellsWithMask:
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+}
+{ Mask = 320, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 327, Description = row #2, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+      Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+   CellsWithMask:
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+}
+{ Mask = 335, Description = block (1, 3), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+}
+{ Mask = 355, Description = block (3, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+}
+{ Mask = 358, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
+      Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+   CellsWithMask:
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+}
+{ Mask = 363, Description = column #8, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+}
+{ Mask = 390, Description = column #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+      Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+   CellsWithMask:
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+}
+{ Mask = 396, Description = block (2, 1), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+}
+{ Mask = 398, Description = row #4, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+}
+{ Mask = 462, Description = row #3, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+}
+
+---------------------
+
+Guessing that 7 and 9 are arbitrary in row #9 (multiple solutions): Pick 9->(9, 7), 7->(9, 8).
++---+---+---+
+|97.|236|85.|
+|5..|8.4|..6|
+|..6|1.5|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1.7|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|975|
++---+---+---+
+Code: 970236850500804006006105000000761500652349187107528000219657438745983000368412975
+
+
+---------------------
+
+{ Mask = 9, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 13, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+}
+{ Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 35, Description = block (3, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+}
+{ Mask = 102, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
+      Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+   CellsWithMask:
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+}
+{ Mask = 136, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
+      Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
+      Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+      Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
+   CellsWithMask:
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+}
+{ Mask = 143, Description = block (1, 1), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+   CellsWithMask:
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+}
+{ Mask = 271, Description = column #9, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+      Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 299, Description = column #8, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+}
+{ Mask = 300, Description = row #6, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
+      Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
+      Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+}
+{ Mask = 302, Description = block (2, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+}
+{ Mask = 320, Description = column #5, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 13, Description: column #5, Index: 4, Row: 0, Column: 4
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+      Discriminator: 13, Description: column #5, Index: 31, Row: 3, Column: 4
+      Discriminator: 13, Description: column #5, Index: 40, Row: 4, Column: 4
+      Discriminator: 13, Description: column #5, Index: 49, Row: 5, Column: 4
+      Discriminator: 13, Description: column #5, Index: 58, Row: 6, Column: 4
+      Discriminator: 13, Description: column #5, Index: 67, Row: 7, Column: 4
+      Discriminator: 13, Description: column #5, Index: 76, Row: 8, Column: 4
+   CellsWithMask:
+      Discriminator: 13, Description: column #5, Index: 13, Row: 1, Column: 4
+      Discriminator: 13, Description: column #5, Index: 22, Row: 2, Column: 4
+}
+{ Mask = 320, Description = block (1, 2), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 19, Description: block (1, 2), Index: 3, Row: 0, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 4, Row: 0, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 5, Row: 0, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 12, Row: 1, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 14, Row: 1, Column: 5
+      Discriminator: 19, Description: block (1, 2), Index: 21, Row: 2, Column: 3
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 23, Row: 2, Column: 5
+   CellsWithMask:
+      Discriminator: 19, Description: block (1, 2), Index: 13, Row: 1, Column: 4
+      Discriminator: 19, Description: block (1, 2), Index: 22, Row: 2, Column: 4
+}
+{ Mask = 327, Description = row #2, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+      Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+   CellsWithMask:
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+}
+{ Mask = 335, Description = block (1, 3), Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+}
+{ Mask = 390, Description = column #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+      Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+   CellsWithMask:
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+}
+{ Mask = 396, Description = block (2, 1), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+}
+{ Mask = 398, Description = row #4, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+}
+{ Mask = 462, Description = row #3, Cells = 9, CellsWithMask = 6, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+}
+
+---------------------
+
+Guessing that 7 and 9 are arbitrary in column #5 (multiple solutions): Pick 9->(2, 5), 7->(3, 5).
++---+---+---+
+|97.|236|85.|
+|5..|894|..6|
+|..6|175|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1.7|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|975|
++---+---+---+
+Code: 970236850500894006006175000000761500652349187107528000219657438745983000368412975
+
+Block (1, 3) can contain 7 only at (2, 7).
++---+---+---+
+|97.|236|85.|
+|5..|894|7.6|
+|..6|175|...|
++---+---+---+
+|...|761|5..|
+|652|349|187|
+|1.7|528|...|
++---+---+---+
+|219|657|438|
+|745|983|...|
+|368|412|975|
++---+---+---+
+Code: 970236850500894706006175000000761500652349187107528000219657438745983000368412975
+
+
+---------------------
+
+{ Mask = 7, Description = row #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 1, Description: row #2, Index: 9, Row: 1, Column: 0
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 12, Row: 1, Column: 3
+      Discriminator: 1, Description: row #2, Index: 13, Row: 1, Column: 4
+      Discriminator: 1, Description: row #2, Index: 14, Row: 1, Column: 5
+      Discriminator: 1, Description: row #2, Index: 15, Row: 1, Column: 6
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+      Discriminator: 1, Description: row #2, Index: 17, Row: 1, Column: 8
+   CellsWithMask:
+      Discriminator: 1, Description: row #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 1, Description: row #2, Index: 11, Row: 1, Column: 2
+      Discriminator: 1, Description: row #2, Index: 16, Row: 1, Column: 7
+}
+{ Mask = 9, Description = row #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 0, Description: row #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 0, Description: row #1, Index: 1, Row: 0, Column: 1
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 3, Row: 0, Column: 3
+      Discriminator: 0, Description: row #1, Index: 4, Row: 0, Column: 4
+      Discriminator: 0, Description: row #1, Index: 5, Row: 0, Column: 5
+      Discriminator: 0, Description: row #1, Index: 6, Row: 0, Column: 6
+      Discriminator: 0, Description: row #1, Index: 7, Row: 0, Column: 7
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+   CellsWithMask:
+      Discriminator: 0, Description: row #1, Index: 2, Row: 0, Column: 2
+      Discriminator: 0, Description: row #1, Index: 8, Row: 0, Column: 8
+}
+{ Mask = 13, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+      Discriminator: 11, Description: column #3, Index: 38, Row: 4, Column: 2
+      Discriminator: 11, Description: column #3, Index: 47, Row: 5, Column: 2
+      Discriminator: 11, Description: column #3, Index: 56, Row: 6, Column: 2
+      Discriminator: 11, Description: column #3, Index: 65, Row: 7, Column: 2
+      Discriminator: 11, Description: column #3, Index: 74, Row: 8, Column: 2
+   CellsWithMask:
+      Discriminator: 11, Description: column #3, Index: 2, Row: 0, Column: 2
+      Discriminator: 11, Description: column #3, Index: 11, Row: 1, Column: 2
+      Discriminator: 11, Description: column #3, Index: 29, Row: 3, Column: 2
+}
+{ Mask = 35, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 7, Description: row #8, Index: 63, Row: 7, Column: 0
+      Discriminator: 7, Description: row #8, Index: 64, Row: 7, Column: 1
+      Discriminator: 7, Description: row #8, Index: 65, Row: 7, Column: 2
+      Discriminator: 7, Description: row #8, Index: 66, Row: 7, Column: 3
+      Discriminator: 7, Description: row #8, Index: 67, Row: 7, Column: 4
+      Discriminator: 7, Description: row #8, Index: 68, Row: 7, Column: 5
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+   CellsWithMask:
+      Discriminator: 7, Description: row #8, Index: 69, Row: 7, Column: 6
+      Discriminator: 7, Description: row #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 7, Description: row #8, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 35, Description = block (3, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 26, Description: block (3, 3), Index: 60, Row: 6, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 61, Row: 6, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 62, Row: 6, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+      Discriminator: 26, Description: block (3, 3), Index: 78, Row: 8, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 79, Row: 8, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 26, Description: block (3, 3), Index: 69, Row: 7, Column: 6
+      Discriminator: 26, Description: block (3, 3), Index: 70, Row: 7, Column: 7
+      Discriminator: 26, Description: block (3, 3), Index: 71, Row: 7, Column: 8
+}
+{ Mask = 38, Description = column #7, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 15, Description: column #7, Index: 6, Row: 0, Column: 6
+      Discriminator: 15, Description: column #7, Index: 15, Row: 1, Column: 6
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 33, Row: 3, Column: 6
+      Discriminator: 15, Description: column #7, Index: 42, Row: 4, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 60, Row: 6, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+      Discriminator: 15, Description: column #7, Index: 78, Row: 8, Column: 6
+   CellsWithMask:
+      Discriminator: 15, Description: column #7, Index: 24, Row: 2, Column: 6
+      Discriminator: 15, Description: column #7, Index: 51, Row: 5, Column: 6
+      Discriminator: 15, Description: column #7, Index: 69, Row: 7, Column: 6
+}
+{ Mask = 136, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 9, Description: column #1, Index: 0, Row: 0, Column: 0
+      Discriminator: 9, Description: column #1, Index: 9, Row: 1, Column: 0
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+      Discriminator: 9, Description: column #1, Index: 36, Row: 4, Column: 0
+      Discriminator: 9, Description: column #1, Index: 45, Row: 5, Column: 0
+      Discriminator: 9, Description: column #1, Index: 54, Row: 6, Column: 0
+      Discriminator: 9, Description: column #1, Index: 63, Row: 7, Column: 0
+      Discriminator: 9, Description: column #1, Index: 72, Row: 8, Column: 0
+   CellsWithMask:
+      Discriminator: 9, Description: column #1, Index: 18, Row: 2, Column: 0
+      Discriminator: 9, Description: column #1, Index: 27, Row: 3, Column: 0
+}
+{ Mask = 143, Description = block (1, 1), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 18, Description: block (1, 1), Index: 0, Row: 0, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 1, Row: 0, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 9, Row: 1, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 20, Row: 2, Column: 2
+   CellsWithMask:
+      Discriminator: 18, Description: block (1, 1), Index: 2, Row: 0, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 10, Row: 1, Column: 1
+      Discriminator: 18, Description: block (1, 1), Index: 11, Row: 1, Column: 2
+      Discriminator: 18, Description: block (1, 1), Index: 18, Row: 2, Column: 0
+      Discriminator: 18, Description: block (1, 1), Index: 19, Row: 2, Column: 1
+}
+{ Mask = 271, Description = column #9, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 17, Row: 1, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 44, Row: 4, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 62, Row: 6, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+      Discriminator: 17, Description: column #9, Index: 80, Row: 8, Column: 8
+   CellsWithMask:
+      Discriminator: 17, Description: column #9, Index: 8, Row: 0, Column: 8
+      Discriminator: 17, Description: column #9, Index: 26, Row: 2, Column: 8
+      Discriminator: 17, Description: column #9, Index: 35, Row: 3, Column: 8
+      Discriminator: 17, Description: column #9, Index: 53, Row: 5, Column: 8
+      Discriminator: 17, Description: column #9, Index: 71, Row: 7, Column: 8
+}
+{ Mask = 271, Description = block (1, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 20, Description: block (1, 3), Index: 6, Row: 0, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 7, Row: 0, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 15, Row: 1, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 17, Row: 1, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 20, Description: block (1, 3), Index: 8, Row: 0, Column: 8
+      Discriminator: 20, Description: block (1, 3), Index: 16, Row: 1, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 24, Row: 2, Column: 6
+      Discriminator: 20, Description: block (1, 3), Index: 25, Row: 2, Column: 7
+      Discriminator: 20, Description: block (1, 3), Index: 26, Row: 2, Column: 8
+}
+{ Mask = 299, Description = column #8, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 16, Description: column #8, Index: 7, Row: 0, Column: 7
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 43, Row: 4, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 61, Row: 6, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+      Discriminator: 16, Description: column #8, Index: 79, Row: 8, Column: 7
+   CellsWithMask:
+      Discriminator: 16, Description: column #8, Index: 16, Row: 1, Column: 7
+      Discriminator: 16, Description: column #8, Index: 25, Row: 2, Column: 7
+      Discriminator: 16, Description: column #8, Index: 34, Row: 3, Column: 7
+      Discriminator: 16, Description: column #8, Index: 52, Row: 5, Column: 7
+      Discriminator: 16, Description: column #8, Index: 70, Row: 7, Column: 7
+}
+{ Mask = 300, Description = row #6, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 5, Description: row #6, Index: 45, Row: 5, Column: 0
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 47, Row: 5, Column: 2
+      Discriminator: 5, Description: row #6, Index: 48, Row: 5, Column: 3
+      Discriminator: 5, Description: row #6, Index: 49, Row: 5, Column: 4
+      Discriminator: 5, Description: row #6, Index: 50, Row: 5, Column: 5
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 5, Description: row #6, Index: 46, Row: 5, Column: 1
+      Discriminator: 5, Description: row #6, Index: 51, Row: 5, Column: 6
+      Discriminator: 5, Description: row #6, Index: 52, Row: 5, Column: 7
+      Discriminator: 5, Description: row #6, Index: 53, Row: 5, Column: 8
+}
+{ Mask = 302, Description = block (2, 3), Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 23, Description: block (2, 3), Index: 33, Row: 3, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 42, Row: 4, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 43, Row: 4, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 44, Row: 4, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+   CellsWithMask:
+      Discriminator: 23, Description: block (2, 3), Index: 34, Row: 3, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 35, Row: 3, Column: 8
+      Discriminator: 23, Description: block (2, 3), Index: 51, Row: 5, Column: 6
+      Discriminator: 23, Description: block (2, 3), Index: 52, Row: 5, Column: 7
+      Discriminator: 23, Description: block (2, 3), Index: 53, Row: 5, Column: 8
+}
+{ Mask = 390, Description = column #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 10, Description: column #2, Index: 1, Row: 0, Column: 1
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 37, Row: 4, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+      Discriminator: 10, Description: column #2, Index: 55, Row: 6, Column: 1
+      Discriminator: 10, Description: column #2, Index: 64, Row: 7, Column: 1
+      Discriminator: 10, Description: column #2, Index: 73, Row: 8, Column: 1
+   CellsWithMask:
+      Discriminator: 10, Description: column #2, Index: 10, Row: 1, Column: 1
+      Discriminator: 10, Description: column #2, Index: 19, Row: 2, Column: 1
+      Discriminator: 10, Description: column #2, Index: 28, Row: 3, Column: 1
+      Discriminator: 10, Description: column #2, Index: 46, Row: 5, Column: 1
+}
+{ Mask = 396, Description = block (2, 1), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 36, Row: 4, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 37, Row: 4, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 38, Row: 4, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 45, Row: 5, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 47, Row: 5, Column: 2
+   CellsWithMask:
+      Discriminator: 21, Description: block (2, 1), Index: 27, Row: 3, Column: 0
+      Discriminator: 21, Description: block (2, 1), Index: 28, Row: 3, Column: 1
+      Discriminator: 21, Description: block (2, 1), Index: 29, Row: 3, Column: 2
+      Discriminator: 21, Description: block (2, 1), Index: 46, Row: 5, Column: 1
+}
+{ Mask = 398, Description = row #3, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 20, Row: 2, Column: 2
+      Discriminator: 2, Description: row #3, Index: 21, Row: 2, Column: 3
+      Discriminator: 2, Description: row #3, Index: 22, Row: 2, Column: 4
+      Discriminator: 2, Description: row #3, Index: 23, Row: 2, Column: 5
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+   CellsWithMask:
+      Discriminator: 2, Description: row #3, Index: 18, Row: 2, Column: 0
+      Discriminator: 2, Description: row #3, Index: 19, Row: 2, Column: 1
+      Discriminator: 2, Description: row #3, Index: 24, Row: 2, Column: 6
+      Discriminator: 2, Description: row #3, Index: 25, Row: 2, Column: 7
+      Discriminator: 2, Description: row #3, Index: 26, Row: 2, Column: 8
+}
+{ Mask = 398, Description = row #4, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0
+   Cells:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 30, Row: 3, Column: 3
+      Discriminator: 3, Description: row #4, Index: 31, Row: 3, Column: 4
+      Discriminator: 3, Description: row #4, Index: 32, Row: 3, Column: 5
+      Discriminator: 3, Description: row #4, Index: 33, Row: 3, Column: 6
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+   CellsWithMask:
+      Discriminator: 3, Description: row #4, Index: 27, Row: 3, Column: 0
+      Discriminator: 3, Description: row #4, Index: 28, Row: 3, Column: 1
+      Discriminator: 3, Description: row #4, Index: 29, Row: 3, Column: 2
+      Discriminator: 3, Description: row #4, Index: 34, Row: 3, Column: 7
+      Discriminator: 3, Description: row #4, Index: 35, Row: 3, Column: 8
+}
+
+---------------------
+
