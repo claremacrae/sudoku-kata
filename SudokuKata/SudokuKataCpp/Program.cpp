@@ -494,7 +494,7 @@ namespace SudokuKata
                             if (rowNumberCount == 1)
                             {
                                 groupDescriptions.push_back(
-                                    StringHelper::formatSimple(L"Row #{0}", cellGroup + 1));
+                                    fmt::format(L"Row #{0}", cellGroup + 1));
                                 candidateRowIndices.push_back(cellGroup);
                                 candidateColIndices.push_back(indexInRow);
                                 candidates.push_back(digit);
@@ -503,7 +503,7 @@ namespace SudokuKata
                             if (colNumberCount == 1)
                             {
                                 groupDescriptions.push_back(
-                                    StringHelper::formatSimple(L"Column #{0}", cellGroup + 1));
+                                    fmt::format(L"Column #{0}", cellGroup + 1));
                                 candidateRowIndices.push_back(indexInCol);
                                 candidateColIndices.push_back(cellGroup);
                                 candidates.push_back(digit);
@@ -514,7 +514,7 @@ namespace SudokuKata
                                 int blockRow = cellGroup / 3;
                                 int blockCol = cellGroup % 3;
 
-                                groupDescriptions.push_back(StringHelper::formatSimple(
+                                groupDescriptions.push_back(fmt::format(
                                     L"Block ({0}, {1})", blockRow + 1, blockCol + 1));
                                 candidateRowIndices.push_back(blockRow * 3 + indexInBlock / 3);
                                 candidateColIndices.push_back(blockCol * 3 + indexInBlock % 3);
@@ -677,7 +677,7 @@ namespace SudokuKata
 
                                     std::wstring valuesReport =
                                         fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
-                                    console << StringHelper::formatSimple(
+                                    console << fmt::format(
                                                    L"{0} cannot appear in ({1}, {2}).",
                                                    valuesReport,
                                                    cell.Row + 1,
@@ -768,7 +768,7 @@ namespace SudokuKata
                                           }))
                         {
                             StringBuilder* message = new StringBuilder();
-                            message->append(StringHelper::formatSimple(
+                            message->append(fmt::format(
                                 L"In {0} values ", groupWithNMasks.Description));
 
                             std::wstring separator = L"";
@@ -779,7 +779,7 @@ namespace SudokuKata
                                 if ((temp & 1) > 0)
                                 {
                                     message->append(
-                                        StringHelper::formatSimple(L"{0}{1}", separator, curValue));
+                                        fmt::format(L"{0}{1}", separator, curValue));
                                     separator = L", ";
                                 }
                                 temp = temp >> 1;
@@ -789,7 +789,7 @@ namespace SudokuKata
                             message->append(L" appear only in cells");
                             for (auto cell : groupWithNMasks.CellsWithMask)
                             {
-                                message->append(StringHelper::formatSimple(
+                                message->append(fmt::format(
                                     L" ({0}, {1})", cell.Row + 1, cell.Column + 1));
                             }
 
@@ -820,7 +820,7 @@ namespace SudokuKata
                             {
                                 if ((maskToClear & 1) > 0)
                                 {
-                                    message->append(StringHelper::formatSimple(
+                                    message->append(fmt::format(
                                         L"{0}{1}", separator, valueToClear));
                                     separator = L", ";
                                 }
@@ -829,7 +829,7 @@ namespace SudokuKata
                             }
 
                             message->append(
-                                StringHelper::formatSimple(L" cannot appear in cell ({0}, {1}).",
+                                fmt::format(L" cannot appear in cell ({0}, {1}).",
                                                            cell.Row + 1,
                                                            cell.Column + 1));
                             console << message->toString() << std::endl;
@@ -1136,15 +1136,15 @@ namespace SudokuKata
 
                     if (index1 / 9 == index2 / 9)
                     {
-                        description = StringHelper::formatSimple(L"row #{0}", index1 / 9 + 1);
+                        description = fmt::format(L"row #{0}", index1 / 9 + 1);
                     }
                     else if (index1 % 9 == index2 % 9)
                     {
-                        description = StringHelper::formatSimple(L"column #{0}", index1 % 9 + 1);
+                        description = fmt::format(L"column #{0}", index1 % 9 + 1);
                     }
                     else
                     {
-                        description = StringHelper::formatSimple(
+                        description = fmt::format(
                             L"block ({0}, {1})", row1 / 3 + 1, col1 / 3 + 1);
                     }
 
