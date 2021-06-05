@@ -598,10 +598,8 @@ namespace SudokuKata
                             }
 
                             const CellGroups& front = cellsInGroup.front();
-                            assert(key == front.getDiscriminator());
-
                             groups.push_back(TwoDigitMaskGroups(
-                                mask, key, cellsInGroup.front().getDescription(), cellsInGroup));
+                                mask, front.getDiscriminator(), front.getDescription(), cellsInGroup));
                         }
                     }
 
