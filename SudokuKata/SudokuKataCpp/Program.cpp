@@ -730,7 +730,6 @@ namespace SudokuKata
                                             (mask & (1 << (state[cell.Index] - 1))) == 0);
                                 }
                                     );
-//                            TODO here next
                             if ( !allMatching )
                             {
                                 continue;
@@ -769,16 +768,9 @@ namespace SudokuKata
                         auto div = "\n---------------------\n";
                         console << div;
 
-                        int nprint = 0;
                         for (const auto& item : groupsWithNMasks)
                         {
-
                             console << item.ToString() << L"\n";
-                            nprint += 1;
-                            if (nprint > 10)
-                            {
-//                                break;
-                            }
                         }
                         console << div;
                     }
