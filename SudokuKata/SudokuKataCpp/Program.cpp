@@ -21,22 +21,22 @@ namespace SudokuKata
     {
         //			#region Construct fully populated board
         // Prepare empty board
-        std::wstring line = L"+---+---+---+";
-        std::wstring middle = L"|...|...|...|";
-        std::vector<std::vector<wchar_t>> board = {
-            std::vector<wchar_t>(line.begin(), line.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(line.begin(), line.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(line.begin(), line.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(middle.begin(), middle.end()),
-            std::vector<wchar_t>(line.begin(), line.end())};
+        std::string line = "+---+---+---+";
+        std::string middle = "|...|...|...|";
+        std::vector<std::vector<char>> board = {
+            std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end())};
 
         // Construct board to be solved
 
