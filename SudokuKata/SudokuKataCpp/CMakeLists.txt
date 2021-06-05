@@ -1,8 +1,4 @@
 add_library(SudokuKataCpp
-        Utilities/GridStringifier.cpp
-        Utilities/GridStringifier.h
-        Utilities/WStringHelpers.cpp
-        Utilities/WStringHelpers.h
         CellGroups.cpp
         CellGroups.h
         GroupsWithNMasks.cpp
@@ -13,6 +9,10 @@ add_library(SudokuKataCpp
         TwoDigitMaskGroups.h
         Utilities/FileReadingRandomNumber.cpp
         Utilities/FileReadingRandomNumber.h
+        Utilities/GridStringifier.cpp
+        Utilities/GridStringifier.h
+        Utilities/WStringHelpers.cpp
+        Utilities/WStringHelpers.h
         )
 target_compile_features(SudokuKataCpp PUBLIC cxx_std_17)
 target_include_directories(SudokuKataCpp
