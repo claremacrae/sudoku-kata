@@ -761,7 +761,8 @@ namespace SudokuKata
                             std::string message;
                             message += (fmt::format("In {0} values ", groupWithNMasks.Description));
 
-                            std::string separator = "";
+                            std::string separator;
+                            separator = "";
                             int temp = mask;
                             int curValue = 1;
                             while (temp > 0)
@@ -800,7 +801,7 @@ namespace SudokuKata
 
                             int valueToClear = 1;
 
-                            std::string separator = "";
+                            std::string separator;
                             std::string message;
 
                             while (maskToClear > 0)
@@ -1115,7 +1116,7 @@ namespace SudokuKata
                     int row2 = index2 / 9;
                     int col2 = index2 % 9;
 
-                    std::string description = "";
+                    std::string description;
 
                     if (index1 / 9 == index2 / 9)
                     {
