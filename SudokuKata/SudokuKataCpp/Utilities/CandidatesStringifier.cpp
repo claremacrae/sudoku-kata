@@ -51,7 +51,7 @@ namespace SudokuKata::Utilities
 
     std::wstring CandidatesStringifier::CharacterForDigit(int mask, int digit)
     {
-        std::wstring blank = StringHelper::toString(L'.');
+        std::wstring blank = L".";
         auto digitMask = 1 << (digit - 1);
         auto character = ((mask & digitMask) != 0) ? std::to_wstring(digit) : blank;
         return character;
