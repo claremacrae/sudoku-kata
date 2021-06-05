@@ -19,8 +19,7 @@ public:
                      const std::wstring& description,
                      const std::vector<CellGroups>& cells,
                      const std::vector<CellGroups>& cellsWithMask,
-                     int cleanableCellsCount
-                     );
+                     int cleanableCellsCount);
 
     std::wstring ToString() const;
 };
