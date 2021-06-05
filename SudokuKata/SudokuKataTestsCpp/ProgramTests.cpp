@@ -18,8 +18,7 @@ namespace SudokuKataTests
     TEST_CASE("TestSeed")
     {
         auto firstN = std::make_shared<FirstNFailuresReporter>(5, new DiffReporter);
-        auto defaultReporterDisposer =
-            Approvals::useAsDefaultReporter(firstN);
+        auto defaultReporterDisposer = Approvals::useAsDefaultReporter(firstN);
         auto errors = 0;
         for (int seed = 0; seed < 20; seed++)
         {
