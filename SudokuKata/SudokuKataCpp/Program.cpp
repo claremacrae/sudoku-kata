@@ -859,7 +859,6 @@ namespace SudokuKata
                 //					#endregion
             }
 
-#if 0
             //				#region Final attempt - look if the board has multiple solutions
             if (!changeMade)
             {
@@ -925,10 +924,10 @@ namespace SudokuKata
 
                 while (!candidateIndex1.empty())
                 {
-                    int index1 = candidateIndex1.pop_front();
-                    int index2 = candidateIndex2.pop_front();
-                    int digit1 = candidateDigit1.pop_front();
-                    int digit2 = candidateDigit2.pop_front();
+                    int index1 = candidateIndex1.front(); candidateIndex1.pop_front();
+                    int index2 = candidateIndex2.front(); candidateIndex2.pop_front();
+                    int digit1 = candidateDigit1.front(); candidateDigit1.pop_front();
+                    int digit2 = candidateDigit2.front(); candidateDigit2.pop_front();
 
                     std::vector<int> alternateState(finalState.size());
                     std::copy_n(state.begin(), alternateState.size(), alternateState.begin());
@@ -982,6 +981,7 @@ namespace SudokuKata
 
                             for (int index = 0; index < currentState.size(); index++)
                             {
+                                console << fmt::format(L"index = {0}, currentState[index] = {1}\n", index, currentState[index]);
                                 if (currentState[index] == 0)
                                 {
 
@@ -1013,10 +1013,14 @@ namespace SudokuKata
                                             isDigitUsed[blockDigit - 1] = true;
                                         }
                                     } // for (i = 0..8)
+                                    console << fmt::format(L"isDigitUsed: {}\n", fmt::join(isDigitUsed, L", "));
 
                                     int candidatesCount =
-                                        isDigitUsed.Where([&](std::any used) { return !used; })
-                                            ->Count();
+                                        std::count(
+                                            isDigitUsed.begin(),
+                                            isDigitUsed.end(),
+                                            false);
+                                    console << fmt::format(L"candidatesCount = {}\n", candidatesCount);
 
                                     if (candidatesCount == 0)
                                     {
@@ -1076,13 +1080,13 @@ namespace SudokuKata
 
                             int rowToMove = rowIndexStack.top();
                             int colToMove = colIndexStack.top();
-                            int digitToMove = lastDigitStack.pop();
+                            int digitToMove = lastDigitStack.top() ; lastDigitStack.pop();
 
                             int rowToWrite = rowToMove + rowToMove / 3 + 1;
                             int colToWrite = colToMove + colToMove / 3 + 1;
 
-                            std::vector<bool> usedDigits = usedDigitsStack.top();
-                            std::vector<int> currentState = stateStack.top();
+                            std::vector<bool>& usedDigits = usedDigitsStack.top();
+                            std::vector<int>& currentState = stateStack.top();
                             int currentStateIndex = 9 * rowToMove + colToMove;
 
                             int movedToDigit = digitToMove + 1;
@@ -1106,7 +1110,9 @@ namespace SudokuKata
                                 board[rowToWrite][colToWrite] =
                                     static_cast<wchar_t>(L'0' + movedToDigit);
 
-                                if (currentState.Any([&](std::any digit) { return digit == 0; }))
+                                bool matchingDigits = std::count(currentState.begin(), currentState.end(), 0) > 0;
+                                console << fmt::format(L"matchingDigits = {0}\n", matchingDigits);
+                                if (matchingDigits)
                                 {
                                     command = L"expand";
                                 }
@@ -1136,11 +1142,12 @@ namespace SudokuKata
 
                 if (!stateIndex1.empty())
                 {
-                    int pos = rng->Next(stateIndex1.size()());
-                    int index1 = stateIndex1.ElementAt(pos);
-                    int index2 = stateIndex2.ElementAt(pos);
-                    int digit1 = value1.ElementAt(pos);
-                    int digit2 = value2.ElementAt(pos);
+                    int pos = rng->Next(stateIndex1.size());
+                    console << fmt::format(L"pos = {0}\n", pos);
+                    int index1 = stateIndex1.at(pos);
+                    int index2 = stateIndex2.at(pos);
+                    int digit1 = value1.at(pos);
+                    int digit2 = value2.at(pos);
                     int row1 = index1 / 9;
                     int col1 = index1 % 9;
                     int row2 = index2 / 9;
@@ -1182,7 +1189,7 @@ namespace SudokuKata
                         }
                     }
 
-                    console << std::wstring::Format(
+                    console << fmt::format(
                                    L"Guessing that {0} and {1} are arbitrary in {2} (multiple "
                                    L"solutions): Pick {3}->({4}, {5}), {6}->({7}, {8}).",
                                    digit1,
@@ -1198,7 +1205,6 @@ namespace SudokuKata
                 }
             }
             //				#endregion
-#endif
 
             if (changeMade)
             {
