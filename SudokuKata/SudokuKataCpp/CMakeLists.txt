@@ -7,10 +7,22 @@ add_library(SudokuKataCpp
         Program.h
         TwoDigitMaskGroups.cpp
         TwoDigitMaskGroups.h
+#        program_main.cpp    # TODO Does not yet compile - and should not be in a library
+        rectangularvectors.h
+        stringbuilder.h
+        stringhelper.h
+        Utilities/CandidatesStringifier.cpp
+        Utilities/CandidatesStringifier.h
         Utilities/FileReadingRandomNumber.cpp
         Utilities/FileReadingRandomNumber.h
+#        Utilities/FileWritingRandomNumber.cpp  # TODO Needs C++ equivalent of C#'s Random
+#        Utilities/FileWritingRandomNumber.h    # TODO Needs C++ equivalent of C#'s Random
         Utilities/GridStringifier.cpp
         Utilities/GridStringifier.h
+        Utilities/IRandomValueGenerator.cpp
+        Utilities/IRandomValueGenerator.h
+#        Utilities/RandomNumber.cpp # TODO Needs C++ equivalent of C#'s Random
+#        Utilities/RandomNumber.h   # TODO Needs C++ equivalent of C#'s Random
         Utilities/WStringHelpers.cpp
         Utilities/WStringHelpers.h
         )
