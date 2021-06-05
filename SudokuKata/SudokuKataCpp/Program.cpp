@@ -767,8 +767,8 @@ namespace SudokuKata
                                                      (candidateMasks[cell.Index] & ~mask) != 0;
                                           }))
                         {
-                            StringBuilder* message = new StringBuilder();
-                            message->append(fmt::format(
+                            std::wstring message;
+                            message += (fmt::format(
                                 L"In {0} values ", groupWithNMasks.Description));
 
                             std::wstring separator = L"";
@@ -778,7 +778,7 @@ namespace SudokuKata
                             {
                                 if ((temp & 1) > 0)
                                 {
-                                    message->append(
+                                    message += (
                                         fmt::format(L"{0}{1}", separator, curValue));
                                     separator = L", ";
                                 }
@@ -786,18 +786,16 @@ namespace SudokuKata
                                 curValue += 1;
                             }
 
-                            message->append(L" appear only in cells");
+                            message += (L" appear only in cells");
                             for (auto cell : groupWithNMasks.CellsWithMask)
                             {
-                                message->append(fmt::format(
+                                message += (fmt::format(
                                     L" ({0}, {1})", cell.Row + 1, cell.Column + 1));
                             }
 
-                            message->append(L" and other values cannot appear in those cells.");
+                            message += (L" and other values cannot appear in those cells.");
 
-                            console << message->toString() << std::endl;
-
-                            delete message;
+                            console << message << std::endl;
                         }
 
                         for (auto cell : groupWithNMasks.CellsWithMask)
@@ -814,13 +812,13 @@ namespace SudokuKata
                             int valueToClear = 1;
 
                             std::wstring separator = L"";
-                            StringBuilder* message = new StringBuilder();
+                            std::wstring message;
 
                             while (maskToClear > 0)
                             {
                                 if ((maskToClear & 1) > 0)
                                 {
-                                    message->append(fmt::format(
+                                    message += (fmt::format(
                                         L"{0}{1}", separator, valueToClear));
                                     separator = L", ";
                                 }
@@ -828,13 +826,11 @@ namespace SudokuKata
                                 valueToClear += 1;
                             }
 
-                            message->append(
+                            message += (
                                 fmt::format(L" cannot appear in cell ({0}, {1}).",
                                                            cell.Row + 1,
                                                            cell.Column + 1));
-                            console << message->toString() << std::endl;
-
-                            delete message;
+                            console << message << std::endl;
                         }
                     }
                 }
