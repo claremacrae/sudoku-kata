@@ -482,11 +482,6 @@ namespace SudokuKata
                                         .Select(group => new TwoDigitMaskGroups(mask, @group.Key, @group.First().Description, @group)))
                                 .ToList();
 
-                         foreach (var group in groups)
-                         {
-                             Console.WriteLine(group);
-                         }
-
                         if (groups.Any())
                         {
                             foreach (var group in groups)
@@ -581,17 +576,6 @@ namespace SudokuKata
                                     }))
                             .Where(group => @group.CellsWithMask.Count() == maskToOnesCount[@group.Mask])
                             .ToList();
-
-                        if (groupsWithNMasks.Count() > 0)
-                        {
-                            var div = "\n---------------------\n";
-                            Console.WriteLine(div);
-                            foreach (GroupsWithNMasks groupsWithNMask in groupsWithNMasks)
-                            {
-                                Console.WriteLine(groupsWithNMask.ToString());
-                            }
-                            Console.WriteLine(div);
-                        }
 
                         foreach (var groupWithNMasks in groupsWithNMasks)
                         {
@@ -782,8 +766,6 @@ namespace SudokuKata
                                 bool containsUnsolvableCells = false;
 
                                 for (int index = 0; index < currentState.Length; index++)
-                                {
-                                    Console.WriteLine("index = {0}, currentState[index] = {1}", index, currentState[index]);
                                     if (currentState[index] == 0)
                                     {
 
@@ -809,10 +791,7 @@ namespace SudokuKata
                                                 isDigitUsed[blockDigit - 1] = true;
                                         } // for (i = 0..8)
 
-                                        Console.WriteLine("isDigitUsed: {0}", string.Join(", ", isDigitUsed));
-
                                         int candidatesCount = isDigitUsed.Where(used => !used).Count();
-                                        Console.WriteLine("candidatesCount = {0}", candidatesCount);
 
                                         if (candidatesCount == 0)
                                         {
@@ -834,7 +813,6 @@ namespace SudokuKata
                                         }
 
                                     } // for (index = 0..81)
-                                }
 
                                 if (!containsUnsolvableCells)
                                 {
@@ -894,9 +872,7 @@ namespace SudokuKata
                                     currentState[currentStateIndex] = movedToDigit;
                                     board[rowToWrite][colToWrite] = (char)('0' + movedToDigit);
 
-                                    var matchingDigits = currentState.Any(digit => digit == 0);
-                                    Console.WriteLine("matchingDigits = {0}", matchingDigits);
-                                    if (matchingDigits)
+                                    if (currentState.Any(digit => digit == 0))
                                         command = "expand";
                                     else
                                         command = "complete";
@@ -923,7 +899,6 @@ namespace SudokuKata
                     if (stateIndex1.Any())
                     {
                         int pos = rng.Next(stateIndex1.Count());
-                        Console.WriteLine("pos = {0}", pos);
                         int index1 = stateIndex1.ElementAt(pos);
                         int index2 = stateIndex2.ElementAt(pos);
                         int digit1 = value1.ElementAt(pos);
