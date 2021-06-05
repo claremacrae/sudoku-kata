@@ -4,8 +4,6 @@
 #include <cstring>
 #include <iostream>
 
-#include "Utilities/WStringHelpers.h"
-
 namespace SudokuKata
 {
 

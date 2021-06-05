@@ -4,7 +4,6 @@
 #include "ApprovalTests.hpp"
 
 #include "Utilities/GridStringifier.h"
-#include "Utilities/WStringHelpers.h"
 
 using namespace SudokuKataTests;
 
