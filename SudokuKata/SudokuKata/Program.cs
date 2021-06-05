@@ -569,7 +569,7 @@ namespace SudokuKata
                         groupsWithNMasks = masks
                             .SelectMany(mask =>
                                 cellGroups
-                                    // .Where(group => @group.All(cell => state[cell.Index] == 0 || (mask & (1 << (state[cell.Index] - 1))) == 0)) // TODO ** UNDO
+                                    .Where(group => @group.All(cell => state[cell.Index] == 0 || (mask & (1 << (state[cell.Index] - 1))) == 0))
                                     .Select(group => new GroupsWithNMasks
                                     {
                                         Mask = mask, Description = @group.First().Description, Cells = @group,
