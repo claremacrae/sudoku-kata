@@ -1206,14 +1206,7 @@ namespace SudokuKata
                         {
                             continue;
                         }
-                        if (character == '.')
-                        {
-                            code += '0';
-                        }
-                        else
-                        {
-                            code += character;
-                        }
+                        code += character == '.' ? '0' : character;
                     }
                 }
 
