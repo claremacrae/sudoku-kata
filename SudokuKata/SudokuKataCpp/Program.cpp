@@ -1,12 +1,13 @@
-﻿#include <algorithm>
+﻿#include "Program.h"
+#include "CellGroups.h"
+#include "GroupsWithNMasks.h"
+#include "TwoDigitMaskGroups.h"
+
+#include <algorithm>
 #include <numeric>
 #include <map>
 #include <fmt/format.h>
 #include <cassert>
-#include "Program.h"
-#include "CellGroups.h"
-#include "GroupsWithNMasks.h"
-#include "TwoDigitMaskGroups.h"
 
 namespace SudokuKata
 {
