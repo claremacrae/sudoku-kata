@@ -776,7 +776,7 @@ namespace SudokuKata
                             }
 
                             message += (" appear only in cells");
-                            for (auto cell : groupWithNMasks.CellsWithMask)
+                            for (const auto& cell : groupWithNMasks.CellsWithMask)
                             {
                                 message +=
                                     (fmt::format(" ({0}, {1})", cell.Row + 1, cell.Column + 1));
@@ -787,7 +787,7 @@ namespace SudokuKata
                             console << message << std::endl;
                         }
 
-                        for (auto cell : groupWithNMasks.CellsWithMask)
+                        for (const auto& cell : groupWithNMasks.CellsWithMask)
                         {
                             int maskToClear = candidateMasks[cell.Index] & ~groupWithNMasks.Mask;
                             if (maskToClear == 0)
