@@ -9,7 +9,6 @@ add_library(SudokuKataCpp
         TwoDigitMaskGroups.h
 #        NotYetPorted/program_main.cpp    # TODO Does not yet compile - and should not be in a library
         rectangularvectors.h
-        stringbuilder.h
         Utilities/CandidatesStringifier.cpp
         Utilities/CandidatesStringifier.h
         Utilities/FileReadingRandomNumber.cpp
