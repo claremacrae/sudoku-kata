@@ -771,16 +771,18 @@ namespace SudokuKata
                         }
                         console << div;
                     }
-#if 0
+
                     for (auto groupWithNMasks : groupsWithNMasks)
                     {
                         int mask = groupWithNMasks.Mask;
 
-                        if (groupWithNMasks.Cells::Any(
-                                [&](std::any cell)
+                        if (std::count_if(
+                                groupWithNMasks.Cells.begin(),
+                                groupWithNMasks.Cells.end(),
+                                [&](auto cell)
                                 {
-                                    return (candidateMasks[cell::Index] & mask) != 0 &&
-                                           (candidateMasks[cell::Index] & ~mask) != 0;
+                                    return (candidateMasks[cell.Index] & mask) != 0 &&
+                                           (candidateMasks[cell.Index] & ~mask) != 0;
                                 }))
                         {
                             StringBuilder* message = new StringBuilder();
@@ -806,7 +808,7 @@ namespace SudokuKata
                             for (auto cell : groupWithNMasks.CellsWithMask)
                             {
                                 message->append(StringHelper::formatSimple(
-                                    L" ({0}, {1})", cell->Row + 1, cell->Column + 1));
+                                    L" ({0}, {1})", cell.Row + 1, cell.Column + 1));
                             }
 
                             message->append(L" and other values cannot appear in those cells.");
@@ -818,13 +820,13 @@ namespace SudokuKata
 
                         for (auto cell : groupWithNMasks.CellsWithMask)
                         {
-                            int maskToClear = candidateMasks[cell->Index] & ~groupWithNMasks.Mask;
+                            int maskToClear = candidateMasks[cell.Index] & ~groupWithNMasks.Mask;
                             if (maskToClear == 0)
                             {
                                 continue;
                             }
 
-                            candidateMasks[cell->Index] &= groupWithNMasks.Mask;
+                            candidateMasks[cell.Index] &= groupWithNMasks.Mask;
                             stepChangeMade = true;
 
                             int valueToClear = 1;
@@ -846,14 +848,13 @@ namespace SudokuKata
 
                             message->append(
                                 StringHelper::formatSimple(L" cannot appear in cell ({0}, {1}).",
-                                                           cell->Row + 1,
-                                                           cell->Column + 1));
+                                                           cell.Row + 1,
+                                                           cell.Column + 1));
                             console << message->toString() << std::endl;
 
                             delete message;
                         }
                     }
-#endif
                 }
 
                 //					#endregion
