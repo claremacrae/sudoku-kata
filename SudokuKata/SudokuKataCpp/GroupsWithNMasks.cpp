@@ -28,24 +28,17 @@ std::wstring GroupsWithNMasks::ToString() const
         CleanableCellsCount
         );
     result += L"\n   Cells:";
-    //                                     std::wstring valuesReport = fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
-
-//    result += string.Join("\n      ", Cells);
-//    result += fmt::format(L"{}", fmt::join(Cells, L"\n      "));
     for (const auto& item : Cells)
     {
         result += L"\n      ";
         result += item.ToString();
     }
     result += L"\n   CellsWithMask:";
-//    result += fmt::format(L"{}", fmt::join(CellsWithMask, L"\n      "));
     for (const auto& item : CellsWithMask)
     {
         result += L"\n      ";
         result += item.ToString();
     }
-
-    //    result += string.Join("\n      ", CellsWithMask);
     result += L"\n}";
     return result;
 }
