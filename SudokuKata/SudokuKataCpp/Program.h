@@ -8,7 +8,6 @@
 #include <stack>
 #include <algorithm>
 #include <iostream>
-#include "rectangularvectors.h"
 
 namespace SudokuKata
 {

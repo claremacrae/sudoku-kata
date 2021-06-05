@@ -219,10 +219,7 @@ namespace SudokuKata
         // Now pick subset of digits as the starting position.
         int remainingDigits = 30;
         int maxRemovedPerBlock = 6;
-        //C# TO C++ CONVERTER NOTE: The following call to the 'RectangularVectors' helper class reproduces the rectangular array initialization that is automatic in C#:
-        //ORIGINAL LINE: int[,] removedPerBlock = new int[3, 3];
-        std::vector<std::vector<int>> removedPerBlock =
-            RectangularVectors::RectangularIntVector(3, 3);
+        std::vector<std::vector<int>> removedPerBlock(3, std::vector<int>(3));
         std::vector<int> positions(9 * 9);
         std::iota(positions.begin(), positions.end(), 0);
 
