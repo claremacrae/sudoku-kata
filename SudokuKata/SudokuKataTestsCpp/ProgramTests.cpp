@@ -28,8 +28,7 @@ namespace SudokuKataTests
             auto randomValueGenerator = new FileReadingRandomNumber();
 
             std::string section = ProgramTests::SeedSectionName(seed);
-            const std::string string = toString(section);
-            auto sectionDisposer = NamerFactory::appendToOutputFilename(string);
+            auto sectionDisposer = NamerFactory::appendToOutputFilename(section);
 
             {
                 // std::cout << "=============================================================" << std::endl;
@@ -80,7 +79,7 @@ namespace SudokuKataTests
         {
             console << "ERROR: " << e.what() << std::endl;
         }
-        Approvals::verify(toString(console.str()));
+        Approvals::verify(console.str());
     }
 
     std::string ProgramTests::GetSeedsFileName()

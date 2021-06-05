@@ -55,11 +55,11 @@ namespace SudokuKataTests
 {
     void GridStringifierTests::VerifyBoardAsString(std::vector<int>& input)
     {
-        Approvals::verify(toString(SudokuKata::Utilities::GridStringifier::ConvertToString(input)));
+        Approvals::verify(SudokuKata::Utilities::GridStringifier::ConvertToString(input));
     }
 
     void GridStringifierTests::VerifyBoardAsCode(std::vector<int>& input)
     {
-        Approvals::verify(toString(SudokuKata::Utilities::GridStringifier::ConvertToCode(input)));
+        Approvals::verify(SudokuKata::Utilities::GridStringifier::ConvertToCode(input));
     }
 }

@@ -37,11 +37,10 @@ namespace SudokuKata
         //C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
         //ORIGINAL LINE: using (TextReader reader = File.OpenText(seedsFile))
         {
-            std::string filepath = toString(seedsFile);
-            std::ifstream ifs(filepath);
+            std::ifstream ifs(seedsFile);
 
             if (!ifs)
-                throw std::runtime_error(filepath + ": " + std::strerror(errno));
+                throw std::runtime_error(seedsFile + ": " + std::strerror(errno));
 
             while (ifs)
             {
