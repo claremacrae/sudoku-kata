@@ -57,10 +57,10 @@ namespace SudokuKata
         // - expand - finds next empty cell and puts new state on stacks
         // - move - finds next candidate number at current pos and applies it to current state
         // - collapse - pops current state from stack as it did not yield a solution
-        std::wstring command = L"expand";
+        std::string command = "expand";
         while (stateStack.size() <= 9 * 9)
         {
-            if (command == L"expand")
+            if (command == "expand")
             {
                 std::vector<int> currentState(9 * 9);
 
@@ -146,10 +146,10 @@ namespace SudokuKata
                 }
 
                 // Always try to move after expand
-                command = L"move";
+                command = "move";
 
             } // if (command == "expand")
-            else if (command == L"collapse")
+            else if (command == "collapse")
             {
                 stateStack.pop();
                 rowIndexStack.pop();
@@ -157,9 +157,9 @@ namespace SudokuKata
                 usedDigitsStack.pop();
                 lastDigitStack.pop();
 
-                command = L"move"; // Always try to move after collapse
+                command = "move"; // Always try to move after collapse
             }
-            else if (command == L"move")
+            else if (command == "move")
             {
 
                 int rowToMove = rowIndexStack.top();
@@ -196,13 +196,13 @@ namespace SudokuKata
 
                     // Next possible digit was found at current position
                     // Next step will be to expand the state
-                    command = L"expand";
+                    command = "expand";
                 }
                 else
                 {
                     // No viable candidate was found at current position - pop it in the next iteration
                     lastDigitStack.push(0);
-                    command = L"collapse";
+                    command = "collapse";
                 }
             } // if (command == "move")
         }
@@ -938,10 +938,10 @@ namespace SudokuKata
                     usedDigitsStack = std::stack<std::vector<bool>>();
                     lastDigitStack = std::stack<int>();
 
-                    command = L"expand";
-                    while (command != L"complete" && command != L"fail")
+                    command = "expand";
+                    while (command != "complete" && command != "fail")
                     {
-                        if (command == L"expand")
+                        if (command == "expand")
                         {
                             std::vector<int> currentState(9 * 9);
 
@@ -1035,10 +1035,10 @@ namespace SudokuKata
                             }
 
                             // Always try to move after expand
-                            command = L"move";
+                            command = "move";
 
                         } // if (command == "expand")
-                        else if (command == L"collapse")
+                        else if (command == "collapse")
                         {
                             stateStack.pop();
                             rowIndexStack.pop();
@@ -1048,14 +1048,14 @@ namespace SudokuKata
 
                             if (!stateStack.empty())
                             {
-                                command = L"move"; // Always try to move after collapse
+                                command = "move"; // Always try to move after collapse
                             }
                             else
                             {
-                                command = L"fail";
+                                command = "fail";
                             }
                         }
-                        else if (command == L"move")
+                        else if (command == "move")
                         {
 
                             int rowToMove = rowIndexStack.top();
@@ -1093,24 +1093,24 @@ namespace SudokuKata
 
                                 if (std::count(currentState.begin(), currentState.end(), 0) > 0)
                                 {
-                                    command = L"expand";
+                                    command = "expand";
                                 }
                                 else
                                 {
-                                    command = L"complete";
+                                    command = "complete";
                                 }
                             }
                             else
                             {
                                 // No viable candidate was found at current position - pop it in the next iteration
                                 lastDigitStack.push(0);
-                                command = L"collapse";
+                                command = "collapse";
                             }
                         } // if (command == "move")
 
                     } // while (command != "complete" && command != "fail")
 
-                    if (command == L"complete")
+                    if (command == "complete")
                     { // Board was solved successfully even with two digits swapped
                         stateIndex1.push_back(index1);
                         stateIndex2.push_back(index2);
