@@ -7,7 +7,8 @@
 #include "Utilities/FileReadingRandomNumber.h"
 #include "Utilities/WStringHelpers.h"
 #include "TestHelpers/FirstNFailuresReporter.h"
-#include "stringhelper.h"
+
+#include <regex>
 
 using namespace ApprovalTests;
 using namespace SudokuKata;
@@ -85,6 +86,6 @@ namespace SudokuKataTests
     {
         auto namer = Approvals::getDefaultNamer();
         auto seedsFile = toWString(namer->getApprovedFile(".seeds.txt"));
-        return StringHelper::replace(seedsFile, L".approved", L"");
+        return std::regex_replace(seedsFile, std::wregex(L"\\.approved"), L"");
     }
 }
