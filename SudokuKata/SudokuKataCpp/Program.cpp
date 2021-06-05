@@ -772,56 +772,6 @@ namespace SudokuKata
                         console << div;
                     }
 #if 0
-                    auto groupsWithNMasks =
-                        masks
-                            .SelectMany(
-                                [&](std::any mask)
-                                {
-                                    cellGroups
-                                        .Where(
-                                            [&](std::any group)
-                                            {
-                                                group::All(
-                                                    [&](std::any cell) {
-                                                        return state[cell::Index] == 0 ||
-                                                               (mask &
-                                                                (1 << (state[cell::Index] - 1))) ==
-                                                                   0;
-                                                    });
-                                            })
-                                        ->Select(
-                                            [&](std::any group)
-                                            {
-                                                new {Mask = mask,
-                                                     Description = group::First()->Description,
-                                                     Cells = group,
-                                                     CellsWithMask =
-                                                         group::Where(
-                                                             [&](std::any cell) {
-                                                                 return state[cell::Index] == 0 &&
-                                                                        (candidateMasks
-                                                                             [cell::Index] &
-                                                                         mask) != 0;
-                                                             })
-                                                             ->ToList(),
-                                                     CleanableCellsCount = group->Count(
-                                                         [&](std::any cell)
-                                                         {
-                                                             return state[cell::Index] == 0 &&
-                                                                    (candidateMasks[cell::Index] &
-                                                                     mask) != 0 &&
-                                                                    (candidateMasks[cell::Index] &
-                                                                     ~mask) != 0;
-                                                         })};
-                                            });
-                                })
-                            ->Where(
-                                [&](std::any group) {
-                                    return group::CellsWithMask->Count() ==
-                                           maskToOnesCount[group::Mask];
-                                })
-                            ->ToList();
-
                     for (auto groupWithNMasks : groupsWithNMasks)
                     {
                         int mask = groupWithNMasks.Mask;
