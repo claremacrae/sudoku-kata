@@ -571,11 +571,8 @@ namespace SudokuKata
                     std::vector<TwoDigitMaskGroups> groups;
                     for (int mask : twoDigitMasks)
                     {
-                        for (const CellGroupsMap::value_type& keyAndValue : cellGroups)
+                        for (const auto& [key, cellsInGroup] : cellGroups)
                         {
-                            const int key = keyAndValue.first;
-                            const std::vector<CellGroups> cellsInGroup = keyAndValue.second;
-
                             int cellsMatchingMask =
                                 std::count_if(cellsInGroup.begin(),
                                               cellsInGroup.end(),
@@ -699,21 +696,19 @@ namespace SudokuKata
                 if (!changeMade && !stepChangeMade)
                 {
                     std::vector<int> masks;
-                    for (const auto& keyAndValue : maskToOnesCount)
+                    for (const auto& [mask, onesCount] : maskToOnesCount)
                     {
-                        if (keyAndValue.second > 1)
+                        if (onesCount > 1)
                         {
-                            masks.push_back(keyAndValue.first);
+                            masks.push_back(mask);
                         }
                     }
 
                     std::vector<GroupsWithNMasks> groupsWithNMasks;
                     for (const auto& mask : masks)
                     {
-                        for (const CellGroupsMap::value_type& pair : cellGroups)
+                        for (const auto& [key, groups] : cellGroups)
                         {
-                            int key = pair.first;
-                            std::vector<CellGroups> groups = pair.second;
                             bool allMatching = std::all_of(
                                 groups.begin(),
                                 groups.end(),
