@@ -924,10 +924,14 @@ namespace SudokuKata
 
                 while (!candidateIndex1.empty())
                 {
-                    int index1 = candidateIndex1.front(); candidateIndex1.pop_front();
-                    int index2 = candidateIndex2.front(); candidateIndex2.pop_front();
-                    int digit1 = candidateDigit1.front(); candidateDigit1.pop_front();
-                    int digit2 = candidateDigit2.front(); candidateDigit2.pop_front();
+                    int index1 = candidateIndex1.front();
+                    candidateIndex1.pop_front();
+                    int index2 = candidateIndex2.front();
+                    candidateIndex2.pop_front();
+                    int digit1 = candidateDigit1.front();
+                    candidateDigit1.pop_front();
+                    int digit2 = candidateDigit2.front();
+                    candidateDigit2.pop_front();
 
                     std::vector<int> alternateState(finalState.size());
                     std::copy_n(state.begin(), alternateState.size(), alternateState.begin());
@@ -981,7 +985,9 @@ namespace SudokuKata
 
                             for (int index = 0; index < currentState.size(); index++)
                             {
-                                console << fmt::format(L"index = {0}, currentState[index] = {1}\n", index, currentState[index]);
+                                console << fmt::format(L"index = {0}, currentState[index] = {1}\n",
+                                                       index,
+                                                       currentState[index]);
                                 if (currentState[index] == 0)
                                 {
 
@@ -1013,14 +1019,13 @@ namespace SudokuKata
                                             isDigitUsed[blockDigit - 1] = true;
                                         }
                                     } // for (i = 0..8)
-                                    console << fmt::format(L"isDigitUsed: {}\n", fmt::join(isDigitUsed, L", "));
+                                    console << fmt::format(L"isDigitUsed: {}\n",
+                                                           fmt::join(isDigitUsed, L", "));
 
                                     int candidatesCount =
-                                        std::count(
-                                            isDigitUsed.begin(),
-                                            isDigitUsed.end(),
-                                            false);
-                                    console << fmt::format(L"candidatesCount = {}\n", candidatesCount);
+                                        std::count(isDigitUsed.begin(), isDigitUsed.end(), false);
+                                    console
+                                        << fmt::format(L"candidatesCount = {}\n", candidatesCount);
 
                                     if (candidatesCount == 0)
                                     {
@@ -1080,7 +1085,8 @@ namespace SudokuKata
 
                             int rowToMove = rowIndexStack.top();
                             int colToMove = colIndexStack.top();
-                            int digitToMove = lastDigitStack.top() ; lastDigitStack.pop();
+                            int digitToMove = lastDigitStack.top();
+                            lastDigitStack.pop();
 
                             int rowToWrite = rowToMove + rowToMove / 3 + 1;
                             int colToWrite = colToMove + colToMove / 3 + 1;
@@ -1110,7 +1116,8 @@ namespace SudokuKata
                                 board[rowToWrite][colToWrite] =
                                     static_cast<wchar_t>(L'0' + movedToDigit);
 
-                                bool matchingDigits = std::count(currentState.begin(), currentState.end(), 0) > 0;
+                                bool matchingDigits =
+                                    std::count(currentState.begin(), currentState.end(), 0) > 0;
                                 console << fmt::format(L"matchingDigits = {0}\n", matchingDigits);
                                 if (matchingDigits)
                                 {
