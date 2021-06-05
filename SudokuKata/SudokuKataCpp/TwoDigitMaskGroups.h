@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include "stringhelper.h"
 #include "CellGroups.h"
 
 #include <vector>

@@ -2,7 +2,6 @@
 
 #include <string>
 #include <vector>
-#include "../stringhelper.h"
 
 namespace SudokuKata::Utilities
 {
