@@ -356,7 +356,7 @@ namespace SudokuKata
                         groups.push_back(CellGroups(
                             discriminator, fmt::format("row #{0}", row + 1), index, row, col));
                     }
-                    cellGroups[discriminator] = groups;
+                    cellGroups.push_back(groups);
                     discriminator += 1;
                 }
             }
@@ -371,7 +371,7 @@ namespace SudokuKata
                         groups.push_back(CellGroups(
                             discriminator, fmt::format("column #{0}", col + 1), index, row, col));
                     }
-                    cellGroups[discriminator] = groups;
+                    cellGroups.push_back(groups);
                     discriminator += 1;
                 }
             }
@@ -394,7 +394,7 @@ namespace SudokuKata
                                 row,
                                 col));
                         }
-                        cellGroups[discriminator] = groups;
+                        cellGroups.push_back(groups);
                         discriminator += 1;
                     }
                 }
@@ -571,7 +571,7 @@ namespace SudokuKata
                     std::vector<TwoDigitMaskGroups> groups;
                     for (int mask : twoDigitMasks)
                     {
-                        for (const auto& [key, cellsInGroup] : cellGroups)
+                        for (const auto& cellsInGroup : cellGroups)
                         {
                             int cellsMatchingMask =
                                 std::count_if(cellsInGroup.begin(),
@@ -705,7 +705,7 @@ namespace SudokuKata
                     std::vector<GroupsWithNMasks> groupsWithNMasks;
                     for (const auto& mask : masks)
                     {
-                        for (const auto& [key, groups] : cellGroups)
+                        for (const auto& groups : cellGroups)
                         {
                             bool allMatching = std::all_of(
                                 groups.begin(),
