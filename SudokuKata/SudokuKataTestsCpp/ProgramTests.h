@@ -2,7 +2,6 @@
 
 #include <string>
 #include <stdexcept>
-#include "tangible_filesystem.h"
 
 namespace SudokuKata
 {
