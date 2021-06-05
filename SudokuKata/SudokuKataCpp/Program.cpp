@@ -3,11 +3,16 @@
 #include "GroupsWithNMasks.h"
 #include "TwoDigitMaskGroups.h"
 
-#include <algorithm>
-#include <numeric>
-#include <map>
 #include <fmt/format.h>
+
+#include <algorithm>
 #include <cassert>
+#include <deque>
+#include <iostream>
+#include <map>
+#include <numeric>
+#include <stack>
+#include <unordered_map>
 
 namespace SudokuKata
 {

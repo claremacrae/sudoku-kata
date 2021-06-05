@@ -2,12 +2,7 @@
 
 #include "Utilities/IRandomValueGenerator.h"
 #include <string>
-#include <unordered_map>
 #include <vector>
-#include <deque>
-#include <stack>
-#include <algorithm>
-#include <iostream>
 
 namespace SudokuKata
 {

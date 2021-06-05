@@ -8,6 +8,7 @@
 #include "Utilities/WStringHelpers.h"
 #include "TestHelpers/FirstNFailuresReporter.h"
 
+#include <iostream>
 #include <regex>
 
 using namespace ApprovalTests;
