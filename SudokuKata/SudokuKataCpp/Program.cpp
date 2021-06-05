@@ -716,28 +716,26 @@ namespace SudokuKata
                     std::vector<GroupsWithNMasks> groupsWithNMasks;
                     for (const auto& mask : masks)
                     {
-                        for (const CellGroupsMap::value_type & pair : cellGroups)
+                        for (const CellGroupsMap::value_type& pair : cellGroups)
                         {
                             int key = pair.first;
                             std::vector<CellGroups> groups = pair.second;
-                            bool allMatching =
-                                std::all_of(
-                                    groups.begin(),
-                                    groups.end(),
-                                    [&](const CellGroups& cell)
-                                    {
+                            bool allMatching = std::all_of(
+                                groups.begin(),
+                                groups.end(),
+                                [&](const CellGroups& cell) {
                                     return (state[cell.Index] == 0 ||
                                             (mask & (1 << (state[cell.Index] - 1))) == 0);
-                                }
-                                    );
-                            if ( !allMatching )
+                                });
+                            if (!allMatching)
                             {
                                 continue;
                             }
                             std::vector<CellGroups> cellsWithMask;
                             for (const auto& cell : groups)
                             {
-                                if (state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0)
+                                if (state[cell.Index] == 0 &&
+                                    (candidateMasks[cell.Index] & mask) != 0)
                                 {
                                     cellsWithMask.push_back(cell);
                                 }
@@ -750,8 +748,7 @@ namespace SudokuKata
                                                   return state[cell.Index] == 0 &&
                                                          (candidateMasks[cell.Index] & mask) != 0 &&
                                                          (candidateMasks[cell.Index] & ~mask) != 0;
-                                              }
-                                );
+                                              });
                             if (cellsWithMask.size() == maskToOnesCount[mask])
                             {
                                 GroupsWithNMasks groupWithNMasks(mask,
