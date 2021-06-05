@@ -4,16 +4,16 @@
 
 GroupsWithNMasks::GroupsWithNMasks(int mask,
                                    const std::wstring& description,
-                                   const std::vector<CellGroups>& cells
-//                                   const std::vector<CellGroups>& cellsWithMask,
-//                                   int cleanableCellsCount
+                                   const std::vector<CellGroups>& cells,
+                                   const std::vector<CellGroups>& cellsWithMask,
+                                   int cleanableCellsCount
                                    )
 {
     Mask = mask;
     Description = description;
     Cells = cells;
-//    CellsWithMask = cellsWithMask;
-//    CleanableCellsCount = cleanableCellsCount;
+    CellsWithMask = cellsWithMask;
+    CleanableCellsCount = cleanableCellsCount;
 }
 
 std::wstring GroupsWithNMasks::ToString() const

@@ -736,13 +736,20 @@ namespace SudokuKata
                                 continue;
                             }
                             std::vector<CellGroups> cellsWithMask;
+                            for (const auto& cell : groups)
+                            {
+                                if (state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0)
+                                {
+                                    cellsWithMask.push_back(cell);
+                                }
+                            }
                             int cleanableCellsCount = 0;
                             GroupsWithNMasks groupWithNMasks(
                                 mask,
                                 groups.front().Description,
-                                groups
-//                                cellsWithMask,
-//                                cleanableCellsCount
+                                groups,
+                                cellsWithMask,
+                                cleanableCellsCount
                                 );
                             groupsWithNMasks.push_back(groupWithNMasks);
                         }

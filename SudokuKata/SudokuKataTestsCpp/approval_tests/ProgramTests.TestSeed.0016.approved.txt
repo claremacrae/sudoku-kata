@@ -454,192 +454,192 @@ Values 8 and 9 in row #5 are in cells (5, 1) and (5, 3).
 9 cannot appear in (5, 9).
 
 ---------------------
-{ Mask = 5, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 5, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 5, Description = column #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 5, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 5, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 12, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 12, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 12, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 12, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 12, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 65, Description = row #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 65, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 65, Description = column #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 65, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = row #1, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = column #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = block (1, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 68, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 69, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 69, Description = column #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 69, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = column #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = block (2, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 72, Description = block (3, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 76, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 76, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 76, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 76, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 129, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 129, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 129, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 129, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #1, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = row #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = column #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = column #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = block (1, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = block (1, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = block (3, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 132, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 133, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 133, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 133, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 133, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 136, Description = block (2, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 140, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 140, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 140, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 140, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = row #1, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = column #6, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = block (1, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = block (2, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 192, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 193, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 193, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = row #1, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = block (1, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 196, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 197, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 197, Description = block (3, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 200, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 200, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 200, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 200, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 200, Description = block (2, 2), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 204, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 204, Description = row #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 204, Description = column #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 257, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 257, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 257, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = row #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = row #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = column #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = column #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = block (1, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 260, Description = block (3, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 261, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 261, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 261, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 264, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 264, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 264, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 264, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 268, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 268, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 268, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 320, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 320, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 320, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 320, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 321, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 324, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 324, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 324, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 325, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 328, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 328, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 328, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 332, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 332, Description = block (2, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = row #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = row #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = column #1, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = column #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = column #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = block (1, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = block (2, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 384, Description = block (3, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 385, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 385, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 385, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = row #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = row #8, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = column #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = column #3, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = block (1, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 388, Description = block (3, 1), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 389, Description = row #2, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 389, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 389, Description = block (1, 3), Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 392, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 392, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 392, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 396, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 396, Description = column #9, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 448, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 448, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 448, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 449, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 452, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 452, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 453, Description = column #7, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 456, Description = row #4, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 456, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
-{ Mask = 460, Description = row #5, Cells = 9, CellsWithMask = 0, CleanableCellsCount = 0 }
+{ Mask = 5, Description = row #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 5, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 5, Description = column #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 5, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 5, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 12, Description = row #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 12, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 12, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 12, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 12, Description = block (2, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 65, Description = row #9, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 65, Description = column #7, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 65, Description = column #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 65, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 68, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 68, Description = row #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 68, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 68, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 68, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 68, Description = column #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 68, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 68, Description = block (2, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 68, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 69, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 69, Description = column #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 69, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 72, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 72, Description = row #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 72, Description = row #7, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 72, Description = column #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 72, Description = column #5, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 72, Description = block (2, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 72, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 72, Description = block (3, 2), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 76, Description = row #5, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 76, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 76, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 76, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 129, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 129, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 129, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 129, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #7, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 132, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = column #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = column #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = column #7, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = column #9, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = block (1, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 132, Description = block (3, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 132, Description = block (3, 3), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 133, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 133, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 133, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 133, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 136, Description = row #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 136, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 136, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 136, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 136, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 136, Description = block (2, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 140, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 140, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 140, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 140, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 192, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 192, Description = row #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 192, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 192, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 192, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 192, Description = column #6, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 192, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 192, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 192, Description = block (2, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 192, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 193, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 193, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 196, Description = row #1, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 196, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 196, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 196, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 196, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 196, Description = block (1, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 196, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 197, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 197, Description = block (3, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 200, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 200, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 200, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 200, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 200, Description = block (2, 2), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 204, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 204, Description = row #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 204, Description = column #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 257, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 257, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 257, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = row #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 260, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 260, Description = column #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 260, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 260, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = block (1, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 260, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 260, Description = block (3, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 261, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 261, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 261, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 264, Description = row #4, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 264, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 264, Description = column #9, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 264, Description = block (2, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 268, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 268, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 268, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 320, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 320, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 320, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 320, Description = block (2, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 321, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 324, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 324, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 324, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 325, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 328, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 328, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 328, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 332, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 332, Description = block (2, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 384, Description = row #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = row #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 384, Description = row #5, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 384, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = column #1, Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 384, Description = column #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 384, Description = column #9, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = block (1, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = block (1, 3), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 384, Description = block (2, 1), Cells = 9, CellsWithMask = 2, CleanableCellsCount = 0 }
+{ Mask = 384, Description = block (3, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 385, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 385, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 385, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = row #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 388, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = row #8, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 388, Description = column #2, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 388, Description = column #3, Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 388, Description = column #7, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = block (1, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 388, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 388, Description = block (3, 1), Cells = 9, CellsWithMask = 3, CleanableCellsCount = 0 }
+{ Mask = 389, Description = row #2, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 389, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 389, Description = block (1, 3), Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 392, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 392, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 392, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 396, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 396, Description = column #9, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 448, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 448, Description = row #5, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 448, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 449, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 452, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 452, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 453, Description = column #7, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 456, Description = row #4, Cells = 9, CellsWithMask = 4, CleanableCellsCount = 0 }
+{ Mask = 456, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
+{ Mask = 460, Description = row #5, Cells = 9, CellsWithMask = 5, CleanableCellsCount = 0 }
 
 ---------------------
 
