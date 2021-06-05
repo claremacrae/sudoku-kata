@@ -20,8 +20,6 @@ add_library(SudokuKataCpp
         Utilities/IRandomValueGenerator.h
 #        NotYetPorted/RandomNumber.cpp # TODO Needs C++ equivalent of C#'s Random
 #        NotYetPorted/RandomNumber.h   # TODO Needs C++ equivalent of C#'s Random
-        Utilities/WStringHelpers.cpp
-        Utilities/WStringHelpers.h
         )
 target_compile_features(SudokuKataCpp PUBLIC cxx_std_17)
 target_include_directories(SudokuKataCpp
