@@ -3,21 +3,17 @@
 #include <codecvt>
 #include <locale>
 
-std::string toString(const std::wstring& wstr)
+std::string toString(const std::string& wstr)
 {
-    static std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8_converter;
-    return utf8_converter.to_bytes(wstr);
+    return wstr;
 }
 
-std::string toString(const wchar_t* wstr)
+std::string toString(const char* wstr)
 {
-    static std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8_converter;
-    return utf8_converter.to_bytes(wstr);
+    return std::string(wstr);
 }
 
-std::wstring toWString(const std::string& str)
+std::string toWString(const std::string& str)
 {
-    std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
-    std::wstring wide = converter.from_bytes(str);
-    return wide;
+    return str;
 }

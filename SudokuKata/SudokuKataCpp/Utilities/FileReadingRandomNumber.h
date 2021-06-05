@@ -18,6 +18,6 @@ namespace SudokuKata
 
         int Next(int limit) override;
 
-        void ReadValuesFromFile(const std::wstring& seedsFile);
+        void ReadValuesFromFile(const std::string& seedsFile);
     };
 }

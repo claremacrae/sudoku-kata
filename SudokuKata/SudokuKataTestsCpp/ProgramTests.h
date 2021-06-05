@@ -13,10 +13,10 @@ namespace SudokuKataTests
     class ProgramTests
     {
     public:
-        static std::wstring SeedSectionName(int seed);
+        static std::string SeedSectionName(int seed);
 
         static void VerifySudokuForSeed(SudokuKata::IRandomValueGenerator* randomValueGenerator);
 
-        static std::wstring GetSeedsFileName();
+        static std::string GetSeedsFileName();
     };
 }

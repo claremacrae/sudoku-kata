@@ -8,14 +8,14 @@ namespace SudokuKata::Utilities
     class CandidatesStringifier
     {
     public:
-        static std::wstring ConvertToString(std::vector<int>& candidateMasks);
+        static std::string ConvertToString(std::vector<int>& candidateMasks);
 
     private:
         static bool IsAtBlockBoundary(int value);
 
-        static std::wstring
+        static std::string
         RowForOneCell(int index, int mask, int digitIndex1, int digitIndex2, int digitIndex3);
 
-        static std::wstring CharacterForDigit(int mask, int digit);
+        static std::string CharacterForDigit(int mask, int digit);
     };
 }

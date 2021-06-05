@@ -27,7 +27,7 @@ namespace SudokuKataTests
             // var randomValueGenerator = new FileWritingRandomNumber(seed);
             auto randomValueGenerator = new FileReadingRandomNumber();
 
-            std::wstring section = ProgramTests::SeedSectionName(seed);
+            std::string section = ProgramTests::SeedSectionName(seed);
             const std::string string = toString(section);
             auto sectionDisposer = NamerFactory::appendToOutputFilename(string);
 
@@ -48,7 +48,7 @@ namespace SudokuKataTests
                 {
                     // The Approval Test failed - log the output on the console, and continue.
                     // so that we can review all failures in one session:
-                    std::wcout << "ERROR: " << e.what() << std::endl << std::endl;
+                    std::cout << "ERROR: " << e.what() << std::endl << std::endl;
                     errors += 1;
                 }
             }
@@ -61,20 +61,20 @@ namespace SudokuKataTests
         CHECK(0 == errors);
     }
 
-    std::wstring ProgramTests::SeedSectionName(int seed)
+    std::string ProgramTests::SeedSectionName(int seed)
     {
-        std::wstringstream s;
-        s << std::setfill(L'0') << std::setw(4) << seed;
+        std::stringstream s;
+        s << std::setfill('0') << std::setw(4) << seed;
         return s.str();
     }
 
     void ProgramTests::VerifySudokuForSeed(SudokuKata::IRandomValueGenerator* randomValueGenerator)
     {
-        std::wstringstream console;
+        std::stringstream console;
         try
         {
             Program::Play(console, randomValueGenerator);
-            std::wstring s = console.str();
+            std::string s = console.str();
         }
         catch (const std::exception& e)
         {
@@ -83,10 +83,10 @@ namespace SudokuKataTests
         Approvals::verify(toString(console.str()));
     }
 
-    std::wstring ProgramTests::GetSeedsFileName()
+    std::string ProgramTests::GetSeedsFileName()
     {
         auto namer = Approvals::getDefaultNamer();
         auto seedsFile = toWString(namer->getApprovedFile(".seeds.txt"));
-        return std::regex_replace(seedsFile, std::wregex(L"\\.approved"), L"");
+        return std::regex_replace(seedsFile, std::regex("\\.approved"), "");
     }
 }

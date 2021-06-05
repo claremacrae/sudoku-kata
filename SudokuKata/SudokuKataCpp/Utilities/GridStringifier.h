@@ -8,12 +8,12 @@ namespace SudokuKata::Utilities
     class GridStringifier
     {
     public:
-        static std::wstring ConvertToString(std::vector<int>& board);
+        static std::string ConvertToString(std::vector<int>& board);
 
     private:
-        static std::wstring ToRowNumbered(std::vector<int>& board, int row);
+        static std::string ToRowNumbered(std::vector<int>& board, int row);
 
-        static std::wstring ToRow(std::vector<int>& board,
+        static std::string ToRow(std::vector<int>& board,
                                   int index0,
                                   int index1,
                                   int index2,
@@ -24,11 +24,11 @@ namespace SudokuKata::Utilities
                                   int index7,
                                   int index8);
 
-        static std::wstring ToTriplet(std::vector<int>& board, int index0, int index1, int index2);
+        static std::string ToTriplet(std::vector<int>& board, int index0, int index1, int index2);
 
-        static std::wstring ToCell(int value);
+        static std::string ToCell(int value);
 
     public:
-        static std::wstring ConvertToCode(std::vector<int>& board);
+        static std::string ConvertToCode(std::vector<int>& board);
     };
 }

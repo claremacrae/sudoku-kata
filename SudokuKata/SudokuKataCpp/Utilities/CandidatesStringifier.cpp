@@ -3,17 +3,17 @@
 namespace SudokuKata::Utilities
 {
 
-    std::wstring CandidatesStringifier::ConvertToString(std::vector<int>& candidateMasks)
+    std::string CandidatesStringifier::ConvertToString(std::vector<int>& candidateMasks)
     {
-        auto blockDivider = L"++=====+=====+=====++=====+=====+=====++=====+=====+=====++\n";
-        auto rowDivider = L"++-----+-----+-----++-----+-----+-----++-----+-----+-----++\n";
-        std::wstring result = blockDivider;
+        auto blockDivider = "++=====+=====+=====++=====+=====+=====++=====+=====+=====++\n";
+        auto rowDivider = "++-----+-----+-----++-----+-----+-----++-----+-----+-----++\n";
+        std::string result = blockDivider;
 
         for (int row = 0; row < 9; row++)
         {
-            std::wstring line1 = L"||";
-            std::wstring line2 = L"||";
-            std::wstring line3 = L"||";
+            std::string line1 = "||";
+            std::string line2 = "||";
+            std::string line3 = "||";
             for (int col = 0; col < 9; col++)
             {
                 // var index = CellPosition.Index(row, col);
@@ -24,9 +24,9 @@ namespace SudokuKata::Utilities
                 line3 += RowForOneCell(index, mask, 7, 8, 9);
             }
 
-            result += line1 + L"\n";
-            result += line2 + L"\n";
-            result += line3 + L"\n";
+            result += line1 + "\n";
+            result += line2 + "\n";
+            result += line3 + "\n";
             result += IsAtBlockBoundary(row) ? blockDivider : rowDivider;
         }
 
@@ -38,22 +38,22 @@ namespace SudokuKata::Utilities
         return (value + 1) % 3 == 0;
     }
 
-    std::wstring CandidatesStringifier::RowForOneCell(
+    std::string CandidatesStringifier::RowForOneCell(
         int index, int mask, int digitIndex1, int digitIndex2, int digitIndex3)
     {
-        std::wstring result = L" ";
+        std::string result = " ";
         result += CharacterForDigit(mask, digitIndex1);
         result += CharacterForDigit(mask, digitIndex2);
         result += CharacterForDigit(mask, digitIndex3);
-        result += IsAtBlockBoundary(index) ? L" ||" : L" |";
+        result += IsAtBlockBoundary(index) ? " ||" : " |";
         return result;
     }
 
-    std::wstring CandidatesStringifier::CharacterForDigit(int mask, int digit)
+    std::string CandidatesStringifier::CharacterForDigit(int mask, int digit)
     {
-        std::wstring blank = L".";
+        std::string blank = ".";
         auto digitMask = 1 << (digit - 1);
-        auto character = ((mask & digitMask) != 0) ? std::to_wstring(digit) : blank;
+        auto character = ((mask & digitMask) != 0) ? std::to_string(digit) : blank;
         return character;
     }
 }

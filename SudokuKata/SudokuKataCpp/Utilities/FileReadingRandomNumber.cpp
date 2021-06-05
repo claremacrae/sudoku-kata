@@ -21,7 +21,7 @@ namespace SudokuKata
             throw std::runtime_error("No more values left in FileReadingRandomNumber");
         }
         auto result = _results.front();
-        // std::wcout << ">>> Next random number: "<< result << ".\n" << std::endl;
+        // std::cout << ">>> Next random number: "<< result << ".\n" << std::endl;
         _results.pop_front();
         return result;
     }
@@ -32,7 +32,7 @@ namespace SudokuKata
         return Next();
     }
 
-    void FileReadingRandomNumber::ReadValuesFromFile(const std::wstring& seedsFile)
+    void FileReadingRandomNumber::ReadValuesFromFile(const std::string& seedsFile)
     {
         //C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
         //ORIGINAL LINE: using (TextReader reader = File.OpenText(seedsFile))
@@ -49,7 +49,7 @@ namespace SudokuKata
                 ifs >> r;
                 _results.push_back(r);
             }
-            // std::wcout << _results.size() << L" lines read from " << seedsFile << '\n';
+            // std::cout << _results.size() << " lines read from " << seedsFile << '\n';
         }
     }
 }

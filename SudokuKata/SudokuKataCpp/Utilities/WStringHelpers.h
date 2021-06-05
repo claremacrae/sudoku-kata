@@ -2,8 +2,8 @@
 
 #include <string>
 
-std::string toString(const std::wstring& wstr);
+std::string toString(const std::string& wstr);
 
-std::string toString(const wchar_t* wstr);
+std::string toString(const char* wstr);
 
-std::wstring toWString(const std::string& str);
+std::string toWString(const std::string& str);

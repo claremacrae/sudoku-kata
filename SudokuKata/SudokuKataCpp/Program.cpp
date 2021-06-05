@@ -17,7 +17,7 @@
 namespace SudokuKata
 {
 
-    void Program::Play(std::wostream& console, IRandomValueGenerator* rng)
+    void Program::Play(std::ostream& console, IRandomValueGenerator* rng)
     {
         //			#region Construct fully populated board
         // Prepare empty board
@@ -192,7 +192,7 @@ namespace SudokuKata
                     lastDigitStack.push(movedToDigit);
                     usedDigits[movedToDigit - 1] = true;
                     currentState[currentStateIndex] = movedToDigit;
-                    board[rowToWrite][colToWrite] = static_cast<wchar_t>(L'0' + movedToDigit);
+                    board[rowToWrite][colToWrite] = static_cast<char>('0' + movedToDigit);
 
                     // Next possible digit was found at current position
                     // Next step will be to expand the state
@@ -208,7 +208,7 @@ namespace SudokuKata
         }
 
         console << std::endl;
-        console << L"Final look of the solved board:" << std::endl;
+        console << "Final look of the solved board:" << std::endl;
         for (const auto& item : board)
         {
             for (const auto& character : item)
@@ -269,7 +269,7 @@ namespace SudokuKata
         }
 
         console << std::endl;
-        console << L"Starting look of the board to solve:" << std::endl;
+        console << "Starting look of the board to solve:" << std::endl;
         for (const auto& item : board)
         {
             for (const auto& character : item)
@@ -282,7 +282,7 @@ namespace SudokuKata
 
         //			#region Prepare lookup structures that will be used in further execution
         console << std::endl;
-        console << std::wstring(80, L'=') << std::endl;
+        console << std::string(80, '=') << std::endl;
         console << std::endl;
 
         std::map<int, int> maskToOnesCount;
@@ -355,7 +355,7 @@ namespace SudokuKata
                     {
                         int index = row * 9 + col;
                         groups.push_back(CellGroups(
-                            discriminator, fmt::format(L"row #{0}", row + 1), index, row, col));
+                            discriminator, fmt::format("row #{0}", row + 1), index, row, col));
                     }
                     cellGroups[discriminator] = groups;
                     discriminator += 1;
@@ -370,7 +370,7 @@ namespace SudokuKata
                     {
                         int index = row * 9 + col;
                         groups.push_back(CellGroups(
-                            discriminator, fmt::format(L"column #{0}", col + 1), index, row, col));
+                            discriminator, fmt::format("column #{0}", col + 1), index, row, col));
                     }
                     cellGroups[discriminator] = groups;
                     discriminator += 1;
@@ -390,7 +390,7 @@ namespace SudokuKata
                             int index = row * 9 + col;
                             groups.push_back(CellGroups(
                                 discriminator,
-                                fmt::format(L"block ({0}, {1})", block_row + 1, block_col + 1),
+                                fmt::format("block ({0}, {1})", block_row + 1, block_col + 1),
                                 index,
                                 row,
                                 col));
@@ -434,11 +434,11 @@ namespace SudokuKata
                     int colToWrite = col + col / 3 + 1;
 
                     state[singleCandidateIndex] = candidate + 1;
-                    board[rowToWrite][colToWrite] = static_cast<wchar_t>(L'1' + candidate);
+                    board[rowToWrite][colToWrite] = static_cast<char>('1' + candidate);
                     candidateMasks[singleCandidateIndex] = 0;
                     changeMade = true;
 
-                    console << L"(" << row + 1 << L", " << col + 1 << L") can only contain "
+                    console << "(" << row + 1 << ", " << col + 1 << ") can only contain "
                             << candidate + 1 << '.' << std::endl;
                 }
 
@@ -448,7 +448,7 @@ namespace SudokuKata
 
                 if (!changeMade)
                 {
-                    std::vector<std::wstring> groupDescriptions;
+                    std::vector<std::string> groupDescriptions;
                     std::vector<int> candidateRowIndices;
                     std::vector<int> candidateColIndices;
                     std::vector<int> candidates;
@@ -497,7 +497,7 @@ namespace SudokuKata
                             if (rowNumberCount == 1)
                             {
                                 groupDescriptions.push_back(
-                                    fmt::format(L"Row #{0}", cellGroup + 1));
+                                    fmt::format("Row #{0}", cellGroup + 1));
                                 candidateRowIndices.push_back(cellGroup);
                                 candidateColIndices.push_back(indexInRow);
                                 candidates.push_back(digit);
@@ -506,7 +506,7 @@ namespace SudokuKata
                             if (colNumberCount == 1)
                             {
                                 groupDescriptions.push_back(
-                                    fmt::format(L"Column #{0}", cellGroup + 1));
+                                    fmt::format("Column #{0}", cellGroup + 1));
                                 candidateRowIndices.push_back(indexInCol);
                                 candidateColIndices.push_back(cellGroup);
                                 candidates.push_back(digit);
@@ -518,7 +518,7 @@ namespace SudokuKata
                                 int blockCol = cellGroup % 3;
 
                                 groupDescriptions.push_back(fmt::format(
-                                    L"Block ({0}, {1})", blockRow + 1, blockCol + 1));
+                                    "Block ({0}, {1})", blockRow + 1, blockCol + 1));
                                 candidateRowIndices.push_back(blockRow * 3 + indexInBlock / 3);
                                 candidateColIndices.push_back(blockCol * 3 + indexInBlock % 3);
                                 candidates.push_back(digit);
@@ -529,15 +529,15 @@ namespace SudokuKata
                     if (candidates.size() > 0)
                     {
                         int index = rng->Next(candidates.size());
-                        std::wstring description = groupDescriptions.at(index);
+                        std::string description = groupDescriptions.at(index);
                         int row = candidateRowIndices.at(index);
                         int col = candidateColIndices.at(index);
                         int digit = candidates.at(index);
                         int rowToWrite = row + row / 3 + 1;
                         int colToWrite = col + col / 3 + 1;
 
-                        std::wstring message =
-                            fmt::format(L"{0} can contain {1} only at ({2}, {3}).",
+                        std::string message =
+                            fmt::format("{0} can contain {1} only at ({2}, {3}).",
                                         description,
                                         digit,
                                         row + 1,
@@ -546,7 +546,7 @@ namespace SudokuKata
                         int stateIndex = 9 * row + col;
                         state[stateIndex] = digit;
                         candidateMasks[stateIndex] = 0;
-                        board[rowToWrite][colToWrite] = static_cast<wchar_t>(L'0' + digit);
+                        board[rowToWrite][colToWrite] = static_cast<char>('0' + digit);
 
                         changeMade = true;
 
@@ -652,8 +652,8 @@ namespace SudokuKata
                                     value += 1;
                                 }
 
-                                console << fmt::format(L"Values {0} and {1} in {2} are in "
-                                                       L"cells ({3}, {4}) and ({5}, {6}).",
+                                console << fmt::format("Values {0} and {1} in {2} are in "
+                                                       "cells ({3}, {4}) and ({5}, {6}).",
                                                        lower,
                                                        upper,
                                                        group.Description,
@@ -678,10 +678,10 @@ namespace SudokuKata
                                         curValue += 1;
                                     }
 
-                                    std::wstring valuesReport =
-                                        fmt::format(L"{}", fmt::join(valuesToRemove, L", "));
+                                    std::string valuesReport =
+                                        fmt::format("{}", fmt::join(valuesToRemove, ", "));
                                     console << fmt::format(
-                                                   L"{0} cannot appear in ({1}, {2}).",
+                                                   "{0} cannot appear in ({1}, {2}).",
                                                    valuesReport,
                                                    cell.Row + 1,
                                                    cell.Column + 1)
@@ -770,11 +770,11 @@ namespace SudokuKata
                                                      (candidateMasks[cell.Index] & ~mask) != 0;
                                           }))
                         {
-                            std::wstring message;
+                            std::string message;
                             message += (fmt::format(
-                                L"In {0} values ", groupWithNMasks.Description));
+                                "In {0} values ", groupWithNMasks.Description));
 
-                            std::wstring separator = L"";
+                            std::string separator = "";
                             int temp = mask;
                             int curValue = 1;
                             while (temp > 0)
@@ -782,21 +782,21 @@ namespace SudokuKata
                                 if ((temp & 1) > 0)
                                 {
                                     message += (
-                                        fmt::format(L"{0}{1}", separator, curValue));
-                                    separator = L", ";
+                                        fmt::format("{0}{1}", separator, curValue));
+                                    separator = ", ";
                                 }
                                 temp = temp >> 1;
                                 curValue += 1;
                             }
 
-                            message += (L" appear only in cells");
+                            message += (" appear only in cells");
                             for (auto cell : groupWithNMasks.CellsWithMask)
                             {
                                 message += (fmt::format(
-                                    L" ({0}, {1})", cell.Row + 1, cell.Column + 1));
+                                    " ({0}, {1})", cell.Row + 1, cell.Column + 1));
                             }
 
-                            message += (L" and other values cannot appear in those cells.");
+                            message += (" and other values cannot appear in those cells.");
 
                             console << message << std::endl;
                         }
@@ -814,23 +814,23 @@ namespace SudokuKata
 
                             int valueToClear = 1;
 
-                            std::wstring separator = L"";
-                            std::wstring message;
+                            std::string separator = "";
+                            std::string message;
 
                             while (maskToClear > 0)
                             {
                                 if ((maskToClear & 1) > 0)
                                 {
                                     message += (fmt::format(
-                                        L"{0}{1}", separator, valueToClear));
-                                    separator = L", ";
+                                        "{0}{1}", separator, valueToClear));
+                                    separator = ", ";
                                 }
                                 maskToClear = maskToClear >> 1;
                                 valueToClear += 1;
                             }
 
                             message += (
-                                fmt::format(L" cannot appear in cell ({0}, {1}).",
+                                fmt::format(" cannot appear in cell ({0}, {1}).",
                                                            cell.Row + 1,
                                                            cell.Column + 1));
                             console << message << std::endl;
@@ -1089,7 +1089,7 @@ namespace SudokuKata
                                 usedDigits[movedToDigit - 1] = true;
                                 currentState[currentStateIndex] = movedToDigit;
                                 board[rowToWrite][colToWrite] =
-                                    static_cast<wchar_t>(L'0' + movedToDigit);
+                                    static_cast<char>('0' + movedToDigit);
 
                                 if (std::count(currentState.begin(), currentState.end(), 0) > 0)
                                 {
@@ -1131,20 +1131,20 @@ namespace SudokuKata
                     int row2 = index2 / 9;
                     int col2 = index2 % 9;
 
-                    std::wstring description = L"";
+                    std::string description = "";
 
                     if (index1 / 9 == index2 / 9)
                     {
-                        description = fmt::format(L"row #{0}", index1 / 9 + 1);
+                        description = fmt::format("row #{0}", index1 / 9 + 1);
                     }
                     else if (index1 % 9 == index2 % 9)
                     {
-                        description = fmt::format(L"column #{0}", index1 % 9 + 1);
+                        description = fmt::format("column #{0}", index1 % 9 + 1);
                     }
                     else
                     {
                         description = fmt::format(
-                            L"block ({0}, {1})", row1 / 3 + 1, col1 / 3 + 1);
+                            "block ({0}, {1})", row1 / 3 + 1, col1 / 3 + 1);
                     }
 
                     state[index1] = finalState[index1];
@@ -1163,13 +1163,13 @@ namespace SudokuKata
                         board[rowToWrite][colToWrite] = L'.';
                         if (state[i] > 0)
                         {
-                            board[rowToWrite][colToWrite] = static_cast<wchar_t>(L'0' + state[i]);
+                            board[rowToWrite][colToWrite] = static_cast<char>('0' + state[i]);
                         }
                     }
 
                     console << fmt::format(
-                                   L"Guessing that {0} and {1} are arbitrary in {2} (multiple "
-                                   L"solutions): Pick {3}->({4}, {5}), {6}->({7}, {8}).",
+                                   "Guessing that {0} and {1} are arbitrary in {2} (multiple "
+                                   "solutions): Pick {3}->({4}, {5}), {6}->({7}, {8}).",
                                    digit1,
                                    digit2,
                                    description,
@@ -1196,7 +1196,7 @@ namespace SudokuKata
                     console << '\n';
                 }
 
-                std::wstring code;
+                std::string code;
                 for (const auto& item : board)
                 {
                     for (const auto& character : item)
@@ -1209,20 +1209,20 @@ namespace SudokuKata
                     }
                 }
 
-                console << L"Code: " << code << std::endl;
+                console << "Code: " << code << std::endl;
                 console << std::endl;
                 //					#endregion
             }
         }
     }
 
-    void Program::Main(std::vector<std::wstring>& args)
+    void Program::Main(std::vector<std::string>& args)
     {
 #if 0
         RandomNumber tempVar();
         Play(&tempVar);
 
-        std::wcout << std::endl;
+        std::cout << std::endl;
         // Console.Write("Press ENTER to exit... ");
         // Console.ReadLine();
 #endif

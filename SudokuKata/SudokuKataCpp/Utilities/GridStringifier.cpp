@@ -3,9 +3,9 @@
 namespace SudokuKata::Utilities
 {
 
-    std::wstring GridStringifier::ConvertToString(std::vector<int>& board)
+    std::string GridStringifier::ConvertToString(std::vector<int>& board)
     {
-        const std::wstring divider = L"+---+---+---+\n";
+        const std::string divider = "+---+---+---+\n";
         auto result = divider;
         result += ToRowNumbered(board, 0);
         result += ToRowNumbered(board, 1);
@@ -22,13 +22,13 @@ namespace SudokuKata::Utilities
         return result;
     }
 
-    std::wstring GridStringifier::ToRowNumbered(std::vector<int>& board, int row)
+    std::string GridStringifier::ToRowNumbered(std::vector<int>& board, int row)
     {
         auto o = row * 9;
         return ToRow(board, o + 0, o + 1, o + 2, o + 3, o + 4, o + 5, o + 6, o + 7, o + 8);
     }
 
-    std::wstring GridStringifier::ToRow(std::vector<int>& board,
+    std::string GridStringifier::ToRow(std::vector<int>& board,
                                         int index0,
                                         int index1,
                                         int index2,
@@ -39,18 +39,18 @@ namespace SudokuKata::Utilities
                                         int index7,
                                         int index8)
     {
-        std::wstring row = L"|";
+        std::string row = "|";
         row += ToTriplet(board, index0, index1, index2);
-        row += L"|";
+        row += "|";
         row += ToTriplet(board, index3, index4, index5);
-        row += L"|";
+        row += "|";
         row += ToTriplet(board, index6, index7, index8);
-        row += L"|";
-        row += L"\n";
+        row += "|";
+        row += "\n";
         return row;
     }
 
-    std::wstring
+    std::string
     GridStringifier::ToTriplet(std::vector<int>& board, int index0, int index1, int index2)
     {
         auto value1 = board[index0];
@@ -59,17 +59,17 @@ namespace SudokuKata::Utilities
         return ToCell(value1) + ToCell(value2) + ToCell(value3);
     }
 
-    std::wstring GridStringifier::ToCell(int value)
+    std::string GridStringifier::ToCell(int value)
     {
-        return value == 0 ? L"." : std::to_wstring(value);
+        return value == 0 ? "." : std::to_string(value);
     }
 
-    std::wstring GridStringifier::ConvertToCode(std::vector<int>& board)
+    std::string GridStringifier::ConvertToCode(std::vector<int>& board)
     {
-        std::wstring result;
+        std::string result;
         for (auto digit : board)
         {
-            result += std::to_wstring(digit);
+            result += std::to_string(digit);
         }
         return result;
     }

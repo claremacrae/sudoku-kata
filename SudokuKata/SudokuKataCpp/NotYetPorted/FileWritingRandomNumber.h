@@ -25,7 +25,7 @@ namespace SudokuKata
 
         int Next(int limit) override;
 
-        void WriteValuesToFile(const std::wstring& seedsFile);
+        void WriteValuesToFile(const std::string& seedsFile);
 
     private:
         int LogNumber(int next);
