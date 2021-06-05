@@ -23,20 +23,19 @@ namespace SudokuKata
         // Prepare empty board
         std::string line = "+---+---+---+";
         std::string middle = "|...|...|...|";
-        std::vector<std::vector<char>> board = {
-            std::vector<char>(line.begin(), line.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(line.begin(), line.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(line.begin(), line.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(middle.begin(), middle.end()),
-            std::vector<char>(line.begin(), line.end())};
+        std::vector<std::vector<char>> board = {std::vector<char>(line.begin(), line.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(line.begin(), line.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(line.begin(), line.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(middle.begin(), middle.end()),
+                                                std::vector<char>(line.begin(), line.end())};
 
         // Construct board to be solved
 
@@ -496,8 +495,7 @@ namespace SudokuKata
 
                             if (rowNumberCount == 1)
                             {
-                                groupDescriptions.push_back(
-                                    fmt::format("Row #{0}", cellGroup + 1));
+                                groupDescriptions.push_back(fmt::format("Row #{0}", cellGroup + 1));
                                 candidateRowIndices.push_back(cellGroup);
                                 candidateColIndices.push_back(indexInRow);
                                 candidates.push_back(digit);
@@ -517,8 +515,8 @@ namespace SudokuKata
                                 int blockRow = cellGroup / 3;
                                 int blockCol = cellGroup % 3;
 
-                                groupDescriptions.push_back(fmt::format(
-                                    "Block ({0}, {1})", blockRow + 1, blockCol + 1));
+                                groupDescriptions.push_back(
+                                    fmt::format("Block ({0}, {1})", blockRow + 1, blockCol + 1));
                                 candidateRowIndices.push_back(blockRow * 3 + indexInBlock / 3);
                                 candidateColIndices.push_back(blockCol * 3 + indexInBlock % 3);
                                 candidates.push_back(digit);
@@ -536,12 +534,11 @@ namespace SudokuKata
                         int rowToWrite = row + row / 3 + 1;
                         int colToWrite = col + col / 3 + 1;
 
-                        std::string message =
-                            fmt::format("{0} can contain {1} only at ({2}, {3}).",
-                                        description,
-                                        digit,
-                                        row + 1,
-                                        col + 1);
+                        std::string message = fmt::format("{0} can contain {1} only at ({2}, {3}).",
+                                                          description,
+                                                          digit,
+                                                          row + 1,
+                                                          col + 1);
 
                         int stateIndex = 9 * row + col;
                         state[stateIndex] = digit;
@@ -680,11 +677,10 @@ namespace SudokuKata
 
                                     std::string valuesReport =
                                         fmt::format("{}", fmt::join(valuesToRemove, ", "));
-                                    console << fmt::format(
-                                                   "{0} cannot appear in ({1}, {2}).",
-                                                   valuesReport,
-                                                   cell.Row + 1,
-                                                   cell.Column + 1)
+                                    console << fmt::format("{0} cannot appear in ({1}, {2}).",
+                                                           valuesReport,
+                                                           cell.Row + 1,
+                                                           cell.Column + 1)
                                             << std::endl;
 
                                     candidateMasks[cell.Index] &= ~group.Mask;
@@ -771,8 +767,7 @@ namespace SudokuKata
                                           }))
                         {
                             std::string message;
-                            message += (fmt::format(
-                                "In {0} values ", groupWithNMasks.Description));
+                            message += (fmt::format("In {0} values ", groupWithNMasks.Description));
 
                             std::string separator = "";
                             int temp = mask;
@@ -781,8 +776,7 @@ namespace SudokuKata
                             {
                                 if ((temp & 1) > 0)
                                 {
-                                    message += (
-                                        fmt::format("{0}{1}", separator, curValue));
+                                    message += (fmt::format("{0}{1}", separator, curValue));
                                     separator = ", ";
                                 }
                                 temp = temp >> 1;
@@ -792,8 +786,8 @@ namespace SudokuKata
                             message += (" appear only in cells");
                             for (auto cell : groupWithNMasks.CellsWithMask)
                             {
-                                message += (fmt::format(
-                                    " ({0}, {1})", cell.Row + 1, cell.Column + 1));
+                                message +=
+                                    (fmt::format(" ({0}, {1})", cell.Row + 1, cell.Column + 1));
                             }
 
                             message += (" and other values cannot appear in those cells.");
@@ -821,18 +815,16 @@ namespace SudokuKata
                             {
                                 if ((maskToClear & 1) > 0)
                                 {
-                                    message += (fmt::format(
-                                        "{0}{1}", separator, valueToClear));
+                                    message += (fmt::format("{0}{1}", separator, valueToClear));
                                     separator = ", ";
                                 }
                                 maskToClear = maskToClear >> 1;
                                 valueToClear += 1;
                             }
 
-                            message += (
-                                fmt::format(" cannot appear in cell ({0}, {1}).",
-                                                           cell.Row + 1,
-                                                           cell.Column + 1));
+                            message += (fmt::format(" cannot appear in cell ({0}, {1}).",
+                                                    cell.Row + 1,
+                                                    cell.Column + 1));
                             console << message << std::endl;
                         }
                     }
@@ -1143,8 +1135,7 @@ namespace SudokuKata
                     }
                     else
                     {
-                        description = fmt::format(
-                            "block ({0}, {1})", row1 / 3 + 1, col1 / 3 + 1);
+                        description = fmt::format("block ({0}, {1})", row1 / 3 + 1, col1 / 3 + 1);
                     }
 
                     state[index1] = finalState[index1];

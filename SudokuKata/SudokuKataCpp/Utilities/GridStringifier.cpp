@@ -29,15 +29,15 @@ namespace SudokuKata::Utilities
     }
 
     std::string GridStringifier::ToRow(std::vector<int>& board,
-                                        int index0,
-                                        int index1,
-                                        int index2,
-                                        int index3,
-                                        int index4,
-                                        int index5,
-                                        int index6,
-                                        int index7,
-                                        int index8)
+                                       int index0,
+                                       int index1,
+                                       int index2,
+                                       int index3,
+                                       int index4,
+                                       int index5,
+                                       int index6,
+                                       int index7,
+                                       int index8)
     {
         std::string row = "|";
         row += ToTriplet(board, index0, index1, index2);

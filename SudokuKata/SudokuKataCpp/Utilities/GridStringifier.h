@@ -14,15 +14,15 @@ namespace SudokuKata::Utilities
         static std::string ToRowNumbered(std::vector<int>& board, int row);
 
         static std::string ToRow(std::vector<int>& board,
-                                  int index0,
-                                  int index1,
-                                  int index2,
-                                  int index3,
-                                  int index4,
-                                  int index5,
-                                  int index6,
-                                  int index7,
-                                  int index8);
+                                 int index0,
+                                 int index1,
+                                 int index2,
+                                 int index3,
+                                 int index4,
+                                 int index5,
+                                 int index6,
+                                 int index7,
+                                 int index8);
 
         static std::string ToTriplet(std::vector<int>& board, int index0, int index1, int index2);
 
