@@ -579,7 +579,7 @@ namespace SudokuKata
                                                     (candidateMasks[cell.Index] & mask) != 0 &&
                                                     (candidateMasks[cell.Index] & ~mask) != 0)
                                     }))
-                            // .Where(group => @group.CellsWithMask.Count() == maskToOnesCount[@group.Mask]) // TODO ** UNDO
+                            .Where(group => @group.CellsWithMask.Count() == maskToOnesCount[@group.Mask])
                             .ToList();
 
                         if (groupsWithNMasks.Count() > 0)
