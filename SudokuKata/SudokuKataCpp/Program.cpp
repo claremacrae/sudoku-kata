@@ -743,7 +743,16 @@ namespace SudokuKata
                                     cellsWithMask.push_back(cell);
                                 }
                             }
-                            int cleanableCellsCount = 0;
+                            int cleanableCellsCount =
+                                std::count_if(groups.begin(),
+                                              groups.end(),
+                                              [&](const CellGroups& cell)
+                                              {
+                                                  return state[cell.Index] == 0 &&
+                                                         (candidateMasks[cell.Index] & mask) != 0 &&
+                                                         (candidateMasks[cell.Index] & ~mask) != 0;
+                                              }
+                                );
                             GroupsWithNMasks groupWithNMasks(
                                 mask,
                                 groups.front().Description,
