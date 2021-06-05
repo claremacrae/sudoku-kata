@@ -565,26 +565,33 @@ namespace SudokuKata
                                 .Where(tuple => tuple.Value > 1)
                                 .Select(tuple => tuple.Key).ToList();
 
-                        var groupsWithNMasks =
-                            masks
-                                .SelectMany(mask =>
-                                    cellGroups
-                                        .Where(group => group.All(cell => state[cell.Index] == 0 || (mask & (1 << (state[cell.Index] - 1))) == 0))
-                                        .Select(group => new
-                                        {
-                                            Mask = mask,
-                                            Description = group.First().Description,
-                                            Cells = group,
-                                            CellsWithMask =
-                                                group.Where(cell => state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0).ToList(),
-                                            CleanableCellsCount =
-                                                group.Count(
-                                                    cell => state[cell.Index] == 0 && 
-                                                        (candidateMasks[cell.Index] & mask) != 0 &&
-                                                        (candidateMasks[cell.Index] & ~mask) != 0)
-                                        }))
-                                .Where(group => group.CellsWithMask.Count() == maskToOnesCount[group.Mask])
-                                .ToList();
+                        List<GroupsWithNMasks> groupsWithNMasks;
+                        groupsWithNMasks = masks
+                            .SelectMany(mask =>
+                                cellGroups
+                                    // .Where(group => @group.All(cell => state[cell.Index] == 0 || (mask & (1 << (state[cell.Index] - 1))) == 0)) // TODO ** UNDO
+                                    .Select(group => new GroupsWithNMasks
+                                    {
+                                        Mask = mask, Description = @group.First().Description, Cells = @group,
+                                        CellsWithMask = @group.Where(cell => state[cell.Index] == 0 && (candidateMasks[cell.Index] & mask) != 0).ToList(),
+                                        CleanableCellsCount = @group.Count(
+                                            cell => state[cell.Index] == 0 && 
+                                                    (candidateMasks[cell.Index] & mask) != 0 &&
+                                                    (candidateMasks[cell.Index] & ~mask) != 0)
+                                    }))
+                            // .Where(group => @group.CellsWithMask.Count() == maskToOnesCount[@group.Mask]) // TODO ** UNDO
+                            .ToList();
+
+                        if (groupsWithNMasks.Count() > 0)
+                        {
+                            var div = "\n---------------------\n";
+                            Console.WriteLine(div);
+                            foreach (GroupsWithNMasks groupsWithNMask in groupsWithNMasks)
+                            {
+                                Console.WriteLine(groupsWithNMask.ToString());
+                            }
+                            Console.WriteLine(div);
+                        }
 
                         foreach (var groupWithNMasks in groupsWithNMasks)
                         {
@@ -659,7 +666,7 @@ namespace SudokuKata
                 }
 
                 #region Final attempt - look if the board has multiple solutions
-                if (!changeMade)
+                if (false && !changeMade) // TODO ** UNDO
                 {
                     // This is the last chance to do something in this iteration:
                     // If this attempt fails, board will not be entirely solved.
