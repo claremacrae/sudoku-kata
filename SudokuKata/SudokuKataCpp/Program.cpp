@@ -724,7 +724,11 @@ namespace SudokuKata
                                 std::all_of(
                                     groups.begin(),
                                     groups.end(),
-                                    [](const auto& group){return true;}
+                                    [&](const CellGroups& cell)
+                                    {
+                                    return (state[cell.Index] == 0 ||
+                                            (mask & (1 << (state[cell.Index] - 1))) == 0);
+                                }
                                     );
 //                            TODO here next
                             if ( !allMatching )
