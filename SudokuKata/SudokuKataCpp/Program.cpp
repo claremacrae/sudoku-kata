@@ -732,13 +732,11 @@ namespace SudokuKata
                                 continue;
                             }
                             std::vector<CellGroups> cellsWithMask;
-                            std::map<int, CellGroups> cells;
-//                            cells.insert(pair.first, pair.second);
                             int cleanableCellsCount = 0;
                             GroupsWithNMasks groupWithNMasks(
                                 mask,
-                                groups.front().Description
-//                                cells
+                                groups.front().Description,
+                                groups
 //                                cellsWithMask,
 //                                cleanableCellsCount
                                 );

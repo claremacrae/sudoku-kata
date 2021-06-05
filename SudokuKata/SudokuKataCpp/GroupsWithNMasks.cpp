@@ -3,15 +3,15 @@
 #include <fmt/format.h>
 
 GroupsWithNMasks::GroupsWithNMasks(int mask,
-                                   const std::wstring& description
-//                                   const std::map<int, CellGroups>& cells
+                                   const std::wstring& description,
+                                   const std::vector<CellGroups>& cells
 //                                   const std::vector<CellGroups>& cellsWithMask,
 //                                   int cleanableCellsCount
                                    )
 {
     Mask = mask;
     Description = description;
-//    Cells = cells;
+    Cells = cells;
 //    CellsWithMask = cellsWithMask;
 //    CleanableCellsCount = cleanableCellsCount;
 }
