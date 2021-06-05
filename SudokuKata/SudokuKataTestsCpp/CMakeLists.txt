@@ -3,7 +3,9 @@ add_executable(SudokuKataTestsCpp
         GridStringifierTests.cpp
         ProgramTests.cpp
         ProgramTests.h
-        WStringHelpersTests.cpp)
+        WStringHelpersTests.cpp
+        TestHelpers/FirstNFailuresReporter.h
+        )
 
 target_link_libraries(SudokuKataTestsCpp SudokuKataCpp ApprovalTests::ApprovalTests Catch2::Catch2)
 
