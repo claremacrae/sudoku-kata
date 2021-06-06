@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <regex>
+#include <iomanip>
 
 using namespace ApprovalTests;
 using namespace SudokuKata;
