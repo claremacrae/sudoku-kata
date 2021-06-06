@@ -32,9 +32,6 @@ namespace SudokuKata
 
     void FileReadingRandomNumber::ReadValuesFromFile(const std::string& seedsFile)
     {
-        //C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
-        //ORIGINAL LINE: using (TextReader reader = File.OpenText(seedsFile))
-        {
             std::ifstream ifs(seedsFile);
 
             if (!ifs)
@@ -47,6 +44,5 @@ namespace SudokuKata
                 _results.push_back(r);
             }
             // std::cout << _results.size() << " lines read from " << seedsFile << '\n';
-        }
     }
 }

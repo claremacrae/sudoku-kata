@@ -20,14 +20,10 @@ namespace SudokuKata
 
     void FileWritingRandomNumber::WriteValuesToFile(const std::string& seedsFile)
     {
-        //C# TO C++ CONVERTER NOTE: The following 'using' block is replaced by its C++ equivalent:
-        //ORIGINAL LINE: using(TextWriter tw = new StreamWriter(seedsFile))
+        TextWriter tw = StreamWriter(seedsFile);
+        for (auto s : _results)
         {
-            TextWriter tw = StreamWriter(seedsFile);
-            for (auto s : _results)
-            {
-                tw.WriteLine(s);
-            }
+            tw.WriteLine(s);
         }
     }
 
