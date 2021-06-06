@@ -182,7 +182,7 @@ namespace SudokuKata
                 {
                     usedDigits[digitToMove - 1] = false;
                     currentState[currentStateIndex] = 0;
-                    board[rowToWrite][colToWrite] = L'.';
+                    board[rowToWrite][colToWrite] = '.';
                 }
 
                 if (movedToDigit <= 9)
@@ -258,7 +258,7 @@ namespace SudokuKata
             int rowToWrite = row + row / 3 + 1;
             int colToWrite = col + col / 3 + 1;
 
-            board[rowToWrite][colToWrite] = L'.';
+            board[rowToWrite][colToWrite] = '.';
 
             int stateIndex = 9 * row + col;
             state[stateIndex] = 0;
@@ -1065,7 +1065,7 @@ namespace SudokuKata
                             {
                                 usedDigits[digitToMove - 1] = false;
                                 currentState[currentStateIndex] = 0;
-                                board[rowToWrite][colToWrite] = L'.';
+                                board[rowToWrite][colToWrite] = '.';
                             }
 
                             if (movedToDigit <= 9)
@@ -1144,7 +1144,7 @@ namespace SudokuKata
                         int rowToWrite = tempRow + tempRow / 3 + 1;
                         int colToWrite = tempCol + tempCol / 3 + 1;
 
-                        board[rowToWrite][colToWrite] = L'.';
+                        board[rowToWrite][colToWrite] = '.';
                         if (state[i] > 0)
                         {
                             board[rowToWrite][colToWrite] = static_cast<char>('0' + state[i]);
