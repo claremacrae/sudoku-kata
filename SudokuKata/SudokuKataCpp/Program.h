@@ -12,5 +12,8 @@ namespace SudokuKata
         void Play(std::ostream& console, IRandomValueGenerator* rng);
 
         static void Main(std::vector<std::string>& args);
+
+    private:
+        std::vector<std::vector<char>> board;
     };
 }

@@ -22,19 +22,19 @@ namespace SudokuKata
         // Prepare empty board
         std::string line = "+---+---+---+";
         std::string middle = "|...|...|...|";
-        std::vector<std::vector<char>> board = {std::vector<char>(line.begin(), line.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(line.begin(), line.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(line.begin(), line.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(middle.begin(), middle.end()),
-                                                std::vector<char>(line.begin(), line.end())};
+        board = {std::vector<char>(line.begin(), line.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(line.begin(), line.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(line.begin(), line.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(middle.begin(), middle.end()),
+                 std::vector<char>(line.begin(), line.end())};
 
         // Construct board to be solved
 
