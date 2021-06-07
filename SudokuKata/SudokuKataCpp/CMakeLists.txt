@@ -5,6 +5,8 @@ add_library(SudokuKataCpp
         GroupsWithNMasks.h
         Program.cpp
         Program.h
+        Puzzle.cpp
+        Puzzle.h
         TwoDigitMaskGroups.cpp
         TwoDigitMaskGroups.h
 #        NotYetPorted/program_main.cpp    # TODO Does not yet compile - and should not be in a library
