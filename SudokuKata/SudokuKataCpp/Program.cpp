@@ -897,193 +897,196 @@ namespace SudokuKata
                         alternateState[index2] = digit2;
                     }
 
-                    // What follows below is a complete copy-paste of the solver which appears at the beginning of this method
-                    // However, the algorithm couldn't be applied directly and it had to be modified.
-                    // Implementation below assumes that the board might not have a solution.
-                    stateStack = std::stack<std::vector<int>>();
-                    rowIndexStack = std::stack<int>();
-                    colIndexStack = std::stack<int>();
-                    usedDigitsStack = std::stack<std::vector<bool>>();
-                    lastDigitStack = std::stack<int>();
-
-                    command = "expand";
-                    while (command != "complete" && command != "fail")
                     {
-                        if (command == "expand")
+                        // What follows below is a complete copy-paste of the solver which appears at the beginning of this method
+                        // However, the algorithm couldn't be applied directly and it had to be modified.
+                        // Implementation below assumes that the board might not have a solution.
+                        stateStack = std::stack<std::vector<int>>();
+                        rowIndexStack = std::stack<int>();
+                        colIndexStack = std::stack<int>();
+                        usedDigitsStack = std::stack<std::vector<bool>>();
+                        lastDigitStack = std::stack<int>();
+
+                        command = "expand";
+                        while (command != "complete" && command != "fail")
                         {
-                            std::vector<int> currentState(9 * 9);
-
-                            if (!stateStack.empty())
+                            if (command == "expand")
                             {
-                                std::copy_n(stateStack.top().begin(),
-                                            currentState.size(),
-                                            currentState.begin());
-                            }
-                            else
-                            {
-                                std::copy_n(alternateState.begin(),
-                                            currentState.size(),
-                                            currentState.begin());
-                            }
+                                std::vector<int> currentState(9 * 9);
 
-                            int bestRow = -1;
-                            int bestCol = -1;
-                            std::vector<bool> bestUsedDigits;
-                            int bestCandidatesCount = -1;
-                            int bestRandomValue = -1;
-                            bool containsUnsolvableCells = false;
-
-                            for (int index = 0; index < currentState.size(); index++)
-                            {
-                                if (currentState[index] == 0)
+                                if (!stateStack.empty())
                                 {
-
-                                    int row = index / 9;
-                                    int col = index % 9;
-                                    int blockRow = row / 3;
-                                    int blockCol = col / 3;
-
-                                    std::vector<bool> isDigitUsed(9);
-
-                                    for (int i = 0; i < 9; i++)
-                                    {
-                                        int rowDigit = currentState[9 * i + col];
-                                        if (rowDigit > 0)
-                                        {
-                                            isDigitUsed[rowDigit - 1] = true;
-                                        }
-
-                                        int colDigit = currentState[9 * row + i];
-                                        if (colDigit > 0)
-                                        {
-                                            isDigitUsed[colDigit - 1] = true;
-                                        }
-
-                                        int blockDigit = currentState[(blockRow * 3 + i / 3) * 9 +
-                                                                      (blockCol * 3 + i % 3)];
-                                        if (blockDigit > 0)
-                                        {
-                                            isDigitUsed[blockDigit - 1] = true;
-                                        }
-                                    } // for (i = 0..8)
-
-                                    int candidatesCount =
-                                        std::count(isDigitUsed.begin(), isDigitUsed.end(), false);
-
-                                    if (candidatesCount == 0)
-                                    {
-                                        containsUnsolvableCells = true;
-                                        break;
-                                    }
-
-                                    int randomValue = rng->Next();
-
-                                    if (bestCandidatesCount < 0 ||
-                                        candidatesCount < bestCandidatesCount ||
-                                        (candidatesCount == bestCandidatesCount &&
-                                         randomValue < bestRandomValue))
-                                    {
-                                        bestRow = row;
-                                        bestCol = col;
-                                        bestUsedDigits = isDigitUsed;
-                                        bestCandidatesCount = candidatesCount;
-                                        bestRandomValue = randomValue;
-                                    }
-
-                                } // for (index = 0..81)
-                            }
-
-                            if (!containsUnsolvableCells)
-                            {
-                                stateStack.push(currentState);
-                                rowIndexStack.push(bestRow);
-                                colIndexStack.push(bestCol);
-                                usedDigitsStack.push(bestUsedDigits);
-                                lastDigitStack.push(0); // No digit was tried at this position
-                            }
-
-                            // Always try to move after expand
-                            command = "move";
-
-                        } // if (command == "expand")
-                        else if (command == "collapse")
-                        {
-                            stateStack.pop();
-                            rowIndexStack.pop();
-                            colIndexStack.pop();
-                            usedDigitsStack.pop();
-                            lastDigitStack.pop();
-
-                            if (!stateStack.empty())
-                            {
-                                command = "move"; // Always try to move after collapse
-                            }
-                            else
-                            {
-                                command = "fail";
-                            }
-                        }
-                        else if (command == "move")
-                        {
-
-                            int rowToMove = rowIndexStack.top();
-                            int colToMove = colIndexStack.top();
-                            int digitToMove = lastDigitStack.top();
-                            lastDigitStack.pop();
-
-                            int rowToWrite = rowToMove + rowToMove / 3 + 1;
-                            int colToWrite = colToMove + colToMove / 3 + 1;
-
-                            std::vector<bool>& usedDigits = usedDigitsStack.top();
-                            std::vector<int>& currentState = stateStack.top();
-                            int currentStateIndex = 9 * rowToMove + colToMove;
-
-                            int movedToDigit = digitToMove + 1;
-                            while (movedToDigit <= 9 && usedDigits[movedToDigit - 1])
-                            {
-                                movedToDigit += 1;
-                            }
-
-                            if (digitToMove > 0)
-                            {
-                                usedDigits[digitToMove - 1] = false;
-                                currentState[currentStateIndex] = 0;
-                                board[rowToWrite][colToWrite] = '.';
-                            }
-
-                            if (movedToDigit <= 9)
-                            {
-                                lastDigitStack.push(movedToDigit);
-                                usedDigits[movedToDigit - 1] = true;
-                                currentState[currentStateIndex] = movedToDigit;
-                                board[rowToWrite][colToWrite] =
-                                    static_cast<char>('0' + movedToDigit);
-
-                                if (std::count(currentState.begin(), currentState.end(), 0) > 0)
-                                {
-                                    command = "expand";
+                                    std::copy_n(stateStack.top().begin(),
+                                                currentState.size(),
+                                                currentState.begin());
                                 }
                                 else
                                 {
-                                    command = "complete";
+                                    std::copy_n(alternateState.begin(),
+                                                currentState.size(),
+                                                currentState.begin());
+                                }
+
+                                int bestRow = -1;
+                                int bestCol = -1;
+                                std::vector<bool> bestUsedDigits;
+                                int bestCandidatesCount = -1;
+                                int bestRandomValue = -1;
+                                bool containsUnsolvableCells = false;
+
+                                for (int index = 0; index < currentState.size(); index++)
+                                {
+                                    if (currentState[index] == 0)
+                                    {
+
+                                        int row = index / 9;
+                                        int col = index % 9;
+                                        int blockRow = row / 3;
+                                        int blockCol = col / 3;
+
+                                        std::vector<bool> isDigitUsed(9);
+
+                                        for (int i = 0; i < 9; i++)
+                                        {
+                                            int rowDigit = currentState[9 * i + col];
+                                            if (rowDigit > 0)
+                                            {
+                                                isDigitUsed[rowDigit - 1] = true;
+                                            }
+
+                                            int colDigit = currentState[9 * row + i];
+                                            if (colDigit > 0)
+                                            {
+                                                isDigitUsed[colDigit - 1] = true;
+                                            }
+
+                                            int blockDigit =
+                                                currentState[(blockRow * 3 + i / 3) * 9 +
+                                                             (blockCol * 3 + i % 3)];
+                                            if (blockDigit > 0)
+                                            {
+                                                isDigitUsed[blockDigit - 1] = true;
+                                            }
+                                        } // for (i = 0..8)
+
+                                        int candidatesCount = std::count(
+                                            isDigitUsed.begin(), isDigitUsed.end(), false);
+
+                                        if (candidatesCount == 0)
+                                        {
+                                            containsUnsolvableCells = true;
+                                            break;
+                                        }
+
+                                        int randomValue = rng->Next();
+
+                                        if (bestCandidatesCount < 0 ||
+                                            candidatesCount < bestCandidatesCount ||
+                                            (candidatesCount == bestCandidatesCount &&
+                                             randomValue < bestRandomValue))
+                                        {
+                                            bestRow = row;
+                                            bestCol = col;
+                                            bestUsedDigits = isDigitUsed;
+                                            bestCandidatesCount = candidatesCount;
+                                            bestRandomValue = randomValue;
+                                        }
+
+                                    } // for (index = 0..81)
+                                }
+
+                                if (!containsUnsolvableCells)
+                                {
+                                    stateStack.push(currentState);
+                                    rowIndexStack.push(bestRow);
+                                    colIndexStack.push(bestCol);
+                                    usedDigitsStack.push(bestUsedDigits);
+                                    lastDigitStack.push(0); // No digit was tried at this position
+                                }
+
+                                // Always try to move after expand
+                                command = "move";
+
+                            } // if (command == "expand")
+                            else if (command == "collapse")
+                            {
+                                stateStack.pop();
+                                rowIndexStack.pop();
+                                colIndexStack.pop();
+                                usedDigitsStack.pop();
+                                lastDigitStack.pop();
+
+                                if (!stateStack.empty())
+                                {
+                                    command = "move"; // Always try to move after collapse
+                                }
+                                else
+                                {
+                                    command = "fail";
                                 }
                             }
-                            else
+                            else if (command == "move")
                             {
-                                // No viable candidate was found at current position - pop it in the next iteration
-                                lastDigitStack.push(0);
-                                command = "collapse";
-                            }
-                        } // if (command == "move")
 
-                    } // while (command != "complete" && command != "fail")
+                                int rowToMove = rowIndexStack.top();
+                                int colToMove = colIndexStack.top();
+                                int digitToMove = lastDigitStack.top();
+                                lastDigitStack.pop();
 
-                    if (command == "complete")
-                    { // Board was solved successfully even with two digits swapped
-                        stateIndex1.push_back(index1);
-                        stateIndex2.push_back(index2);
-                        value1.push_back(digit1);
-                        value2.push_back(digit2);
+                                int rowToWrite = rowToMove + rowToMove / 3 + 1;
+                                int colToWrite = colToMove + colToMove / 3 + 1;
+
+                                std::vector<bool>& usedDigits = usedDigitsStack.top();
+                                std::vector<int>& currentState = stateStack.top();
+                                int currentStateIndex = 9 * rowToMove + colToMove;
+
+                                int movedToDigit = digitToMove + 1;
+                                while (movedToDigit <= 9 && usedDigits[movedToDigit - 1])
+                                {
+                                    movedToDigit += 1;
+                                }
+
+                                if (digitToMove > 0)
+                                {
+                                    usedDigits[digitToMove - 1] = false;
+                                    currentState[currentStateIndex] = 0;
+                                    board[rowToWrite][colToWrite] = '.';
+                                }
+
+                                if (movedToDigit <= 9)
+                                {
+                                    lastDigitStack.push(movedToDigit);
+                                    usedDigits[movedToDigit - 1] = true;
+                                    currentState[currentStateIndex] = movedToDigit;
+                                    board[rowToWrite][colToWrite] =
+                                        static_cast<char>('0' + movedToDigit);
+
+                                    if (std::count(currentState.begin(), currentState.end(), 0) > 0)
+                                    {
+                                        command = "expand";
+                                    }
+                                    else
+                                    {
+                                        command = "complete";
+                                    }
+                                }
+                                else
+                                {
+                                    // No viable candidate was found at current position - pop it in the next iteration
+                                    lastDigitStack.push(0);
+                                    command = "collapse";
+                                }
+                            } // if (command == "move")
+
+                        } // while (command != "complete" && command != "fail")
+
+                        if (command == "complete")
+                        { // Board was solved successfully even with two digits swapped
+                            stateIndex1.push_back(index1);
+                            stateIndex2.push_back(index2);
+                            value1.push_back(digit1);
+                            value2.push_back(digit2);
+                        }
                     }
                 } // while (!candidateIndex1.empty())
 
