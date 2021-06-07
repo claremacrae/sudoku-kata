@@ -12,20 +12,20 @@
 #include "Program.h"
 #include "Puzzle.h"
 
-std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::__1::vector<std::vector<char>>& board,
+std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::vector<std::vector<char>>& board,
                                                 IRandomValueGenerator* rng)
 {
     // Construct board to be solved
 
     // Top element is current state of the board
-    std::__1::stack<std::vector<int>> stateStack;
+    std::stack<std::vector<int>> stateStack;
 
     // Top elements are (row, col) of cell which has been modified compared to previous state
     std::stack<int> rowIndexStack;
     std::stack<int> colIndexStack;
 
     // Top element indicates candidate digits (those with False) for (row, col)
-    std::__1::stack<std::vector<bool>> usedDigitsStack;
+    std::stack<std::vector<bool>> usedDigitsStack;
 
     // Top element is the value that was set on (row, col)
     std::stack<int> lastDigitStack;
@@ -187,7 +187,7 @@ std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::__1::vector<std:
     return stateStack.top();
 }
 
-std::__1::vector<std::vector<char>> SudokuKata::Puzzle::ConstructFullBoard()
+std::vector<std::vector<char>> SudokuKata::Puzzle::ConstructFullBoard()
     {
         // Prepare empty board
         std::string line = "+---+---+---+";

@@ -10,9 +10,9 @@ namespace SudokuKata
     class Puzzle
     {
     protected:
-        static std::vector<int> ConstructBoardToSolve(std::__1::vector<std::vector<char>>& board,
+        static std::vector<int> ConstructBoardToSolve(std::vector<std::vector<char>>& board,
                                                       IRandomValueGenerator* rng);
-        static std::__1::vector<std::vector<char>> ConstructFullBoard();
+        static std::vector<std::vector<char>> ConstructFullBoard();
         std::vector<std::vector<char>> board;
         std::vector<int> state;
     };
