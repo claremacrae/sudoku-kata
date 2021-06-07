@@ -1034,14 +1034,14 @@ namespace SudokuKata
         // Construct board to be solved
 
         // Top element is current state of the board
-        std::__1::stack<std::vector<int>> stateStack;
+        std::stack<std::vector<int>> stateStack;
 
         // Top elements are (row, col) of cell which has been modified compared to previous state
         std::stack<int> rowIndexStack;
         std::stack<int> colIndexStack;
 
         // Top element indicates candidate digits (those with False) for (row, col)
-        std::__1::stack<std::vector<bool>> usedDigitsStack;
+        std::stack<std::vector<bool>> usedDigitsStack;
 
         // Top element is the value that was set on (row, col)
         std::stack<int> lastDigitStack;
