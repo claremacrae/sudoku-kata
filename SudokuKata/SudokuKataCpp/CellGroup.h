@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-class CellGroups
+class CellGroup
 {
 public:
     int Discriminator = 0;
@@ -21,11 +21,11 @@ public:
     int getRow() const;
     int getColumn() const;
 
-    CellGroups(int discriminator, const std::string& description, int index, int row, int column);
+    CellGroup(int discriminator, const std::string& description, int index, int row, int column);
 
     std::string ToString() const;
 };
 
 // TODO Maybe remove after porting, for more realistic Kata!
 // TODO Remove Map from the name!
-using CellGroupsMap = std::vector<std::vector<CellGroups>>;
+using CellGroupsMap = std::vector<std::vector<CellGroup>>;

@@ -1,5 +1,5 @@
 ﻿#include "Program.h"
-#include "CellGroups.h"
+#include "CellGroup.h"
 #include "GroupsWithNMasks.h"
 #include "TwoDigitMaskGroups.h"
 
@@ -345,11 +345,11 @@ namespace SudokuKata
             {
                 for (int row = 0; row != 9; ++row)
                 {
-                    std::vector<CellGroups> groups;
+                    std::vector<CellGroup> groups;
                     for (int col = 0; col != 9; col++)
                     {
                         int index = row * 9 + col;
-                        groups.push_back(CellGroups(
+                        groups.push_back(CellGroup(
                             discriminator, fmt::format("row #{0}", row + 1), index, row, col));
                     }
                     cellGroups.push_back(groups);
@@ -360,11 +360,11 @@ namespace SudokuKata
             {
                 for (int col = 0; col != 9; col++)
                 {
-                    std::vector<CellGroups> groups;
+                    std::vector<CellGroup> groups;
                     for (int row = 0; row != 9; ++row)
                     {
                         int index = row * 9 + col;
-                        groups.push_back(CellGroups(
+                        groups.push_back(CellGroup(
                             discriminator, fmt::format("column #{0}", col + 1), index, row, col));
                     }
                     cellGroups.push_back(groups);
@@ -377,13 +377,13 @@ namespace SudokuKata
                 {
                     for (int block_col = 0; block_col < 3; ++block_col)
                     {
-                        std::vector<CellGroups> groups;
+                        std::vector<CellGroup> groups;
                         for (int cell_number = 0; cell_number < 9; ++cell_number)
                         {
                             int row = (3 * block_row) + (cell_number / 3);
                             int col = (3 * block_col) + (cell_number % 3);
                             int index = row * 9 + col;
-                            groups.push_back(CellGroups(
+                            groups.push_back(CellGroup(
                                 discriminator,
                                 fmt::format("block ({0}, {1})", block_row + 1, block_col + 1),
                                 index,
@@ -572,7 +572,7 @@ namespace SudokuKata
                             int cellsMatchingMask =
                                 std::count_if(cellsInGroup.begin(),
                                               cellsInGroup.end(),
-                                              [&](const CellGroups& cell) {
+                                              [&](const CellGroup& cell) {
                                                   return (candidateMasks[cell.getIndex()] == mask);
                                               });
                             if (cellsMatchingMask != 2)
@@ -583,7 +583,7 @@ namespace SudokuKata
                             bool anyValid =
                                 std::any_of(cellsInGroup.begin(),
                                             cellsInGroup.end(),
-                                            [&](const CellGroups& cell)
+                                            [&](const CellGroup& cell)
                                             {
                                                 int cellMask = candidateMasks[cell.getIndex()];
                                                 return cellMask != mask && (cellMask & mask) > 0;
@@ -593,7 +593,7 @@ namespace SudokuKata
                                 continue;
                             }
 
-                            const CellGroups& front = cellsInGroup.front();
+                            const CellGroup& front = cellsInGroup.front();
                             groups.push_back(TwoDigitMaskGroups(
                                 mask, front.getDiscriminator(), front.getDescription(), cellsInGroup));
                         }
@@ -603,8 +603,8 @@ namespace SudokuKata
                     {
                         for (const TwoDigitMaskGroups& group : groups)
                         {
-                            std::vector<CellGroups> cells;
-                            for (const CellGroups& cell : group.Cells)
+                            std::vector<CellGroup> cells;
+                            for (const CellGroup& cell : group.Cells)
                             {
                                 if (candidateMasks[cell.Index] != group.Mask &&
                                     (candidateMasks[cell.Index] & group.Mask) > 0)
@@ -613,8 +613,8 @@ namespace SudokuKata
                                 }
                             }
 
-                            std::vector<CellGroups> maskCells;
-                            for (const CellGroups& cell : group.Cells)
+                            std::vector<CellGroup> maskCells;
+                            for (const CellGroup& cell : group.Cells)
                             {
                                 if (candidateMasks[cell.Index] == group.Mask)
                                 {
@@ -706,7 +706,7 @@ namespace SudokuKata
                             bool allMatching = std::all_of(
                                 groups.begin(),
                                 groups.end(),
-                                [&](const CellGroups& cell) {
+                                [&](const CellGroup& cell) {
                                     return (state[cell.Index] == 0 ||
                                             (mask & (1 << (state[cell.Index] - 1))) == 0);
                                 });
@@ -714,7 +714,7 @@ namespace SudokuKata
                             {
                                 continue;
                             }
-                            std::vector<CellGroups> cellsWithMask;
+                            std::vector<CellGroup> cellsWithMask;
                             for (const auto& cell : groups)
                             {
                                 if (state[cell.Index] == 0 &&
@@ -726,7 +726,7 @@ namespace SudokuKata
                             int cleanableCellsCount =
                                 std::count_if(groups.begin(),
                                               groups.end(),
-                                              [&](const CellGroups& cell)
+                                              [&](const CellGroup& cell)
                                               {
                                                   return state[cell.Index] == 0 &&
                                                          (candidateMasks[cell.Index] & mask) != 0 &&

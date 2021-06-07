@@ -5,7 +5,7 @@
 TwoDigitMaskGroups::TwoDigitMaskGroups(int mask,
                                        int discriminator,
                                        const std::string& description,
-                                       const std::vector<CellGroups>& cells)
+                                       const std::vector<CellGroup>& cells)
     : Mask(mask), Discriminator(discriminator), Description(description), Cells(cells)
 {
     assert(cells.size() == 9);

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "CellGroups.h"
+#include "CellGroup.h"
 
 #include <vector>
 
@@ -11,13 +11,13 @@ public:
     const int Mask = 0;
     const int Discriminator = 0;
     const std::string Description;
-    const std::vector<CellGroups> Cells;
+    const std::vector<CellGroup> Cells;
 
 public:
     TwoDigitMaskGroups(int mask,
                        int discriminator,
                        const std::string& description,
-                       const std::vector<CellGroups>& cells);
+                       const std::vector<CellGroup>& cells);
 
     std::string ToString() const;
 };

@@ -4,8 +4,8 @@
 
 GroupsWithNMasks::GroupsWithNMasks(int mask,
                                    const std::string& description,
-                                   const std::vector<CellGroups>& cells,
-                                   const std::vector<CellGroups>& cellsWithMask,
+                                   const std::vector<CellGroup>& cells,
+                                   const std::vector<CellGroup>& cellsWithMask,
                                    int cleanableCellsCount)
 {
     Mask = mask;

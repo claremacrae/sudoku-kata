@@ -1,6 +1,6 @@
 add_library(SudokuKataCpp
-        CellGroups.cpp
-        CellGroups.h
+        CellGroup.cpp
+        CellGroup.h
         GroupsWithNMasks.cpp
         GroupsWithNMasks.h
         Program.cpp

@@ -1,38 +1,38 @@
-#include "CellGroups.h"
+#include "CellGroup.h"
 #include <fmt/format.h>
 
-int CellGroups::getDiscriminator() const
+int CellGroup::getDiscriminator() const
 {
     return Discriminator;
 }
 
-std::string CellGroups::getDescription() const
+std::string CellGroup::getDescription() const
 {
     return Description;
 }
 
-int CellGroups::getIndex() const
+int CellGroup::getIndex() const
 {
     return Index;
 }
 
-int CellGroups::getRow() const
+int CellGroup::getRow() const
 {
     return Row;
 }
 
-int CellGroups::getColumn() const
+int CellGroup::getColumn() const
 {
     return Column;
 }
 
-CellGroups::CellGroups(
+CellGroup::CellGroup(
     int discriminator, const std::string& description, int index, int row, int column)
     : Discriminator(discriminator), Description(description), Index(index), Row(row), Column(column)
 {
 }
 
-std::string CellGroups::ToString() const
+std::string CellGroup::ToString() const
 {
     return fmt::format("{0}: {1}, {2}: {3}, {4}: {5}, {6}: {7}, {8}: {9}",
                        "Discriminator",
