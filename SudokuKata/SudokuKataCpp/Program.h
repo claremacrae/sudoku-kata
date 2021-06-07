@@ -1,23 +1,17 @@
 ﻿#pragma once
 
 #include "Utilities/IRandomValueGenerator.h"
+#include "Puzzle.h"
 #include <string>
 #include <vector>
 
 namespace SudokuKata
 {
-    class Program
+    class Program : public Puzzle
     {
     public:
         void Play(std::ostream& console, IRandomValueGenerator* rng);
 
         static void Main(std::vector<std::string>& args);
-
-    private:
-        std::vector<std::vector<char>> board;
-        std::vector<int> state;
-        static std::vector<std::vector<char>> ConstructFullBoard();
-        static std::vector<int> ConstructBoardToSolve(std::vector<std::vector<char>>& board,
-                                                      IRandomValueGenerator* rng);
     };
 }
