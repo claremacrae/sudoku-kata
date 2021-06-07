@@ -340,7 +340,7 @@ namespace SudokuKata
             //				#endregion
 
             //				#region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
-            GroupsOfCells cellGroups;
+            std::vector<std::vector<CellGroup>> cellGroups;
             int discriminator = 0;
             {
                 for (int row = 0; row != 9; ++row)

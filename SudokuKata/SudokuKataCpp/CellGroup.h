@@ -25,6 +25,3 @@ public:
 
     std::string ToString() const;
 };
-
-// TODO Maybe remove after porting, for more realistic Kata!
-using GroupsOfCells = std::vector<std::vector<CellGroup>>;
