@@ -190,6 +190,8 @@ namespace SudokuKata
             } // if (command == "move")
         }
 
+        state = stateStack.top();
+
         console << std::endl;
         console << "Final look of the solved board:" << std::endl;
         for (const auto& item : board)
@@ -212,7 +214,6 @@ namespace SudokuKata
         std::vector<int> positions(9 * 9);
         std::iota(positions.begin(), positions.end(), 0);
 
-        state = stateStack.top();
 
         std::vector<int> finalState(state.size());
         std::copy_n(state.begin(), finalState.size(), finalState.begin());
