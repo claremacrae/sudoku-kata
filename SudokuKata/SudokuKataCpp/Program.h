@@ -16,5 +16,6 @@ namespace SudokuKata
     private:
         std::vector<std::vector<char>> board;
         std::vector<int> state;
+        void ConstructFullBoard();
     };
 }
