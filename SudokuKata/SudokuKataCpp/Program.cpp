@@ -901,13 +901,26 @@ namespace SudokuKata
                         // What follows below is a complete copy-paste of the solver which appears at the beginning of this method
                         // However, the algorithm couldn't be applied directly and it had to be modified.
                         // Implementation below assumes that the board might not have a solution.
-                        stateStack = std::stack<std::vector<int>>();
-                        rowIndexStack = std::stack<int>();
-                        colIndexStack = std::stack<int>();
-                        usedDigitsStack = std::stack<std::vector<bool>>();
-                        lastDigitStack = std::stack<int>();
 
-                        command = "expand";
+                        // Top element is current state of the board
+                        std::stack<std::vector<int>> stateStack;
+
+                        // Top elements are (row, col) of cell which has been modified compared to previous state
+                        std::stack<int> rowIndexStack;
+                        std::stack<int> colIndexStack;
+
+                        // Top element indicates candidate digits (those with False) for (row, col)
+                        std::stack<std::vector<bool>> usedDigitsStack;
+
+                        // Top element is the value that was set on (row, col)
+                        std::stack<int> lastDigitStack;
+
+                        // Indicates operation to perform next
+                        // - expand - finds next empty cell and puts new state on stacks
+                        // - move - finds next candidate number at current pos and applies it to current state
+                        // - collapse - pops current state from stack as it did not yield a solution
+                        std::string command = "expand";
+
                         while (command != "complete" && command != "fail")
                         {
                             if (command == "expand")
