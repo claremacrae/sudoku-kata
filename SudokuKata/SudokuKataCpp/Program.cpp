@@ -19,7 +19,7 @@ namespace SudokuKata
     void Program::Play(std::ostream& console, IRandomValueGenerator* rng)
     {
         //			#region Construct fully populated board
-        ConstructFullBoard();
+        board = ConstructFullBoard();
         ConstructBoardToSolve(rng);
 
         console << std::endl;
@@ -1203,24 +1203,24 @@ namespace SudokuKata
         state = stateStack.top();
     }
 
-    void Program::ConstructFullBoard()
+    std::vector<std::vector<char>> Program::ConstructFullBoard()
     {
         // Prepare empty board
         std::string line = "+---+---+---+";
         std::string middle = "|...|...|...|";
-        board = {std::vector<char>(line.begin(), line.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(line.begin(), line.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(line.begin(), line.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(middle.begin(), middle.end()),
-                 std::vector<char>(line.begin(), line.end())};
+        return {std::vector<char>(line.begin(), line.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(line.begin(), line.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(line.begin(), line.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(middle.begin(), middle.end()),
+                std::vector<char>(line.begin(), line.end())};
     }
 
     void Program::Main(std::vector<std::string>& args)

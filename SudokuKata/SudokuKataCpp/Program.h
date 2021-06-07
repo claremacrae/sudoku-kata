@@ -16,7 +16,7 @@ namespace SudokuKata
     private:
         std::vector<std::vector<char>> board;
         std::vector<int> state;
-        void ConstructFullBoard();
+        std::vector<std::vector<char>> ConstructFullBoard();
         void ConstructBoardToSolve(IRandomValueGenerator* rng);
     };
 }
