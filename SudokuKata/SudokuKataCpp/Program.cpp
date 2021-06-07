@@ -227,7 +227,7 @@ namespace SudokuKata
         std::vector<int> positions(9 * 9);
         std::iota(positions.begin(), positions.end(), 0);
 
-        std::vector<int> state = stateStack.top();
+        state = stateStack.top();
 
         std::vector<int> finalState(state.size());
         std::copy_n(state.begin(), finalState.size(), finalState.begin());
