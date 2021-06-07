@@ -20,7 +20,7 @@ namespace SudokuKata
     {
         //			#region Construct fully populated board
         board = ConstructFullBoard();
-        state = ConstructBoardToSolve(rng, board);
+        state = ConstructBoardToSolve(board, rng);
 
         console << std::endl;
         console << "Final look of the solved board:" << std::endl;
@@ -1029,8 +1029,8 @@ namespace SudokuKata
         }
     }
 
-    std::vector<int> Program::ConstructBoardToSolve(IRandomValueGenerator* rng,
-                                                    std::vector<std::vector<char>>& board1)
+    std::vector<int> Program::ConstructBoardToSolve(std::vector<std::vector<char>>& board1,
+                                                    IRandomValueGenerator* rng)
     {
         // Construct board to be solved
 
