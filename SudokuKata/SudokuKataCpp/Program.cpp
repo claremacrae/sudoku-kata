@@ -20,7 +20,7 @@ namespace SudokuKata
     {
         //			#region Construct fully populated board
         board = ConstructFullBoard();
-        state = ConstructBoardToSolve(rng);
+        state = ConstructBoardToSolve(rng, board);
 
         console << std::endl;
         console << "Final look of the solved board:" << std::endl;
@@ -1029,7 +1029,8 @@ namespace SudokuKata
         }
     }
 
-    std::vector<int> Program::ConstructBoardToSolve(IRandomValueGenerator* rng)
+    std::vector<int> Program::ConstructBoardToSolve(IRandomValueGenerator* rng,
+                                                    std::vector<std::vector<char>>& board1)
     {
         // Construct board to be solved
 
@@ -1177,7 +1178,7 @@ namespace SudokuKata
                 {
                     usedDigits[digitToMove - 1] = false;
                     currentState[currentStateIndex] = 0;
-                    board[rowToWrite][colToWrite] = '.';
+                    board1[rowToWrite][colToWrite] = '.';
                 }
 
                 if (movedToDigit <= 9)
@@ -1185,7 +1186,7 @@ namespace SudokuKata
                     lastDigitStack.push(movedToDigit);
                     usedDigits[movedToDigit - 1] = true;
                     currentState[currentStateIndex] = movedToDigit;
-                    board[rowToWrite][colToWrite] = static_cast<char>('0' + movedToDigit);
+                    board1[rowToWrite][colToWrite] = static_cast<char>('0' + movedToDigit);
 
                     // Next possible digit was found at current position
                     // Next step will be to expand the state
