@@ -9,7 +9,7 @@ namespace SudokuKata
     class Program
     {
     public:
-        static void Play(std::ostream& console, IRandomValueGenerator* rng);
+        void Play(std::ostream& console, IRandomValueGenerator* rng);
 
         static void Main(std::vector<std::string>& args);
     };

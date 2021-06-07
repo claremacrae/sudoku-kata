@@ -72,7 +72,8 @@ namespace SudokuKataTests
         std::stringstream console;
         try
         {
-            Program::Play(console, randomValueGenerator);
+            Program program;
+            program.Play(console, randomValueGenerator);
             std::string s = console.str();
         }
         catch (const std::exception& e)
