@@ -27,5 +27,4 @@ public:
 };
 
 // TODO Maybe remove after porting, for more realistic Kata!
-// TODO Remove Map from the name!
-using CellGroupsMap = std::vector<std::vector<CellGroup>>;
+using GroupsOfCells = std::vector<std::vector<CellGroup>>;
