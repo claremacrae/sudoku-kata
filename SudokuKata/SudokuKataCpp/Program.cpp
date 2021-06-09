@@ -44,7 +44,6 @@ namespace SudokuKata
         std::vector<int> positions(9 * 9);
         std::iota(positions.begin(), positions.end(), 0);
 
-
         std::vector<int> finalState(state.size());
         std::copy_n(state.begin(), finalState.size(), finalState.begin());
 
@@ -410,8 +409,10 @@ namespace SudokuKata
                             }
 
                             const CellGroup& front = cellsInGroup.front();
-                            groups.push_back(TwoDigitMaskGroups(
-                                mask, front.getDiscriminator(), front.getDescription(), cellsInGroup));
+                            groups.push_back(TwoDigitMaskGroups(mask,
+                                                                front.getDiscriminator(),
+                                                                front.getDescription(),
+                                                                cellsInGroup));
                         }
                     }
 

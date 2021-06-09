@@ -13,7 +13,7 @@
 #include "Puzzle.h"
 
 std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::vector<std::vector<char>>& board,
-                                                IRandomValueGenerator* rng)
+                                                           IRandomValueGenerator* rng)
 {
     // Construct board to be solved
 
@@ -43,8 +43,7 @@ std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::vector<std::vect
 
             if (!stateStack.empty())
             {
-                std::copy_n(
-                    stateStack.top().begin(), currentState.size(), currentState.begin());
+                std::copy_n(stateStack.top().begin(), currentState.size(), currentState.begin());
             }
 
             int bestRow = -1;
@@ -100,8 +99,7 @@ std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::vector<std::vect
                     int randomValue = rng->Next();
 
                     if (bestCandidatesCount < 0 || candidatesCount < bestCandidatesCount ||
-                        (candidatesCount == bestCandidatesCount &&
-                         randomValue < bestRandomValue))
+                        (candidatesCount == bestCandidatesCount && randomValue < bestRandomValue))
                     {
                         bestRow = row;
                         bestCol = col;
@@ -188,21 +186,21 @@ std::vector<int> SudokuKata::Puzzle::ConstructBoardToSolve(std::vector<std::vect
 }
 
 std::vector<std::vector<char>> SudokuKata::Puzzle::ConstructFullBoard()
-    {
-        // Prepare empty board
-        std::string line = "+---+---+---+";
-        std::string middle = "|...|...|...|";
-        return {std::vector<char>(line.begin(), line.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(line.begin(), line.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(line.begin(), line.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(middle.begin(), middle.end()),
-                std::vector<char>(line.begin(), line.end())};
-    }
+{
+    // Prepare empty board
+    std::string line = "+---+---+---+";
+    std::string middle = "|...|...|...|";
+    return {std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(middle.begin(), middle.end()),
+            std::vector<char>(line.begin(), line.end())};
+}
