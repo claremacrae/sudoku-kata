@@ -32,17 +32,17 @@ namespace SudokuKata
 
     void FileReadingRandomNumber::ReadValuesFromFile(const std::string& seedsFile)
     {
-            std::ifstream ifs(seedsFile);
+        std::ifstream ifs(seedsFile);
 
-            if (!ifs)
-                throw std::runtime_error(seedsFile + ": " + std::strerror(errno));
+        if (!ifs)
+            throw std::runtime_error(seedsFile + ": " + std::strerror(errno));
 
-            while (ifs)
-            {
-                int r;
-                ifs >> r;
-                _results.push_back(r);
-            }
-            // std::cout << _results.size() << " lines read from " << seedsFile << '\n';
+        while (ifs)
+        {
+            int r;
+            ifs >> r;
+            _results.push_back(r);
+        }
+        // std::cout << _results.size() << " lines read from " << seedsFile << '\n';
     }
 }
