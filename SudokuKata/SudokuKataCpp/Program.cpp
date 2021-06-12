@@ -18,7 +18,7 @@ namespace SudokuKata
 
     void Program::Play(std::ostream& console, IRandomValueGenerator* rng)
     {
-        //			#region Construct fully populated board
+        // >>>> #region Construct fully populated board
         // Prepare empty board
         std::string line = "+---+---+---+";
         std::string middle = "|...|...|...|";
@@ -216,9 +216,9 @@ namespace SudokuKata
             console << '\n';
         }
 
-        //			#endregion
+        // >>>> #endregion
 
-        //			#region Generate initial board from the completely solved one
+        // >>>> #region Generate initial board from the completely solved one
         // Board is solved at this point.
         // Now pick subset of digits as the starting position.
         int remainingDigits = 30;
@@ -276,9 +276,9 @@ namespace SudokuKata
             }
             console << '\n';
         }
-        //			#endregion
+        // >>>> #endregion
 
-        //			#region Prepare lookup structures that will be used in further execution
+        // >>>> #region Prepare lookup structures that will be used in further execution
         console << std::endl;
         console << std::string(80, '=') << std::endl;
         console << std::endl;
@@ -299,14 +299,14 @@ namespace SudokuKata
         }
 
         int allOnes = (1 << 9) - 1;
-        //			#endregion
+        // >>>> #endregion
 
         bool changeMade = true;
         while (changeMade)
         {
             changeMade = false;
 
-            //				#region Calculate candidates for current state of the board
+            // >>>> #region Calculate candidates for current state of the board
             std::vector<int> candidateMasks(state.size());
 
             for (int i = 0; i < state.size(); i++)
@@ -337,9 +337,9 @@ namespace SudokuKata
                     candidateMasks[i] = allOnes & ~colidingNumbers;
                 }
             }
-            //				#endregion
+            // >>>> #endregion
 
-            //				#region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
+            // >>>> #region Build a collection (named cellGroups) which maps cell indices into distinct groups (rows/columns/blocks)
             std::vector<std::vector<CellGroup>> cellGroups;
             int discriminator = 0;
             {
@@ -395,14 +395,14 @@ namespace SudokuKata
                     }
                 }
             }
-            //				#endregion
+            // >>>> #endregion
 
             bool stepChangeMade = true;
             while (stepChangeMade)
             {
                 stepChangeMade = false;
 
-                //					#region Pick cells with only one candidate left
+                // >>>> #region Pick cells with only one candidate left
 
                 std::vector<int> singleCandidateIndices;
                 for (int index = 0; index < candidateMasks.size(); ++index)
@@ -437,9 +437,9 @@ namespace SudokuKata
                             << candidate + 1 << '.' << std::endl;
                 }
 
-                //					#endregion
+                // >>>> #endregion
 
-                //					#region Try to find a number which can only appear in one place in a row/column/block
+                // >>>> #region Try to find a number which can only appear in one place in a row/column/block
 
                 if (!changeMade)
                 {
@@ -547,9 +547,9 @@ namespace SudokuKata
                     }
                 }
 
-                //					#endregion
+                // >>>> #endregion
 
-                //					#region Try to find pairs of digits in the same row/column/block and remove them from other colliding cells
+                // >>>> #region Try to find pairs of digits in the same row/column/block and remove them from other colliding cells
                 if (!changeMade)
                 {
                     std::vector<int> twoDigitMasks;
@@ -680,9 +680,9 @@ namespace SudokuKata
                         }
                     }
                 }
-                //					#endregion
+                // >>>> #endregion
 
-                //					#region Try to find groups of digits of size N which only appear in N cells within row/column/block
+                // >>>> #region Try to find groups of digits of size N which only appear in N cells within row/column/block
                 // When a set of N digits only appears in N cells within row/column/block, then no other digit can appear in the same set of cells
                 // All other candidates can then be removed from those cells
 
@@ -819,10 +819,10 @@ namespace SudokuKata
                     }
                 }
 
-                //					#endregion
+                // >>>> #endregion
             }
 
-            //				#region Final attempt - look if the board has multiple solutions
+            // >>>> #region Final attempt - look if the board has multiple solutions
             if (!changeMade)
             {
                 // This is the last chance to do something in this iteration:
@@ -1162,11 +1162,11 @@ namespace SudokuKata
                             << std::endl;
                 }
             }
-            //				#endregion
+            // >>>> #endregion
 
             if (changeMade)
             {
-                //					#region Print the board as it looks after one change was made to it
+                // >>>> #region Print the board as it looks after one change was made to it
                 for (const auto& item : board)
                 {
                     for (const auto& character : item)
@@ -1191,7 +1191,7 @@ namespace SudokuKata
 
                 console << "Code: " << code << std::endl;
                 console << std::endl;
-                //					#endregion
+                // >>>> #endregion
             }
         }
     }
