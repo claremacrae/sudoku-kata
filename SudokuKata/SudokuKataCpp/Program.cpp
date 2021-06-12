@@ -595,7 +595,7 @@ namespace SudokuKata
 
                             const CellGroup& front = cellsInGroup.front();
                             groups.push_back(TwoDigitMaskGroups(
-                                mask, front.getDiscriminator(), front.getDescription(), cellsInGroup));
+                                    mask, front.Discriminator, front.getDescription(), cellsInGroup));
                         }
                     }
 

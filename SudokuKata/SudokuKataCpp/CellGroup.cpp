@@ -1,11 +1,6 @@
 #include "CellGroup.h"
 #include <fmt/format.h>
 
-int CellGroup::getDiscriminator() const
-{
-    return Discriminator;
-}
-
 std::string CellGroup::getDescription() const
 {
     return Description;
@@ -34,9 +29,11 @@ CellGroup::CellGroup(
 
 std::string CellGroup::ToString() const
 {
+    int result;
+    result = Discriminator;
     return fmt::format("{0}: {1}, {2}: {3}, {4}: {5}, {6}: {7}, {8}: {9}",
                        "Discriminator",
-                       getDiscriminator(),
+                       result,
                        "Description",
                        getDescription(),
                        "Index",

@@ -14,8 +14,6 @@ public:
     int Column = 0;
 
 public:
-    // TODO Remove accessors - inline?
-    int getDiscriminator() const;
     std::string getDescription() const;
     int getIndex() const;
     int getRow() const;
