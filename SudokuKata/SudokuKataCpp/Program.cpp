@@ -573,7 +573,7 @@ namespace SudokuKata
                                 std::count_if(cellsInGroup.begin(),
                                               cellsInGroup.end(),
                                               [&](const CellGroup& cell) {
-                                                  return (candidateMasks[cell.getIndex()] == mask);
+                                                  return (candidateMasks[cell.Index] == mask);
                                               });
                             if (cellsMatchingMask != 2)
                             {
@@ -585,7 +585,7 @@ namespace SudokuKata
                                             cellsInGroup.end(),
                                             [&](const CellGroup& cell)
                                             {
-                                                int cellMask = candidateMasks[cell.getIndex()];
+                                                int cellMask = candidateMasks[cell.Index];
                                                 return cellMask != mask && (cellMask & mask) > 0;
                                             });
                             if (!anyValid)
@@ -595,7 +595,7 @@ namespace SudokuKata
 
                             const CellGroup& front = cellsInGroup.front();
                             groups.push_back(TwoDigitMaskGroups(
-                                    mask, front.Discriminator, front.getDescription(), cellsInGroup));
+                                    mask, front.Discriminator, front.Description, cellsInGroup));
                         }
                     }
 

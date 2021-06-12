@@ -14,11 +14,6 @@ public:
     int Column = 0;
 
 public:
-    std::string getDescription() const;
-    int getIndex() const;
-    int getRow() const;
-    int getColumn() const;
-
     CellGroup(int discriminator, const std::string& description, int index, int row, int column);
 
     std::string ToString() const;
