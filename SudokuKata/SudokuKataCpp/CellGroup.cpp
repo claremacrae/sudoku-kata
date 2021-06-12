@@ -29,11 +29,9 @@ CellGroup::CellGroup(
 
 std::string CellGroup::ToString() const
 {
-    int result;
-    result = Discriminator;
     return fmt::format("{0}: {1}, {2}: {3}, {4}: {5}, {6}: {7}, {8}: {9}",
                        "Discriminator",
-                       result,
+                       Discriminator,
                        "Description",
                        getDescription(),
                        "Index",
