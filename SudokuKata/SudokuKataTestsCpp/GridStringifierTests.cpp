@@ -21,7 +21,6 @@ TEST_CASE("TestPopulatedBoard")
 
 TEST_CASE("TestPopulatedBoardAsCode")
 {
-    // TODO Are there sections, where I could use the input twice, for two separate outputs?
     // Assert
     std::vector<int> input = {4, 2, 9, 5, 3, 8, 6, 1, 7, 6, 3, 7, 9, 1, 4, 8, 2, 5, 8, 5, 1,
                               7, 6, 2, 4, 3, 9, 9, 7, 5, 6, 8, 3, 1, 4, 2, 1, 6, 2, 4, 5, 7,
